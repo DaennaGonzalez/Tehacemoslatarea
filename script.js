@@ -215,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       event.preventDefault();
 
-      const headerOffset = 110;
+      const headerOffset = window.innerWidth <= 767 ? 90 : 110;
       const targetPosition =
         target.getBoundingClientRect().top + window.pageYOffset - headerOffset;
 
