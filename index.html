@@ -37,7 +37,7 @@
     <span>¿Qué tarea necesitas?</span>
   </a>
 
-  <header class="main-header" id="inicio">
+  <header class="main-header">
     <div class="container header-container">
       <a href="#inicio" class="brand" aria-label="Ir al inicio">
         <img src="imgs/logo-principal.webp" alt="Logo Te Hago La Tarea" class="brand-logo" />
@@ -67,10 +67,10 @@
   </header>
 
   <main>
+
+    
 <!-- HERO -->
-<!-- HERO -->
-<!-- HERO -->
-<section class="hero section" id="hero">
+<section class="hero section" id="inicio">
   <div class="container hero-grid">
     <div class="hero-badge textured-card texture-cuadro reveal-up">
       <span>🤓💻 Tu apoyo académico de confianza</span>
@@ -160,27 +160,50 @@
     </div>
   </div>
 
-  <div class="hero-wave" aria-hidden="true">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#ffffff" fill-opacity="1" d="M0,192L30,186.7C60,181,120,171,180,186.7C240,203,300,245,360,272C420,299,480,309,540,293.3C600,277,660,235,720,224C780,213,840,235,900,245.3C960,256,1020,256,1080,234.7C1140,213,1200,171,1260,160C1320,149,1380,171,1410,181.3L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
-    </svg>
-  </div>
+
 </section>
 
 
 
 
-    <section class="trust-strip section section-light">
-      <div class="container">
-        <div class="trust-grid">
-          <article class="trust-item reveal-up"><span>✅</span><strong>8 años de experiencia</strong></article>
-          <article class="trust-item reveal-up"><span>📲</span><strong>Atención por WhatsApp</strong></article>
-          <article class="trust-item reveal-up"><span>💬</span><strong>Cotización sin compromiso</strong></article>
-          <article class="trust-item reveal-up"><span>🎓</span><strong>Múltiples áreas académicas</strong></article>
-          <article class="trust-item reveal-up"><span>✨</span><strong>Clientes satisfechos</strong></article>
-        </div>
-      </div>
-    </section>
+   <section class="trust-strip section section-light">
+  <div class="trust-wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 220" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      
+      <!-- capa superior: será el color del hero -->
+      <path
+        class="trust-wave-top"
+        d="M0,0H1440V0
+           C1320,0 1200,0 1080,0
+           C960,0 840,0 720,0
+           C600,0 480,0 360,0
+           C240,0 120,0 0,0
+           Z" />
+
+      <!-- capa inferior: será el color de la sección de abajo -->
+      <path
+        class="trust-wave-bottom"
+        d="M0,110
+           C120,85 220,55 360,78
+           C520,104 610,176 760,168
+           C900,160 1010,92 1150,88
+           C1280,84 1360,118 1440,106
+           L1440,220
+           L0,220
+           Z" />
+    </svg>
+  </div>
+
+  <div class="container">
+    <div class="trust-grid">
+      <article class="trust-item reveal-up"><span>✅</span><strong>8 años de experiencia</strong></article>
+      <article class="trust-item reveal-up"><span>📲</span><strong>Atención por WhatsApp</strong></article>
+      <article class="trust-item reveal-up"><span>💬</span><strong>Cotización sin compromiso</strong></article>
+      <article class="trust-item reveal-up"><span>🎓</span><strong>Múltiples áreas académicas</strong></article>
+      <article class="trust-item reveal-up"><span>✨</span><strong>Clientes satisfechos</strong></article>
+    </div>
+  </div>
+</section>
 
     
     <section class="areas section" id="areas">
@@ -189,7 +212,7 @@
           <span class="section-tag">Carreras, áreas y materias</span>
           <h2>Manejamos muchísimas áreas académicas</h2>
           <p>
-            Da clic en cada categoría para ver el listado completo de materias. Por ahora cada categoría lleva el mismo ícono y luego lo puedes reemplazar por uno distinto.
+            Da clic en cada categoría para ver el listado completo de materias. Si no se encuentra alguna de tu interés, manda mensaje.
           </p>
         </div>
 
@@ -197,7 +220,7 @@
           <article class="accordion-item reveal-up">
             <button class="accordion-trigger" type="button">
               <span class="accordion-title-wrap">
-                <img src="imgs/icono-geografia.webp" alt="Icono" class="accordion-icon" />
+                <img src="imgs/icono-metodologia.webp" alt="Icono" class="accordion-icon" />
                 <span>Metodología de la investigación y tesis</span>
               </span>
               <span class="accordion-arrow">+</span>
@@ -224,7 +247,7 @@
           <article class="accordion-item reveal-up">
             <button class="accordion-trigger" type="button">
               <span class="accordion-title-wrap">
-                <img src="imgs/icono-geografia.webp" alt="Icono" class="accordion-icon" />
+                <img src="imgs/icono-matematicas.webp" alt="Icono" class="accordion-icon" />
                 <span>Matemáticas, estadística y análisis cuantitativo</span>
               </span>
               <span class="accordion-arrow">+</span>
@@ -256,7 +279,7 @@
           <article class="accordion-item reveal-up">
             <button class="accordion-trigger" type="button">
               <span class="accordion-title-wrap">
-                <img src="imgs/icono-geografia.webp" alt="Icono" class="accordion-icon" />
+                <img src="imgs/icono-administracion.webp" alt="Icono" class="accordion-icon" />
                 <span>Administración de empresas</span>
               </span>
               <span class="accordion-arrow">+</span>
@@ -283,7 +306,7 @@
           <article class="accordion-item reveal-up">
             <button class="accordion-trigger" type="button">
               <span class="accordion-title-wrap">
-                <img src="imgs/icono-geografia.webp" alt="Icono" class="accordion-icon" />
+                <img src="imgs/icono-finanzas.webp" alt="Icono" class="accordion-icon" />
                 <span>Contaduría y finanzas</span>
               </span>
               <span class="accordion-arrow">+</span>
@@ -312,7 +335,7 @@
           <article class="accordion-item reveal-up">
             <button class="accordion-trigger" type="button">
               <span class="accordion-title-wrap">
-                <img src="imgs/icono-geografia.webp" alt="Icono" class="accordion-icon" />
+                <img src="imgs/icono-derecho.webp" alt="Icono" class="accordion-icon" />
                 <span>Derecho</span>
               </span>
               <span class="accordion-arrow">+</span>
@@ -338,7 +361,7 @@
           <article class="accordion-item reveal-up">
             <button class="accordion-trigger" type="button">
               <span class="accordion-title-wrap">
-                <img src="imgs/icono-geografia.webp" alt="Icono" class="accordion-icon" />
+                <img src="imgs/icono-industrial.webp" alt="Icono" class="accordion-icon" />
                 <span>Ingeniería industrial</span>
               </span>
               <span class="accordion-arrow">+</span>
@@ -364,7 +387,7 @@
           <article class="accordion-item reveal-up">
             <button class="accordion-trigger" type="button">
               <span class="accordion-title-wrap">
-                <img src="imgs/icono-geografia.webp" alt="Icono" class="accordion-icon" />
+                <img src="imgs/icono-sistemas.webp" alt="Icono" class="accordion-icon" />
                 <span>Ingeniería en sistemas / software / TI</span>
               </span>
               <span class="accordion-arrow">+</span>
@@ -389,7 +412,7 @@
           <article class="accordion-item reveal-up">
             <button class="accordion-trigger" type="button">
               <span class="accordion-title-wrap">
-                <img src="imgs/icono-geografia.webp" alt="Icono" class="accordion-icon" />
+                <img src="imgs/icono-disenografico.webp" alt="Icono" class="accordion-icon" />
                 <span>Diseño gráfico y multimedia</span>
               </span>
               <span class="accordion-arrow">+</span>
@@ -411,7 +434,7 @@
           <article class="accordion-item reveal-up">
             <button class="accordion-trigger" type="button">
               <span class="accordion-title-wrap">
-                <img src="imgs/icono-geografia.webp" alt="Icono" class="accordion-icon" />
+                <img src="imgs/icono-salud.webp" alt="Icono" class="accordion-icon" />
                 <span>Enfermería y ciencias de la salud</span>
               </span>
               <span class="accordion-arrow">+</span>
@@ -437,7 +460,7 @@
           <article class="accordion-item reveal-up">
             <button class="accordion-trigger" type="button">
               <span class="accordion-title-wrap">
-                <img src="imgs/icono-geografia.webp" alt="Icono" class="accordion-icon" />
+                <img src="imgs/icono-psicologia.webp" alt="Icono" class="accordion-icon" />
                 <span>Psicología</span>
               </span>
               <span class="accordion-arrow">+</span>
@@ -459,7 +482,7 @@
           <article class="accordion-item reveal-up">
             <button class="accordion-trigger" type="button">
               <span class="accordion-title-wrap">
-                <img src="imgs/icono-geografia.webp" alt="Icono" class="accordion-icon" />
+                <img src="imgs/icono-pedagogia.webp" alt="Icono" class="accordion-icon" />
                 <span>Educación y pedagogía</span>
               </span>
               <span class="accordion-arrow">+</span>
@@ -480,7 +503,7 @@
           <article class="accordion-item reveal-up">
             <button class="accordion-trigger" type="button">
               <span class="accordion-title-wrap">
-                <img src="imgs/icono-geografia.webp" alt="Icono" class="accordion-icon" />
+                <img src="imgs/icono-economia.webp" alt="Icono" class="accordion-icon" />
                 <span>Economía y negocios internacionales</span>
               </span>
               <span class="accordion-arrow">+</span>
@@ -501,7 +524,7 @@
           <article class="accordion-item reveal-up">
             <button class="accordion-trigger" type="button">
               <span class="accordion-title-wrap">
-                <img src="imgs/icono-geografia.webp" alt="Icono" class="accordion-icon" />
+                <img src="imgs/icono-ingenieria.webp" alt="Icono" class="accordion-icon" />
                 <span>Ingenierías y otras áreas técnicas</span>
               </span>
               <span class="accordion-arrow">+</span>
@@ -523,7 +546,7 @@
           <article class="accordion-item reveal-up">
             <button class="accordion-trigger" type="button">
               <span class="accordion-title-wrap">
-                <img src="imgs/icono-geografia.webp" alt="Icono" class="accordion-icon" />
+                <img src="imgs/icono-filosofia.webp" alt="Icono" class="accordion-icon" />
                 <span>Humanidades y filosofía</span>
               </span>
               <span class="accordion-arrow">+</span>
@@ -544,7 +567,7 @@
           <article class="accordion-item reveal-up">
             <button class="accordion-trigger" type="button">
               <span class="accordion-title-wrap">
-                <img src="imgs/icono-geografia.webp" alt="Icono" class="accordion-icon" />
+                <img src="imgs/icono-idiomas.webp" alt="Icono" class="accordion-icon" />
                 <span>Idiomas y redacción</span>
               </span>
               <span class="accordion-arrow">+</span>
@@ -562,7 +585,7 @@
           <article class="accordion-item reveal-up">
             <button class="accordion-trigger" type="button">
               <span class="accordion-title-wrap">
-                <img src="imgs/icono-geografia.webp" alt="Icono" class="accordion-icon" />
+                <img src="imgs/icono-otros.webp" alt="Icono" class="accordion-icon" />
                 <span>Otros servicios académicos</span>
               </span>
               <span class="accordion-arrow">+</span>
@@ -688,7 +711,7 @@
           <span class="section-tag">Tu apoyo académico en Monterrey</span>
           <h2>Soy quien realiza los trabajos: su servidora, Daenna González</h2>
           <p>
-            Soy de Monterrey y personalmente reviso cada solicitud para confirmar si puedo apoyarte de acuerdo con la fecha, hora de entrega y tipo de actividad que necesitas.
+            Soy de Monterrey (México) y personalmente reviso cada solicitud para confirmar si puedo apoyarte de acuerdo con la fecha, hora de entrega y tipo de actividad que necesitas.
           </p>
           <p>
             Mi objetivo es que te sientas con confianza al pedirme una tarea, proyecto, tesis o presentación, sabiendo que recibirás atención clara, trato directo y trabajo bien elaborado.
@@ -741,79 +764,146 @@
           <span class="section-tag">Resultados reales</span>
           <h2>Evidencias y entregas realizadas</h2>
           <p>
-            Aquí podrás colocar imágenes de agradecimientos, evidencias de trabajos entregados, presentaciones, capturas y resultados de clientes satisfechos.
+            Aquí algunas evidencias de trabajos entregados, presentaciones, capturas y resultados de clientes satisfechos.
           </p>
         </div>
 
-        <div class="evidence-gallery">
-          <article class="gallery-placeholder reveal-up">Imagen de agradecimiento 1</article>
-          <article class="gallery-placeholder reveal-up">Imagen de evidencia 2</article>
-          <article class="gallery-placeholder reveal-up">Presentación entregada 3</article>
-          <article class="gallery-placeholder reveal-up">Trabajo realizado 4</article>
-          <article class="gallery-placeholder reveal-up">Captura de cliente 5</article>
-          <article class="gallery-placeholder reveal-up">Documento final 6</article>
-        </div>
+        <div class="evidence-gallery" id="evidenceGallery">
+
+  <!-- visibles -->
+  <article class="evidence-card reveal-up">
+    <img src="imgs/textura-cartoncito.webp" alt="Evidencia 1">
+  </article>
+
+  <article class="evidence-card reveal-up">
+    <img src="imgs/textura-cartoncito.webp" alt="Evidencia 2">
+  </article>
+
+  <article class="evidence-card reveal-up">
+    <img src="imgs/textura-cartoncito.webp" alt="Evidencia 3">
+  </article>
+
+  <article class="evidence-card reveal-up">
+    <img src="imgs/textura-cartoncito.webp" alt="Evidencia 4">
+  </article>
+
+  <article class="evidence-card reveal-up">
+    <img src="imgs/textura-cartoncito.webp" alt="Evidencia 5">
+  </article>
+
+  <!-- ocultas -->
+  <article class="evidence-card hidden-evidence">
+    <img src="imgs/textura-cartoncito.webp" alt="Evidencia 6">
+  </article>
+
+  <article class="evidence-card hidden-evidence">
+    <img src="imgs/textura-cartoncito.webp" alt="Evidencia 7">
+  </article>
+
+  <article class="evidence-card hidden-evidence">
+    <img src="imgs/textura-cartoncito.webp" alt="Evidencia 8">
+  </article>
+
+  <article class="evidence-card hidden-evidence">
+    <img src="imgs/textura-cartoncito.webp" alt="Evidencia 9">
+  </article>
+
+  <article class="evidence-card hidden-evidence">
+    <img src="imgs/textura-cartoncito.webp" alt="Evidencia 10">
+  </article>
+
+  <article class="evidence-card hidden-evidence">
+    <img src="imgs/textura-cartoncito.webp" alt="Evidencia 11">
+  </article>
+
+   <article class="evidence-card hidden-evidence">
+    <img src="imgs/textura-cartoncito.webp" alt="Evidencia 12">
+  </article>
+
+  <article class="evidence-card hidden-evidence">
+    <img src="imgs/textura-cartoncito.webp" alt="Evidencia 13">
+  </article>
+
+  <article class="evidence-card hidden-evidence">
+    <img src="imgs/textura-cartoncito.webp" alt="Evidencia 14">
+  </article>
+
+  <!-- aquí puedes seguir hasta 25 -->
+</div>
+
+<!-- BOTÓN -->
+<div class="evidence-more">
+  <button id="btnVerMas" class="btn btn-secondary">
+    Ver más evidencias
+  </button>
+</div>
       </div>
     </section>
 
     <section class="works section">
-      <div class="container works-grid-layout">
-        <div class="works-content reveal-left">
-          <span class="section-tag">Trabajos realizados</span>
-          <h2>Tesis, presentaciones, diseños, mapas, esquemas e investigaciones</h2>
-          <p>
-            Aquí puedes mostrar ejemplos visuales de presentaciones, diseños, documentos académicos, reportes, infografías, mapas conceptuales y otros trabajos realizados.
-          </p>
-        </div>
+  <div class="container works-grid-layout">
+    <div class="works-content reveal-left">
+      <span class="section-tag">Trabajos realizados</span>
+      <h2>Tesis, presentaciones, diseños, mapas, esquemas e investigaciones</h2>
+      <p>
+        Más ejemplos de entregas de presentaciones, diseños, documentos académicos, reportes, infografías, mapas conceptuales y otros trabajos realizados.
+      </p>
+    </div>
 
-        <div class="vertical-marquee reveal-right">
-          <div class="marquee-column up">
-            <div class="marquee-column-track">
-              <article class="work-card">Ejemplo 1</article>
-              <article class="work-card">Ejemplo 2</article>
-              <article class="work-card">Ejemplo 3</article>
-              <article class="work-card">Ejemplo 1</article>
-              <article class="work-card">Ejemplo 2</article>
-              <article class="work-card">Ejemplo 3</article>
-            </div>
-          </div>
-          <div class="marquee-column down">
-            <div class="marquee-column-track">
-              <article class="work-card">Ejemplo 4</article>
-              <article class="work-card">Ejemplo 5</article>
-              <article class="work-card">Ejemplo 6</article>
-              <article class="work-card">Ejemplo 4</article>
-              <article class="work-card">Ejemplo 5</article>
-              <article class="work-card">Ejemplo 6</article>
-            </div>
-          </div>
+    <div class="vertical-marquee reveal-right">
+      <div class="marquee-column up">
+        <div class="marquee-column-track">
+          <article class="work-card">
+            <img src="imgs/textura-cartoncito.webp" alt="Trabajo realizado 1">
+          </article>
+          <article class="work-card">
+            <img src="imgs/textura-cartoncito.webp" alt="Trabajo realizado 2">
+          </article>
+          <article class="work-card">
+            <img src="imgs/textura-cartoncito.webp" alt="Trabajo realizado 3">
+          </article>
         </div>
       </div>
-    </section>
+
+      <div class="marquee-column down">
+        <div class="marquee-column-track">
+          <article class="work-card">
+            <img src="imgs/textura-cartoncito.webp" alt="Trabajo realizado 4">
+          </article>
+          <article class="work-card">
+            <img src="imgs/textura-cartoncito.webp" alt="Trabajo realizado 5">
+          </article>
+          <article class="work-card">
+            <img src="imgs/textura-cartoncito.webp" alt="Trabajo realizado 6">
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <section class="reviews section section-light" id="resenas">
       <div class="container">
         <div class="section-heading reveal-up">
           <span class="section-tag">Opiniones</span>
           <h2>Lo que opinan nuestros clientes</h2>
-          <p>Esta sección puede mostrar reseñas, estrellas y comentarios reales de personas que ya recibieron apoyo.</p>
         </div>
 
         <div class="reviews-slider">
           <article class="review-card reveal-up">
             <div class="stars">★★★★★</div>
-            <p>Muy responsable, me ayudó muchísimo y entregó a tiempo.</p>
-            <strong>Cliente 1</strong>
+            <p>Muy responsable, me ayudó muchísimo y entregó a tiempo, ya me habian quedado mal y me urgía y de buenas alcanzó a ayudarme y todo perfectoo.</p>
+            <strong>Eduardo Mendoza</strong>
           </article>
           <article class="review-card reveal-up">
             <div class="stars">★★★★★</div>
-            <p>Excelente atención, todo bien explicado y ordenado.</p>
-            <strong>Cliente 2</strong>
+            <p>Todo super bien, explicado y ordenado, ocupaba exponer y me hizo la presentación en Ppt y en Canva y aparte me dio la explicación para lo que tendría que decir al exponer y nombree me facilitó todavía más ya mínimo no me puse tan nerviosa.</p>
+            <strong>Laura Monzón</strong>
           </article>
           <article class="review-card reveal-up">
             <div class="stars">★★★★★</div>
-            <p>Me dio confianza desde el inicio y el resultado estuvo muy bien.</p>
-            <strong>Cliente 3</strong>
+            <p>Me dio confianza desde el inicio no sé porque jajaj, me ayudó con la tesis pero ya me la habian recomendado y todo estuvo muy bien, muchas graciass!</p>
+            <strong>Carolina Rodríguez</strong>
           </article>
         </div>
       </div>
@@ -868,28 +958,56 @@
       </div>
     </section>
 
-    <section class="payments section section-light">
-      <div class="container payments-grid">
-        <div class="payments-content reveal-left">
-          <span class="section-tag">Formas de pago</span>
-          <h2>Transferencia y PayPal</h2>
-          <p>
-            Se aceptan pagos por transferencia bancaria. Para pagos desde otro país también se acepta PayPal, considerando el 10% adicional correspondiente a comisión.
-          </p>
-          <p>
-            Los datos exactos de pago pueden compartirse al momento de confirmar el servicio. Atención desde Monterrey, Nuevo León.
-          </p>
+ <section class="payments section section-light">
+  <div class="container payments-grid">
+
+    <!-- TEXTO -->
+    <div class="payments-content reveal-left">
+      <span class="section-tag">Formas de pago</span>
+      <h2>Transferencia y PayPal</h2>
+
+      <p>
+        Se aceptan pagos por transferencia bancaria. Para pagos desde otro país también se acepta PayPal, considerando el 10% adicional correspondiente a comisión.
+      </p>
+
+      <p>
+        Los datos exactos de pago pueden compartirse al momento de confirmar el servicio. Atención desde Monterrey, Nuevo León.
+      </p>
+
+      <!-- ICONOS -->
+      <div class="payments-logos">
+
+        <div class="payment-item">
+          <img src="imgs/icono-bbva.webp" alt="BBVA" class="payment-logo payment-logo-bbva">
+          <span>Transferencia BBVA</span>
         </div>
-        <div class="payments-card textured-card texture-cartoncito reveal-right">
-          <h3>Opciones de pago</h3>
-          <ul>
-            <li>Transferencia bancaria</li>
-            <li>PayPal para otros países</li>
-            <li>10% adicional en PayPal por comisión</li>
-          </ul>
+
+        <div class="payment-item">
+          <img src="imgs/icono-paypal.webp" alt="PayPal" class="payment-logo payment-logo-paypal">
+          <span>Pagos internacionales</span>
         </div>
+
+        <div class="payment-item payment-mexico">
+          <img src="imgs/icono-mexico.webp" alt="México" class="payment-logo payment-logo-mexico">
+          <span>Servicio en México</span>
+        </div>
+
       </div>
-    </section>
+    </div>
+
+    <!-- TARJETA DERECHA -->
+    <div class="payments-card textured-card texture-cartoncito reveal-right">
+      <h3>Opciones de pago</h3>
+      <ul>
+        <li>Transferencia bancaria</li>
+        <li>PayPal para otros países</li>
+        <li>10% adicional en PayPal por comisión</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+    
 
     <section class="final-cta section">
       <div class="container final-cta-grid">
@@ -911,34 +1029,50 @@
     </section>
   </main>
 
-  <footer class="main-footer">
-    <div class="footer-wave" aria-hidden="true">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0F172A" fill-opacity="1" d="M0,160L34.3,144C68.6,128,137,96,206,80C274.3,64,343,64,411,85.3C480,107,549,149,617,170.7C685.7,192,754,192,823,181.3C891.4,171,960,149,1029,138.7C1097.1,128,1166,128,1234,138.7C1302.9,149,1371,171,1406,181.3L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+<footer class="main-footer">
+  <div class="container footer-content">
+
+    <div class="footer-brand">
+      <img src="imgs/logo-horizontal.webp" alt="Logo horizontal Te Hago La Tarea" class="footer-logo" />
+      <p>
+        Tu apoyo académico de confianza en Monterrey. Tareas, proyectos, tesis,
+        presentaciones e investigaciones con atención personalizada.
+      </p>
     </div>
 
-    <div class="container footer-content">
-      <div class="footer-brand">
-        <img src="imgs/logo-horizontal.webp" alt="Logo horizontal Te Hago La Tarea" class="footer-logo" />
-        <p>Tu apoyo académico de confianza en Monterrey.</p>
-      </div>
-
-      <div class="footer-links">
-        <h4>Enlaces</h4>
-        <a href="#inicio">Inicio</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#areas">Carreras y materias</a>
-        <a href="#niveles">Niveles</a>
-        <a href="#contacto">Contacto</a>
-      </div>
-
-      <div class="footer-contact">
-        <h4>Contacto</h4>
-        <a href="https://wa.me/528116718765" target="_blank" rel="noopener noreferrer">WhatsApp: +52 81 1671 8765</a>
-        <a href="mailto:daenna2001@gmail.com">daenna2001@gmail.com</a>
-        <a href="https://www.facebook.com/TeHagoLaTareaByDaenna" target="_blank" rel="noopener noreferrer">Facebook</a>
-      </div>
+    <div class="footer-links">
+      <h4>Enlaces</h4>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#areas">Carreras y materias</a>
+      <a href="#niveles">Niveles</a>
+      <a href="#evidencias">Evidencias</a>
+      <a href="#contacto">Contacto</a>
     </div>
-  </footer>
+
+    <div class="footer-contact">
+      <h4>Contacto</h4>
+      <a href="https://wa.me/528116718765" target="_blank" rel="noopener noreferrer">
+        WhatsApp: +52 81 1671 8765
+      </a>
+      <a href="mailto:daenna2001@gmail.com">
+        daenna2001@gmail.com
+      </a>
+      <a href="https://www.facebook.com/TeHagoLaTareaByDaenna" target="_blank" rel="noopener noreferrer">
+        Facebook
+      </a>
+      <span class="footer-location">Monterrey, Nuevo León, México</span>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-content">
+      <p>© 2026 Te Hago La Tarea. Todos los derechos reservados.</p>
+      <p>By Daenna González</p>
+    </div>
+  </div>
+</footer>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {

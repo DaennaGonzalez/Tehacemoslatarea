@@ -154,6 +154,34 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // =========================
+// BOTON VER MÁS (4 EN 4)
+// =========================
+const btnVerMas = document.getElementById('btnVerMas');
+
+if (btnVerMas) {
+  let visibles = 5; // ya tienes 5 visibles al inicio
+  const incremento = 4;
+
+  btnVerMas.addEventListener('click', () => {
+    const items = document.querySelectorAll('.evidence-card');
+
+    let mostrados = 0;
+
+    for (let i = visibles; i < items.length && mostrados < incremento; i++) {
+      items[i].style.display = 'block';
+      mostrados++;
+    }
+
+    visibles += incremento;
+
+    // si ya no hay más, oculta el botón
+    if (visibles >= items.length) {
+      btnVerMas.style.display = 'none';
+    }
+  });
+}
+
+  // =========================
   // EFECTO PARALLAX SUAVE EN HERO
   // =========================
   const hero = document.querySelector('.hero');
