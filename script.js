@@ -262,3 +262,85 @@ if (btnVerMas) {
     accordionItems[0].classList.add('active');
   }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const pdfCards = document.querySelectorAll('.pdf-card');
+  const pdfModal = document.getElementById('pdfModal');
+  const pdfViewer = document.getElementById('pdfViewer');
+  const pdfModalTitle = document.getElementById('pdfModalTitle');
+  const pdfModalClose = document.getElementById('pdfModalClose');
+  const pdfBackdrop = document.querySelector('[data-close-pdf]');
+
+  if (!pdfCards.length || !pdfModal || !pdfViewer || !pdfModalTitle || !pdfModalClose) {
+    return;
+  }
+
+  let lastFocusedElement = null;
+
+  const openPdfModal = (pdfUrl, pdfTitle) => {
+    if (!pdfUrl) return;
+
+    lastFocusedElement = document.activeElement;
+
+    pdfViewer.src = pdfUrl;
+    pdfModalTitle.textContent = pdfTitle || 'Vista previa del documento';
+
+    pdfModal.classList.add('is-active');
+    pdfModal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+
+    setTimeout(() => {
+      pdfModalClose.focus();
+    }, 50);
+  };
+
+  const closePdfModal = () => {
+    pdfModal.classList.remove('is-active');
+    pdfModal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+
+    pdfViewer.src = '';
+
+    if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+      lastFocusedElement.focus();
+    }
+  };
+
+  pdfCards.forEach((card) => {
+    card.addEventListener('click', () => {
+      const pdfUrl = card.getAttribute('data-pdf');
+      const pdfTitle = card.getAttribute('data-title');
+
+      openPdfModal(pdfUrl, pdfTitle);
+    });
+
+    card.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+
+        const pdfUrl = card.getAttribute('data-pdf');
+        const pdfTitle = card.getAttribute('data-title');
+
+        openPdfModal(pdfUrl, pdfTitle);
+      }
+    });
+  });
+
+  pdfModalClose.addEventListener('click', closePdfModal);
+
+  if (pdfBackdrop) {
+    pdfBackdrop.addEventListener('click', closePdfModal);
+  }
+
+  pdfModal.addEventListener('click', (event) => {
+    if (event.target === pdfModal) {
+      closePdfModal();
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && pdfModal.classList.contains('is-active')) {
+      closePdfModal();
+    }
+  });
+});
