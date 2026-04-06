@@ -344,3 +344,47 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const pdfStepBlocks = document.querySelectorAll('.pdf-step-block');
+  const btnMostrarMasPdf = document.getElementById('btnMostrarMasPdf');
+
+  if (!pdfStepBlocks.length || !btnMostrarMasPdf) return;
+
+  let visibleIndex = 0;
+
+  pdfStepBlocks.forEach((block, index) => {
+    if (index === 0) {
+      block.classList.add('is-visible');
+    } else {
+      block.classList.remove('is-visible');
+    }
+  });
+
+  btnMostrarMasPdf.addEventListener('click', () => {
+    const nextIndex = visibleIndex + 1;
+
+    if (nextIndex < pdfStepBlocks.length) {
+      pdfStepBlocks[nextIndex].classList.add('is-visible');
+
+      setTimeout(() => {
+        const headerOffset = window.innerWidth <= 767 ? 90 : 110;
+        const targetPosition =
+          pdfStepBlocks[nextIndex].getBoundingClientRect().top +
+          window.pageYOffset -
+          headerOffset;
+
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+      }, 80);
+
+      visibleIndex = nextIndex;
+    }
+
+    if (visibleIndex >= pdfStepBlocks.length - 1) {
+      btnMostrarMasPdf.style.display = 'none';
+    }
+  });
+});

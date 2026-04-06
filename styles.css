@@ -4492,3 +4492,555 @@ body.modal-open {
     transition: none !important;
   }
 }
+
+
+/* =========================================================
+   MOSTRAR APARTADOS PDF UNO POR UNO
+========================================================= */
+
+.pdf-step-block {
+  display: none;
+}
+
+.pdf-step-block.is-visible {
+  display: block;
+  animation: pdfFadeUp 0.55s ease;
+}
+
+.pdf-step-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 34px;
+}
+
+#btnMostrarMasPdf {
+  min-width: 220px;
+}
+
+@keyframes pdfFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================================
+   PDF EVIDENCIAS - VERSION CORREGIDA
+   PEGAR AL FINAL DE TODO TU CSS
+========================================================= */
+
+.pdf-evidences {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 10% 12%, rgba(255,255,255,0.14), transparent 16%),
+    radial-gradient(circle at 88% 14%, rgba(255,255,255,0.10), transparent 14%),
+    linear-gradient(
+      135deg,
+      rgba(12,192,223,0.18) 0%,
+      rgba(86,216,178,0.18) 34%,
+      rgba(255,222,89,0.20) 100%
+    );
+}
+
+.pdf-evidences::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.38) 0%,
+      rgba(255,255,255,0.18) 40%,
+      rgba(255,255,255,0.08) 100%
+    );
+  z-index: 0;
+}
+
+.pdf-evidences > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================================================
+   BLOQUES DE CATEGORIA
+========================================================= */
+.pdf-category-block {
+  margin-top: 42px;
+  padding: 28px;
+  border-radius: 34px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.88), rgba(255,255,255,0.96));
+  border: 1px solid rgba(255,255,255,0.34);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.10);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pdf-category-block:first-of-type {
+  margin-top: 10px;
+}
+
+.pdf-category-block:hover {
+  box-shadow: 0 20px 42px rgba(15, 23, 42, 0.14);
+}
+
+.pdf-category-head {
+  margin-bottom: 24px;
+}
+
+.pdf-category-head h3 {
+  margin: 0 0 10px;
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: clamp(1.65rem, 2.4vw, 2.2rem);
+  line-height: 1.1;
+  color: var(--color-dark);
+}
+
+.pdf-category-head p {
+  margin: 0;
+  max-width: 820px;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-muted);
+}
+
+/* =========================================================
+   GRID DE TARJETAS
+========================================================= */
+.pdf-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+/* =========================================================
+   TARJETAS
+========================================================= */
+.pdf-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  text-align: left;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 26px;
+  background: rgba(255,255,255,0.98);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.10);
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.pdf-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 18px 34px rgba(15, 23, 42, 0.14);
+}
+
+.pdf-card:focus-visible {
+  outline: 3px solid rgba(12,192,223,0.42);
+  outline-offset: 4px;
+}
+
+.pdf-card-image-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 0.78 / 1;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(12,192,223,0.12), rgba(255,222,89,0.16));
+}
+
+.pdf-card-image-wrap--horizontal,
+.pdf-card--horizontal .pdf-card-image-wrap {
+  aspect-ratio: 1.5 / 1;
+}
+
+.pdf-card-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.pdf-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px 16px 18px;
+}
+
+.pdf-card-title {
+  display: block;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.28;
+  color: var(--color-dark);
+}
+
+.pdf-card-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #08788f;
+}
+
+.pdf-card-text::before {
+  content: '📄';
+  line-height: 1;
+}
+
+/* =========================================================
+   PASO A PASO
+========================================================= */
+.pdf-step-block {
+  display: none;
+}
+
+.pdf-step-block.is-visible {
+  display: block;
+  animation: pdfFadeUp 0.5s ease;
+}
+
+@keyframes pdfFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================================
+   BOTON VER MAS
+========================================================= */
+.pdf-step-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+  padding: 18px;
+  border-radius: 28px;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(12,192,223,0.22) 0%,
+      rgba(86,216,178,0.20) 40%,
+      rgba(255,222,89,0.24) 100%
+    );
+  border: 1px solid rgba(255,255,255,0.28);
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.08);
+}
+
+#btnMostrarMasPdf {
+  min-width: 240px;
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================================================
+   MODAL - CORREGIDO PARA IR ENCIMA DEL HEADER
+========================================================= */
+/* ESTE CSS ASUME QUE #pdfModal ESTA FUERA DE .pdf-evidences */
+
+#pdfModal.pdf-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 99999 !important;
+  isolation: isolate;
+}
+
+#pdfModal.pdf-modal.is-active {
+  display: block;
+}
+
+#pdfModal .pdf-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  background: rgba(15, 23, 42, 0.78);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+
+#pdfModal .pdf-modal-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  width: min(1220px, calc(100vw - 36px));
+  height: min(88vh, 900px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 30px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.985), rgba(255,255,255,0.965));
+  border: 1px solid rgba(255,255,255,0.34);
+  box-shadow:
+    0 30px 80px rgba(0,0,0,0.30),
+    0 10px 24px rgba(15, 23, 42, 0.12);
+}
+
+#pdfModal .pdf-modal-topbar {
+  position: relative;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  padding: 18px 84px 18px 24px;
+  background: linear-gradient(90deg, rgba(12,192,223,0.16), rgba(255,222,89,0.20));
+  border-bottom: 1px solid rgba(15,23,42,0.06);
+}
+
+#pdfModal .pdf-modal-title {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.12rem;
+  font-weight: 800;
+  color: var(--color-dark);
+}
+
+#pdfModal .pdf-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 3;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.95);
+  color: var(--color-dark);
+  font-size: 1.65rem;
+  font-weight: 700;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+#pdfModal .pdf-modal-close:hover {
+  transform: scale(1.08);
+  background: #ffffff;
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.16);
+}
+
+#pdfModal .pdf-modal-close:focus-visible {
+  outline: 3px solid rgba(12,192,223,0.42);
+  outline-offset: 2px;
+}
+
+#pdfModal .pdf-modal-viewer {
+  flex: 1;
+  min-height: 0;
+  background: #f4f7fb;
+}
+
+#pdfModal .pdf-modal-viewer iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+  background: #ffffff;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+@media (max-width: 1399px) {
+  .pdf-cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1199px) {
+  .pdf-category-block {
+    padding: 24px;
+    border-radius: 30px;
+  }
+
+  .pdf-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #pdfModal .pdf-modal-dialog {
+    width: min(1100px, calc(100vw - 28px));
+    height: min(86vh, 860px);
+    border-radius: 26px;
+  }
+
+  .pdf-card-image-wrap--horizontal,
+  .pdf-card--horizontal .pdf-card-image-wrap {
+    aspect-ratio: 1.6 / 1;
+  }
+}
+
+@media (max-width: 991px) {
+  .pdf-category-block {
+    margin-top: 34px;
+    padding: 22px;
+  }
+
+  .pdf-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .pdf-card {
+    border-radius: 24px;
+  }
+
+  .pdf-step-actions {
+    padding: 16px;
+    border-radius: 24px;
+  }
+
+  #pdfModal .pdf-modal-dialog {
+    width: calc(100vw - 20px);
+    height: min(84vh, 820px);
+    border-radius: 22px;
+  }
+
+  #pdfModal .pdf-modal-topbar {
+    min-height: 66px;
+    padding: 16px 72px 16px 18px;
+  }
+
+  #pdfModal .pdf-modal-title {
+    font-size: 1rem;
+  }
+
+  #pdfModal .pdf-modal-close {
+    width: 44px;
+    height: 44px;
+    font-size: 1.45rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .pdf-category-block {
+    margin-top: 28px;
+    padding: 18px;
+    border-radius: 24px;
+  }
+
+  .pdf-category-head {
+    margin-bottom: 18px;
+  }
+
+  .pdf-category-head h3 {
+    font-size: 1.45rem;
+  }
+
+  .pdf-category-head p {
+    font-size: 0.96rem;
+    line-height: 1.7;
+  }
+
+  .pdf-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .pdf-card {
+    border-radius: 22px;
+  }
+
+  .pdf-card-image-wrap {
+    aspect-ratio: 1.02 / 1;
+  }
+
+  .pdf-card-image-wrap--horizontal,
+  .pdf-card--horizontal .pdf-card-image-wrap {
+    aspect-ratio: 1.65 / 1;
+  }
+
+  .pdf-card-body {
+    padding: 14px 14px 16px;
+  }
+
+  .pdf-card-title {
+    font-size: 1rem;
+  }
+
+  .pdf-card-text {
+    font-size: 0.88rem;
+  }
+
+  .pdf-step-actions {
+    margin-top: 24px;
+    padding: 14px;
+    border-radius: 22px;
+  }
+
+  #btnMostrarMasPdf {
+    width: 100%;
+    min-width: 0;
+  }
+
+  #pdfModal .pdf-modal-dialog {
+    width: calc(100vw - 10px);
+    height: 89vh;
+    border-radius: 18px;
+  }
+
+  #pdfModal .pdf-modal-topbar {
+    min-height: 60px;
+    padding: 14px 58px 14px 14px;
+  }
+
+  #pdfModal .pdf-modal-title {
+    font-size: 0.94rem;
+    line-height: 1.3;
+  }
+
+  #pdfModal .pdf-modal-close {
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.28rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pdf-evidences .section-heading h2 {
+    font-size: clamp(1.9rem, 8vw, 2.5rem);
+    line-height: 1.08;
+  }
+
+  .pdf-category-block {
+    padding: 16px;
+  }
+
+  .pdf-card-image-wrap {
+    aspect-ratio: 1 / 1;
+  }
+
+  .pdf-card-image-wrap--horizontal,
+  .pdf-card--horizontal .pdf-card-image-wrap {
+    aspect-ratio: 1.7 / 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pdf-card,
+  .pdf-category-block,
+  #pdfModal .pdf-modal-close {
+    transition: none !important;
+  }
+}
