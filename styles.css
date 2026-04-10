@@ -5044,3 +5044,29 @@ body.modal-open {
     transition: none !important;
   }
 }
+.seo-hidden {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.seo-intro {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.seo-intro .container {
+  max-width: 1100px;
+}
+
+.seo-intro h2 {
+  margin-bottom: 1rem;
+}
+
+.seo-intro p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
