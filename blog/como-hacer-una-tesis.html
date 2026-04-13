@@ -1,0 +1,1926 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Cómo hacer una tesis paso a paso | Guía completa para estudiantes</title>
+  <meta name="description" content="Aprende cómo hacer una tesis paso a paso con esta guía completa. Tema, planteamiento del problema, objetivos, marco teórico, metodología, resultados, conclusiones y errores comunes.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tehagolatarea.com/blog/como-hacer-una-tesis.html" />
+
+  <meta property="og:title" content="Cómo hacer una tesis paso a paso | Guía completa">
+  <meta property="og:description" content="Guía extensa y clara para hacer una tesis desde cero: tema, objetivos, marco teórico, metodología y más.">
+  <meta property="og:image" content="https://tehagolatarea.com/imgs/preview.jpg">
+  <meta property="og:url" content="https://tehagolatarea.com/blog/como-hacer-una-tesis.html">
+  <meta property="og:type" content="article">
+
+  <script>
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Figtree:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/webp" href="../imgs/logo-principal.webp">
+
+  <style>
+    :root{
+      --bg-1:#c8f4ff;
+      --bg-2:#fff0a8;
+      --bg-3:#d8ffd9;
+      --white:#ffffff;
+      --dark:#1e2434;
+      --text:#31445d;
+      --muted:#5f728f;
+      --line:rgba(30,36,52,.10);
+
+      --primary:#1cc96b;
+      --primary-dark:#13a857;
+      --secondary:#08a9c4;
+      --accent:#ffd75e;
+      --accent-2:#ff8eb2;
+      --accent-3:#9d8cff;
+      --card:#ffffffde;
+
+      --shadow-soft:0 12px 30px rgba(23, 33, 61, 0.08);
+      --shadow-medium:0 20px 48px rgba(23, 33, 61, 0.14);
+      --shadow-strong:0 28px 70px rgba(23, 33, 61, 0.20);
+
+      --radius-xl:34px;
+      --radius-lg:24px;
+      --radius-md:18px;
+
+      --max:1240px;
+      --header-height:96px;
+    }
+
+    *{
+      box-sizing:border-box;
+      min-width:0;
+    }
+
+    html{
+      scroll-behavior:smooth;
+      overflow-x:hidden;
+      scroll-padding-top:calc(var(--header-height) + 22px);
+    }
+
+    body{
+      margin:0;
+      font-family:'Figtree',sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(255,255,255,.9), transparent 25%),
+        linear-gradient(120deg,var(--bg-1),var(--bg-3) 45%,var(--bg-2));
+      min-height:100vh;
+      overflow-x:hidden;
+      word-break:normal;
+      overflow-wrap:break-word;
+      padding-top:var(--header-height);
+    }
+
+    body::before,
+    body::after{
+      content:"";
+      position:fixed;
+      inset:auto;
+      width:320px;
+      height:320px;
+      border-radius:50%;
+      filter:blur(60px);
+      opacity:.25;
+      pointer-events:none;
+      z-index:0;
+    }
+
+    body::before{
+      top:-80px;
+      left:-80px;
+      background:#8fe7ff;
+    }
+
+    body::after{
+      right:-80px;
+      bottom:-80px;
+      background:#ffe281;
+    }
+
+    img{
+      max-width:100%;
+      height:auto;
+    }
+
+    .container{
+      width:min(var(--max), calc(100% - 32px));
+      margin-inline:auto;
+      position:relative;
+      z-index:1;
+    }
+
+    .progress-bar{
+      position:fixed;
+      top:0;
+      left:0;
+      height:5px;
+      width:0%;
+      background:linear-gradient(90deg,var(--secondary),var(--primary),var(--accent-2));
+      z-index:9999;
+      box-shadow:0 6px 16px rgba(0,0,0,.12);
+    }
+
+    .floating-whatsapp{
+      position:fixed;
+      right:16px;
+      bottom:16px;
+      z-index:999;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      text-decoration:none;
+      background:linear-gradient(135deg,var(--primary),#12b76a);
+      color:#fff;
+      padding:12px 18px;
+      border-radius:999px;
+      box-shadow:var(--shadow-medium);
+      font-weight:800;
+      transition:.25s ease;
+      max-width:min(92vw, 340px);
+    }
+
+    .floating-whatsapp:hover{
+      transform:translateY(-4px) scale(1.02);
+      box-shadow:var(--shadow-strong);
+    }
+
+    .floating-whatsapp img{
+      width:24px;
+      height:24px;
+      object-fit:contain;
+      flex-shrink:0;
+    }
+
+    .floating-whatsapp span{
+      line-height:1.3;
+    }
+
+    .header{
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      z-index:1000;
+      backdrop-filter:blur(18px);
+      -webkit-backdrop-filter:blur(18px);
+      background:rgba(255,255,255,.76);
+      border-bottom:1px solid rgba(255,255,255,.45);
+      box-shadow:0 10px 30px rgba(23, 33, 61, 0.08);
+    }
+
+    .header-inner{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+      min-height:var(--header-height);
+      padding:12px 0;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      text-decoration:none;
+      color:var(--dark);
+      min-width:0;
+      max-width:100%;
+      flex:1 1 auto;
+    }
+
+    .brand img{
+      width:62px;
+      height:62px;
+      object-fit:contain;
+      filter:drop-shadow(0 10px 18px rgba(0,0,0,.12));
+      flex-shrink:0;
+    }
+
+    .brand-text{
+      display:flex;
+      flex-direction:column;
+      min-width:0;
+    }
+
+    .brand-text strong{
+      font-family:'Outfit',sans-serif;
+      font-size:1.15rem;
+      line-height:1.1;
+      overflow-wrap:anywhere;
+    }
+
+    .brand-text span{
+      color:var(--muted);
+      font-size:.94rem;
+      line-height:1.2;
+    }
+
+    .nav{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+
+    .nav a{
+      text-decoration:none;
+      color:var(--dark);
+      font-weight:800;
+      padding:11px 14px;
+      border-radius:999px;
+      transition:.22s ease;
+      white-space:normal;
+      text-align:center;
+      line-height:1.2;
+    }
+
+    .nav a:hover{
+      background:rgba(255,255,255,.78);
+      transform:translateY(-2px);
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      min-height:52px;
+      padding:12px 22px;
+      border:none;
+      border-radius:999px;
+      text-decoration:none;
+      font-weight:900;
+      font-family:'Outfit',sans-serif;
+      transition:.25s ease;
+      cursor:pointer;
+      text-align:center;
+      line-height:1.25;
+      white-space:normal;
+    }
+
+    .btn-primary{
+      color:#fff;
+      background:linear-gradient(135deg,var(--primary),var(--primary-dark));
+      box-shadow:0 16px 30px rgba(28,201,107,.28);
+    }
+
+    .btn-secondary{
+      color:var(--dark);
+      background:rgba(255,255,255,.84);
+      border:1px solid rgba(30,36,52,.08);
+      box-shadow:var(--shadow-soft);
+    }
+
+    .btn:hover{
+      transform:translateY(-4px) scale(1.02);
+    }
+
+    .hero{
+      padding:54px 0 28px;
+      overflow:hidden;
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:minmax(0, 1.05fr) minmax(0, .95fr);
+      gap:30px;
+      align-items:center;
+    }
+
+    .hero-copy{
+      display:grid;
+      gap:18px;
+      position:relative;
+      z-index:2;
+      min-width:0;
+    }
+
+    .tag{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:14px 18px;
+      border-radius:999px;
+      background:rgba(255,255,255,.72);
+      width:max-content;
+      max-width:100%;
+      box-shadow:var(--shadow-soft);
+      border:1px solid rgba(255,255,255,.55);
+      font-weight:900;
+      color:var(--dark);
+      line-height:1.3;
+      white-space:normal;
+    }
+
+    .hero h1{
+      margin:0;
+      font-family:'Balsamiq Sans',cursive;
+      font-size:clamp(2.2rem, 5vw, 4.8rem);
+      line-height:1.02;
+      color:#ffe888;
+      -webkit-text-stroke:4px #2b2218;
+      paint-order:stroke fill;
+      text-shadow:
+        0 4px 0 rgba(255,255,255,.14),
+        0 12px 22px rgba(23,33,61,.12);
+      overflow-wrap:anywhere;
+    }
+
+    .hero p{
+      margin:0;
+      font-size:1.08rem;
+      line-height:1.85;
+      color:var(--text);
+      max-width:760px;
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+      margin-top:6px;
+    }
+
+    .hero-badges{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      padding:0;
+      margin:6px 0 0;
+      list-style:none;
+    }
+
+    .hero-badges li{
+      padding:12px 16px;
+      background:rgba(255,255,255,.78);
+      border-radius:999px;
+      box-shadow:var(--shadow-soft);
+      font-weight:800;
+      color:var(--dark);
+      line-height:1.3;
+    }
+
+    .hero-visual{
+      position:relative;
+      min-height:460px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      z-index:1;
+      min-width:0;
+    }
+
+    .hero-card{
+      position:relative;
+      z-index:1;
+      width:min(100%, 540px);
+      background:linear-gradient(180deg, rgba(255,255,255,.70), rgba(255,255,255,.88));
+      border-radius:38px;
+      padding:18px;
+      box-shadow:var(--shadow-medium);
+      overflow:hidden;
+      transform-origin:center;
+      animation:softFloat 4.8s ease-in-out infinite;
+    }
+
+    .hero-card img{
+      width:100%;
+      max-height:430px;
+      object-fit:contain;
+      display:block;
+      margin:0 auto;
+      filter:drop-shadow(0 20px 28px rgba(0,0,0,.14));
+      position:relative;
+      z-index:1;
+    }
+
+    .hero-bubbles-grid{
+      display:none;
+    }
+
+    .hero-bubble{
+      position:absolute;
+      z-index:3;
+      background:rgba(255,255,255,.92);
+      border-radius:24px;
+      padding:14px 16px;
+      box-shadow:var(--shadow-soft);
+      font-weight:900;
+      color:var(--dark);
+      max-width:210px;
+      line-height:1.35;
+      animation:softBounce 3.5s ease-in-out infinite;
+      border:1px solid rgba(255,255,255,.6);
+      backdrop-filter:blur(8px);
+      -webkit-backdrop-filter:blur(8px);
+      text-align:center;
+      overflow-wrap:anywhere;
+    }
+
+    .bubble-1{
+      top:18px;
+      left:-8px;
+    }
+
+    .bubble-2{
+      top:54px;
+      right:-6px;
+      animation-delay:.4s;
+    }
+
+    .bubble-3{
+      bottom:28px;
+      left:8px;
+      animation-delay:.8s;
+    }
+
+    .article-shell{
+      padding:18px 0 70px;
+    }
+
+    .article-layout{
+      display:grid;
+      grid-template-columns:290px minmax(0, 1fr);
+      gap:28px;
+      align-items:start;
+    }
+
+    .toc{
+      position:sticky;
+      top:calc(var(--header-height) + 18px);
+      background:rgba(255,255,255,.78);
+      border:1px solid rgba(255,255,255,.58);
+      border-radius:28px;
+      box-shadow:var(--shadow-soft);
+      padding:22px 18px;
+      backdrop-filter:blur(14px);
+      -webkit-backdrop-filter:blur(14px);
+      overflow:hidden;
+    }
+
+    .toc h3{
+      margin:0 0 14px;
+      font-family:'Outfit',sans-serif;
+      font-size:1.18rem;
+      color:var(--dark);
+    }
+
+    .toc ul{
+      list-style:none;
+      padding:0;
+      margin:0;
+      display:grid;
+      gap:10px;
+    }
+
+    .toc a{
+      text-decoration:none;
+      color:var(--text);
+      font-weight:800;
+      display:block;
+      padding:10px 12px;
+      border-radius:14px;
+      transition:.2s ease;
+      line-height:1.35;
+    }
+
+    .toc a:hover,
+    .toc a.active{
+      background:linear-gradient(135deg, rgba(8,169,196,.14), rgba(28,201,107,.12));
+      color:var(--dark);
+      transform:translateX(4px);
+    }
+
+    .article-main{
+      display:grid;
+      gap:24px;
+      min-width:0;
+      overflow:hidden;
+    }
+
+    .panel{
+      background:var(--card);
+      border:1px solid rgba(255,255,255,.65);
+      border-radius:30px;
+      box-shadow:var(--shadow-soft);
+      padding:28px;
+      backdrop-filter:blur(12px);
+      -webkit-backdrop-filter:blur(12px);
+      min-width:0;
+      overflow:hidden;
+      scroll-margin-top:calc(var(--header-height) + 24px);
+    }
+
+    .section-title{
+      display:grid;
+      gap:10px;
+      margin-bottom:18px;
+    }
+
+    .section-title span{
+      font-weight:900;
+      color:var(--secondary);
+      letter-spacing:.02em;
+    }
+
+    .section-title h2{
+      margin:0;
+      font-family:'Balsamiq Sans',cursive;
+      font-size:clamp(1.8rem, 3vw, 3rem);
+      line-height:1.08;
+      color:var(--dark);
+      overflow-wrap:anywhere;
+    }
+
+    .article-main p{
+      margin:0 0 14px;
+      line-height:1.9;
+      font-size:1.04rem;
+      color:var(--text);
+      max-width:100%;
+      overflow-wrap:break-word;
+      hyphens:auto;
+    }
+
+    .lead-box{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
+      margin-top:18px;
+    }
+
+    .mini-card{
+      background:linear-gradient(180deg, rgba(255,255,255,.88), rgba(255,255,255,.72));
+      border-radius:22px;
+      padding:18px;
+      border:1px solid rgba(30,36,52,.06);
+      box-shadow:var(--shadow-soft);
+      min-width:0;
+    }
+
+    .mini-card h3{
+      margin:0 0 10px;
+      font-family:'Outfit',sans-serif;
+      color:var(--dark);
+      font-size:1.12rem;
+      line-height:1.25;
+      overflow-wrap:anywhere;
+    }
+
+    .steps-grid{
+      display:grid;
+      grid-template-columns:repeat(2, 1fr);
+      gap:18px;
+    }
+
+    .step-card{
+      position:relative;
+      border-radius:24px;
+      padding:22px 20px 20px;
+      overflow:hidden;
+      box-shadow:var(--shadow-soft);
+      background:linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.78));
+      border:1px solid rgba(30,36,52,.06);
+      transition:.25s ease;
+      min-width:0;
+    }
+
+    .step-card:hover{
+      transform:translateY(-6px) rotate(-.4deg);
+      box-shadow:var(--shadow-medium);
+    }
+
+    .step-number{
+      width:54px;
+      height:54px;
+      display:grid;
+      place-items:center;
+      border-radius:18px;
+      font-family:'Outfit',sans-serif;
+      font-size:1.3rem;
+      font-weight:900;
+      color:#fff;
+      background:linear-gradient(135deg, var(--secondary), var(--accent-3));
+      box-shadow:0 14px 22px rgba(8,169,196,.22);
+      margin-bottom:14px;
+      flex-shrink:0;
+    }
+
+    .step-card h3{
+      margin:0 0 10px;
+      font-family:'Outfit',sans-serif;
+      color:var(--dark);
+      font-size:1.22rem;
+      line-height:1.25;
+      overflow-wrap:anywhere;
+    }
+
+    .pretty-list{
+      display:grid;
+      gap:12px;
+      padding:0;
+      margin:0;
+      list-style:none;
+    }
+
+    .pretty-list li{
+      position:relative;
+      padding:16px 16px 16px 54px;
+      border-radius:18px;
+      background:rgba(255,255,255,.74);
+      box-shadow:var(--shadow-soft);
+      font-weight:700;
+      color:var(--text);
+      min-width:0;
+      line-height:1.6;
+      overflow-wrap:break-word;
+    }
+
+    .pretty-list li::before{
+      content:"✓";
+      position:absolute;
+      left:16px;
+      top:50%;
+      transform:translateY(-50%);
+      width:26px;
+      height:26px;
+      display:grid;
+      place-items:center;
+      border-radius:999px;
+      color:#fff;
+      font-weight:900;
+      background:linear-gradient(135deg,var(--primary),var(--secondary));
+      box-shadow:0 8px 18px rgba(28,201,107,.25);
+      flex-shrink:0;
+    }
+
+    .color-box-grid{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:18px;
+    }
+
+    .color-box{
+      border-radius:24px;
+      padding:22px;
+      box-shadow:var(--shadow-soft);
+      color:var(--dark);
+      transition:.22s ease;
+      min-width:0;
+    }
+
+    .color-box:hover{
+      transform:translateY(-6px) scale(1.01);
+    }
+
+    .color-box:nth-child(1){background:linear-gradient(135deg,#d9fbff,#f5ffff)}
+    .color-box:nth-child(2){background:linear-gradient(135deg,#fff2b9,#fffaf0)}
+    .color-box:nth-child(3){background:linear-gradient(135deg,#ffe0ea,#fff6f9)}
+
+    .color-box h3{
+      margin:0 0 10px;
+      font-family:'Outfit',sans-serif;
+      font-size:1.16rem;
+      line-height:1.25;
+      overflow-wrap:anywhere;
+    }
+
+    .thesis-table-wrap{
+      overflow-x:auto;
+      overflow-y:hidden;
+      border-radius:22px;
+      box-shadow:var(--shadow-soft);
+      background:#fff;
+      -webkit-overflow-scrolling:touch;
+      max-width:100%;
+    }
+
+    .thesis-table{
+      width:100%;
+      border-collapse:collapse;
+      min-width:760px;
+      font-size:1rem;
+    }
+
+    .thesis-table th,
+    .thesis-table td{
+      padding:16px 18px;
+      border-bottom:1px solid var(--line);
+      text-align:left;
+      vertical-align:top;
+    }
+
+    .thesis-table th{
+      background:linear-gradient(135deg, rgba(8,169,196,.14), rgba(157,140,255,.14));
+      color:var(--dark);
+      font-family:'Outfit',sans-serif;
+      font-size:1rem;
+    }
+
+    .thesis-table tr:hover td{
+      background:rgba(8,169,196,.04);
+    }
+
+    .faq-list{
+      display:grid;
+      gap:14px;
+    }
+
+    .faq-item{
+      background:rgba(255,255,255,.84);
+      border-radius:22px;
+      box-shadow:var(--shadow-soft);
+      overflow:hidden;
+      border:1px solid rgba(30,36,52,.06);
+      min-width:0;
+    }
+
+    .faq-btn{
+      width:100%;
+      border:none;
+      background:transparent;
+      text-align:left;
+      padding:20px 22px;
+      font-family:'Outfit',sans-serif;
+      font-size:1.08rem;
+      font-weight:900;
+      color:var(--dark);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      cursor:pointer;
+      line-height:1.35;
+    }
+
+    .faq-btn span:first-child{
+      flex:1 1 auto;
+      min-width:0;
+    }
+
+    .faq-btn span:last-child{
+      min-width:36px;
+      width:36px;
+      height:36px;
+      border-radius:999px;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(135deg,var(--secondary),var(--primary));
+      color:#fff;
+      box-shadow:0 12px 18px rgba(8,169,196,.18);
+      transition:.22s ease;
+      flex-shrink:0;
+    }
+
+    .faq-item.active .faq-btn span:last-child{
+      transform:rotate(45deg);
+    }
+
+    .faq-content{
+      max-height:0;
+      overflow:hidden;
+      transition:max-height .35s ease;
+    }
+
+    .faq-content-inner{
+      padding:0 22px 20px;
+      color:var(--text);
+      line-height:1.85;
+      overflow-wrap:break-word;
+    }
+
+    .cta-panel{
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:24px;
+      align-items:center;
+      background:linear-gradient(135deg, rgba(28,201,107,.16), rgba(8,169,196,.14), rgba(255,215,94,.18));
+    }
+
+    .cta-panel h2{
+      margin:0 0 12px;
+      font-family:'Balsamiq Sans',cursive;
+      font-size:clamp(1.8rem, 3vw, 3rem);
+      line-height:1.08;
+      color:var(--dark);
+      overflow-wrap:anywhere;
+    }
+
+    .cta-panel img{
+      width:100%;
+      max-width:320px;
+      display:block;
+      margin:0 auto;
+      filter:drop-shadow(0 16px 24px rgba(0,0,0,.12));
+      animation:softFloat 4.5s ease-in-out infinite;
+    }
+
+    .back-links{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:8px;
+    }
+
+    .back-links a{
+      text-decoration:none;
+      font-weight:900;
+      color:var(--dark);
+      background:rgba(255,255,255,.82);
+      padding:11px 16px;
+      border-radius:999px;
+      box-shadow:var(--shadow-soft);
+      transition:.22s ease;
+      line-height:1.2;
+      text-align:center;
+    }
+
+    .back-links a:hover{
+      transform:translateY(-3px);
+    }
+
+    .reveal-up,
+    .reveal-left,
+    .reveal-right{
+      opacity:0;
+      transition:opacity .7s ease, transform .7s ease;
+      will-change:transform, opacity;
+    }
+
+    .reveal-up{transform:translateY(36px)}
+    .reveal-left{transform:translateX(-36px)}
+    .reveal-right{transform:translateX(36px)}
+    .reveal-visible{
+      opacity:1 !important;
+      transform:none !important;
+    }
+
+    @keyframes softFloat{
+      0%,100%{transform:translateY(0)}
+      50%{transform:translateY(-10px)}
+    }
+
+    @keyframes softBounce{
+      0%,100%{transform:translateY(0)}
+      50%{transform:translateY(-7px)}
+    }
+
+    @media (max-width: 1100px){
+      :root{
+        --header-height:88px;
+      }
+
+      .hero-grid,
+      .article-layout,
+      .cta-panel{
+        grid-template-columns:1fr;
+      }
+
+      .toc{
+        position:relative;
+        top:auto;
+        order:0;
+      }
+
+      .hero-copy{
+        text-align:center;
+        max-width:100%;
+      }
+
+      .tag{
+        margin-inline:auto;
+      }
+
+      .hero-actions,
+      .hero-badges,
+      .back-links{
+        justify-content:center;
+      }
+
+      .hero-visual{
+        min-height:auto;
+        margin-top:8px;
+        padding-top:6px;
+        padding-bottom:8px;
+      }
+
+      .hero-card{
+        width:min(100%, 500px);
+        margin-inline:auto;
+      }
+
+      .hero-bubble{
+        display:none;
+      }
+
+      .hero-bubbles-grid{
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        gap:12px;
+        margin-top:14px;
+      }
+
+      .hero-bubbles-grid .hero-bubble-inline{
+        background:rgba(255,255,255,.90);
+        border:1px solid rgba(255,255,255,.6);
+        box-shadow:var(--shadow-soft);
+        border-radius:20px;
+        padding:14px 12px;
+        font-weight:900;
+        color:var(--dark);
+        text-align:center;
+        line-height:1.35;
+        overflow-wrap:anywhere;
+      }
+
+      .toc ul{
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 920px){
+      .header-inner{
+        gap:12px;
+      }
+
+      .nav{
+        gap:8px;
+      }
+
+      .nav a{
+        padding:9px 12px;
+        font-size:.95rem;
+      }
+    }
+
+    @media (max-width: 820px){
+      :root{
+        --header-height:78px;
+      }
+
+      .lead-box,
+      .steps-grid,
+      .color-box-grid{
+        grid-template-columns:1fr;
+      }
+
+      .nav{
+        display:none;
+      }
+
+      .container{
+        width:min(var(--max), calc(100% - 24px));
+      }
+
+      .hero{
+        padding:30px 0 18px;
+      }
+
+      .hero-grid{
+        gap:22px;
+      }
+
+      .hero h1{
+        -webkit-text-stroke:2.5px #2b2218;
+        font-size:clamp(2rem, 9vw, 3.6rem);
+        line-height:1.04;
+      }
+
+      .hero p{
+        font-size:1rem;
+        line-height:1.8;
+        max-width:100%;
+      }
+
+      .panel{
+        padding:22px 18px;
+      }
+
+      .hero-card{
+        padding:16px;
+        border-radius:28px;
+      }
+
+      .hero-card img{
+        max-height:320px;
+      }
+
+      .hero-bubbles-grid{
+        grid-template-columns:1fr 1fr 1fr;
+      }
+
+      .toc{
+        padding:20px 16px;
+        border-radius:24px;
+        overflow-x:auto;
+      }
+
+      .toc ul{
+        display:flex;
+        gap:10px;
+        flex-wrap:nowrap;
+        overflow-x:auto;
+        padding-bottom:4px;
+        scrollbar-width:thin;
+      }
+
+      .toc li{
+        flex:0 0 auto;
+      }
+
+      .toc a{
+        white-space:nowrap;
+      }
+
+      .toc a:hover,
+      .toc a.active{
+        transform:none;
+      }
+
+      .faq-btn{
+        font-size:1rem;
+        padding:18px;
+      }
+
+      .cta-panel{
+        gap:18px;
+      }
+
+      .cta-panel img{
+        max-width:260px;
+      }
+    }
+
+    @media (max-width: 640px){
+      :root{
+        --header-height:72px;
+      }
+
+      .container{
+        width:min(var(--max), calc(100% - 20px));
+      }
+
+      .floating-whatsapp{
+        right:12px;
+        bottom:12px;
+        padding:12px 14px;
+        max-width:64px;
+        justify-content:center;
+      }
+
+      .floating-whatsapp span{
+        display:none;
+      }
+
+      .brand img{
+        width:54px;
+        height:54px;
+      }
+
+      .brand-text strong{
+        font-size:1rem;
+      }
+
+      .brand-text span{
+        display:none;
+      }
+
+      .header-inner{
+        gap:12px;
+        min-height:var(--header-height);
+        padding:8px 0;
+      }
+
+      .hero{
+        padding-top:24px;
+        padding-bottom:10px;
+      }
+
+      .hero-grid{
+        gap:18px;
+      }
+
+      .tag{
+        width:100%;
+        justify-content:center;
+        text-align:center;
+        font-size:.95rem;
+        padding:12px 14px;
+      }
+
+      .hero h1{
+        font-size:clamp(1.85rem, 10vw, 3rem);
+        line-height:1.05;
+        -webkit-text-stroke:2px #2b2218;
+      }
+
+      .hero p{
+        font-size:.98rem;
+        line-height:1.75;
+      }
+
+      .hero-actions{
+        flex-direction:column;
+        align-items:stretch;
+      }
+
+      .hero-actions .btn{
+        width:100%;
+      }
+
+      .hero-badges{
+        justify-content:center;
+      }
+
+      .hero-badges li{
+        width:100%;
+        text-align:center;
+        padding:11px 14px;
+      }
+
+      .hero-visual{
+        padding-top:0;
+        padding-bottom:0;
+      }
+
+      .hero-card{
+        width:100%;
+        max-width:100%;
+        padding:14px;
+        border-radius:22px;
+      }
+
+      .hero-card img{
+        max-height:220px;
+      }
+
+      .hero-bubbles-grid{
+        grid-template-columns:1fr;
+        gap:10px;
+        margin-top:12px;
+      }
+
+      .hero-bubbles-grid .hero-bubble-inline{
+        border-radius:16px;
+        padding:12px 12px;
+        font-size:.86rem;
+      }
+
+      .article-shell{
+        padding:6px 0 60px;
+      }
+
+      .toc{
+        padding:18px 14px;
+        border-radius:20px;
+      }
+
+      .toc h3{
+        font-size:1.05rem;
+      }
+
+      .toc a{
+        padding:10px 10px;
+        font-size:.94rem;
+        line-height:1.35;
+      }
+
+      .panel{
+        padding:18px 14px;
+        border-radius:22px;
+      }
+
+      .section-title{
+        gap:8px;
+        margin-bottom:14px;
+      }
+
+      .section-title h2{
+        font-size:clamp(1.45rem, 7vw, 2rem);
+        line-height:1.08;
+      }
+
+      .article-main p,
+      .mini-card p,
+      .color-box p,
+      .faq-content-inner{
+        font-size:.97rem;
+        line-height:1.78;
+      }
+
+      .mini-card,
+      .step-card,
+      .color-box{
+        padding:16px;
+        border-radius:18px;
+      }
+
+      .step-number{
+        width:48px;
+        height:48px;
+        font-size:1.15rem;
+        border-radius:14px;
+      }
+
+      .step-card h3,
+      .mini-card h3,
+      .color-box h3{
+        font-size:1.02rem;
+      }
+
+      .pretty-list li{
+        padding:14px 14px 14px 46px;
+        border-radius:16px;
+        font-size:.96rem;
+        line-height:1.65;
+      }
+
+      .pretty-list li::before{
+        left:12px;
+        width:24px;
+        height:24px;
+        font-size:.82rem;
+      }
+
+      .thesis-table-wrap{
+        border-radius:18px;
+      }
+
+      .thesis-table{
+        min-width:580px;
+        font-size:.92rem;
+      }
+
+      .thesis-table th,
+      .thesis-table td{
+        padding:14px 14px;
+      }
+
+      .faq-btn{
+        padding:16px 14px;
+        font-size:.95rem;
+        gap:12px;
+      }
+
+      .faq-btn span:last-child{
+        min-width:32px;
+        width:32px;
+        height:32px;
+      }
+
+      .faq-content-inner{
+        padding:0 14px 16px;
+      }
+
+      .cta-panel{
+        gap:14px;
+      }
+
+      .cta-panel h2{
+        font-size:clamp(1.5rem, 7vw, 2rem);
+      }
+
+      .cta-panel img{
+        max-width:220px;
+      }
+
+      .back-links{
+        flex-direction:column;
+        align-items:stretch;
+      }
+
+      .back-links a{
+        text-align:center;
+      }
+
+      .btn,
+      .back-links a{
+        min-height:48px;
+      }
+    }
+
+    @media (max-width: 480px){
+      .header-inner{
+        padding:8px 0;
+      }
+
+      .hero h1{
+        font-size:clamp(1.7rem, 10vw, 2.5rem);
+        line-height:1.06;
+        -webkit-text-stroke:1.8px #2b2218;
+      }
+
+      .hero p{
+        font-size:.95rem;
+      }
+
+      .panel{
+        padding:16px 12px;
+        border-radius:20px;
+      }
+
+      .hero-card{
+        border-radius:20px;
+        padding:12px;
+      }
+
+      .hero-card img{
+        max-height:200px;
+      }
+
+      .hero-bubbles-grid .hero-bubble-inline{
+        font-size:.82rem;
+        padding:11px 10px;
+      }
+
+      .toc{
+        padding:16px 12px;
+        border-radius:18px;
+      }
+
+      .section-title h2{
+        font-size:clamp(1.35rem, 7.5vw, 1.8rem);
+      }
+
+      .article-main p,
+      .pretty-list li,
+      .mini-card p,
+      .color-box p,
+      .faq-content-inner{
+        font-size:.95rem;
+      }
+
+      .thesis-table{
+        min-width:540px;
+        font-size:.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="progress-bar" id="progressBar"></div>
+
+  <a class="floating-whatsapp" href="https://wa.me/528116718765" target="_blank" rel="noopener noreferrer" aria-label="Enviar mensaje por WhatsApp">
+    <img src="../imgs/icono-whatsapp.png" alt="WhatsApp">
+    <span>¿Necesitas ayuda con tu tesis?</span>
+  </a>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand" aria-label="Ir al inicio">
+        <img src="../imgs/logo-principal.webp" alt="Logo Te Hago La Tarea">
+        <span class="brand-text">
+          <strong>Te Hago La Tarea</strong>
+          <span>Blog académico</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="../index.html">Inicio</a>
+        <a href="../index.html">Hacer tareas</a>
+        <a href="../index.html">Tesis</a>
+        <a href="../index.html">Ayuda con tareas</a>
+        <a href="../index.html">Proyectos universidad</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal-left">
+          <span class="tag">📘 Guía completa para estudiantes</span>
+          <h1>Cómo hacer una tesis paso a paso</h1>
+          <p>
+            Hacer una tesis puede sentirse pesado al inicio, sobre todo cuando no sabes cómo arrancar, qué apartados llevar, cómo redactar un problema de investigación o cómo organizar el documento completo. En esta guía vas a encontrar una explicación amplia, clara y útil para entender el proceso desde cero.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#guia-completa">Empezar la guía</a>
+            <a class="btn btn-secondary" href="https://wa.me/528116718765" target="_blank" rel="noopener noreferrer">Pedir ayuda por WhatsApp</a>
+          </div>
+
+          <ul class="hero-badges">
+            <li>Pasos claros</li>
+            <li>Ejemplos reales</li>
+            <li>Errores comunes</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal-right">
+          <div class="hero-card">
+            <img src="../imgs/blog-1.webp" alt="Estudiante pensando cómo hacer una tesis paso a paso">
+          </div>
+
+          <div class="hero-bubble bubble-1">🎓 Ideal para licenciatura, ingeniería y maestría</div>
+          <div class="hero-bubble bubble-2">🧠 Explicado sin enredos</div>
+          <div class="hero-bubble bubble-3">📚 Tema, marco teórico, metodología y más</div>
+
+          <div class="hero-bubbles-grid" aria-hidden="true">
+            <div class="hero-bubble-inline">🎓 Ideal para licenciatura, ingeniería y maestría</div>
+            <div class="hero-bubble-inline">🧠 Explicado sin enredos</div>
+            <div class="hero-bubble-inline">📚 Tema, marco teórico, metodología y más</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-shell" id="guia-completa">
+      <div class="container article-layout">
+
+        <aside class="toc reveal-left">
+          <h3>Contenido del artículo</h3>
+          <ul id="tocList">
+            <li><a href="#intro">Introducción</a></li>
+            <li><a href="#paso-1">1. Elegir el tema</a></li>
+            <li><a href="#paso-2">2. Planteamiento del problema</a></li>
+            <li><a href="#paso-3">3. Objetivos</a></li>
+            <li><a href="#paso-4">4. Justificación</a></li>
+            <li><a href="#paso-5">5. Marco teórico</a></li>
+            <li><a href="#paso-6">6. Metodología</a></li>
+            <li><a href="#paso-7">7. Resultados</a></li>
+            <li><a href="#paso-8">8. Conclusiones</a></li>
+            <li><a href="#tabla">Tabla resumen</a></li>
+            <li><a href="#errores">Errores comunes</a></li>
+            <li><a href="#faq">Preguntas frecuentes</a></li>
+            <li><a href="#cta-final">Ayuda con tesis</a></li>
+          </ul>
+        </aside>
+
+        <div class="article-main">
+
+          <article class="panel reveal-up" id="intro" data-section>
+            <div class="section-title">
+              <span>Introducción</span>
+              <h2>¿Por qué hacer una tesis parece tan difícil al principio?</h2>
+            </div>
+
+            <p>
+              La tesis suele ser una de las actividades más demandantes de la etapa universitaria o de posgrado porque no se trata de responder preguntas sueltas, sino de desarrollar un documento más amplio, con estructura formal, coherencia interna, sustento teórico y un enfoque metodológico claro. A muchas personas les cuesta trabajo empezar porque sienten que deben tener todo resuelto desde el día uno, y eso casi nunca pasa así.
+            </p>
+
+            <p>
+              Lo más común es que al inicio existan dudas sobre el tema, el tipo de investigación, la manera correcta de redactar el problema, la estructura del marco teórico o el método que conviene utilizar. También es muy frecuente no saber cómo relacionar una parte con otra. Por ejemplo, una persona puede tener un tema interesante, pero no tener claro el objetivo general, o puede tener una idea del problema, pero no saber cómo volverla una pregunta de investigación bien planteada.
+            </p>
+
+            <p>
+              La mejor forma de abordar una tesis es dividirla por partes. Cuando entiendes que el documento se construye paso a paso, deja de verse como algo inmenso y empieza a sentirse más manejable. Esa es la idea de esta guía: explicarte cada fase con claridad, para que sepas qué va primero, qué sigue después y qué errores conviene evitar.
+            </p>
+
+            <div class="lead-box">
+              <div class="mini-card">
+                <h3>¿Esta guía para quién sirve?</h3>
+                <p>Para estudiantes de licenciatura, ingeniería, maestría, especialidad y personas que necesitan entender la lógica general de una tesis o tesina.</p>
+              </div>
+              <div class="mini-card">
+                <h3>¿Qué vas a encontrar aquí?</h3>
+                <p>Una ruta clara para avanzar desde la elección del tema hasta las conclusiones, además de una tabla resumen, listas útiles y dudas frecuentes.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel reveal-up" id="paso-1" data-section>
+            <div class="section-title">
+              <span>Paso 1</span>
+              <h2>Elegir el tema de tesis</h2>
+            </div>
+
+            <p>
+              Elegir el tema es el primer gran filtro. Un tema mal escogido puede hacer que toda la tesis se vuelva pesada, confusa o difícil de sostener. Un buen tema no necesariamente tiene que ser revolucionario; lo importante es que sea viable, tenga relación con tu área de estudio y permita conseguir información suficiente para trabajarlo.
+            </p>
+
+            <p>
+              Muchas personas eligen temas demasiado amplios, como “la educación en México” o “la ansiedad en jóvenes”, y eso complica mucho el desarrollo porque no hay una delimitación clara. Lo recomendable es aterrizarlo: definir población, lugar, contexto, tiempo o variable principal. Entre más específico sea el enfoque, más fácil será construir el resto del documento.
+            </p>
+
+            <ul class="pretty-list">
+              <li>Escoge un tema que sí tenga relación con tu carrera o línea académica.</li>
+              <li>Busca un enfoque que te interese de verdad, porque pasarás bastante tiempo trabajando en él.</li>
+              <li>Evita temas enormes o vagos que no puedas delimitar con claridad.</li>
+              <li>Revisa si existe suficiente información teórica o antecedentes sobre el tema.</li>
+              <li>Piensa si tu tema se puede investigar de forma realista con el tiempo y recursos que tienes.</li>
+            </ul>
+          </article>
+
+          <article class="panel reveal-up" id="paso-2" data-section>
+            <div class="section-title">
+              <span>Paso 2</span>
+              <h2>Planteamiento del problema</h2>
+            </div>
+
+            <p>
+              El planteamiento del problema es una de las partes más importantes de toda tesis porque define el sentido del estudio. Aquí no solo dices “de qué trata”, sino qué situación problemática observas, por qué vale la pena estudiar esa situación y en qué contexto específico ocurre.
+            </p>
+
+            <p>
+              Un error común es convertir esta parte en una introducción muy general o en un texto lleno de opiniones. El planteamiento del problema necesita mostrar una situación concreta que pueda investigarse. Debe verse claramente qué está pasando, a quién afecta, qué consecuencias tiene y por qué amerita ser estudiado.
+            </p>
+
+            <div class="color-box-grid">
+              <div class="color-box">
+                <h3>Qué sí debe tener</h3>
+                <p>Contexto, delimitación, explicación de la situación problemática y relación lógica con el objetivo del estudio.</p>
+              </div>
+              <div class="color-box">
+                <h3>Qué no conviene hacer</h3>
+                <p>Llenarlo de definiciones sueltas, ideas repetidas o frases muy amplias que no aterrizan un problema real.</p>
+              </div>
+              <div class="color-box">
+                <h3>Consejo práctico</h3>
+                <p>Piensa en el problema como una pregunta central: ¿qué está pasando aquí que merece investigarse?</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel reveal-up" id="paso-3" data-section>
+            <div class="section-title">
+              <span>Paso 3</span>
+              <h2>Redactar el objetivo general y los objetivos específicos</h2>
+            </div>
+
+            <p>
+              Después del problema vienen los objetivos. Los objetivos indican hacia dónde va tu investigación. El objetivo general resume la intención principal del estudio, mientras que los objetivos específicos desglosan acciones más concretas que te ayudarán a llegar a ese propósito central.
+            </p>
+
+            <p>
+              Un buen objetivo general debe ser claro, alcanzable y coherente con el problema planteado. Los objetivos específicos, por su parte, deben seguir una secuencia lógica. No se trata de llenar una lista por cumplir formato, sino de construir una ruta de investigación ordenada.
+            </p>
+
+            <div class="steps-grid">
+              <div class="step-card">
+                <div class="step-number">1</div>
+                <h3>Define el verbo</h3>
+                <p>Usa verbos claros como analizar, identificar, describir, evaluar, comparar o determinar, según el tipo de estudio.</p>
+              </div>
+
+              <div class="step-card">
+                <div class="step-number">2</div>
+                <h3>Delimita el objeto</h3>
+                <p>Especifica qué fenómeno, variable, población o situación estás estudiando exactamente.</p>
+              </div>
+
+              <div class="step-card">
+                <div class="step-number">3</div>
+                <h3>Ubica el contexto</h3>
+                <p>Menciona el lugar, tiempo o espacio donde se desarrollará la investigación si eso forma parte de tu delimitación.</p>
+              </div>
+
+              <div class="step-card">
+                <div class="step-number">4</div>
+                <h3>Mantén coherencia</h3>
+                <p>Los objetivos deben guardar relación con el problema, la metodología y el tipo de resultados que esperas obtener.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel reveal-up" id="paso-4" data-section>
+            <div class="section-title">
+              <span>Paso 4</span>
+              <h2>Justificación de la tesis</h2>
+            </div>
+
+            <p>
+              La justificación responde una pregunta básica: ¿para qué sirve esta investigación? En esta parte debes explicar por qué tu estudio vale la pena, qué aporta, quién puede beneficiarse y por qué es pertinente desarrollar ese tema.
+            </p>
+
+            <p>
+              Muchas justificaciones se sienten débiles cuando solo dicen que el tema “es importante” sin explicar realmente para quién, en qué sentido y con qué posible utilidad. La justificación necesita sustento lógico. Debe mostrar que el estudio tiene un valor académico, social, práctico, institucional o profesional.
+            </p>
+
+            <ul class="pretty-list">
+              <li>Explica a quién puede beneficiar el estudio.</li>
+              <li>Indica qué aporta tu investigación al tema.</li>
+              <li>Menciona si ayuda a comprender, resolver o visibilizar una situación.</li>
+              <li>Evita frases genéricas sin contenido real.</li>
+            </ul>
+          </article>
+
+          <article class="panel reveal-up" id="paso-5" data-section>
+            <div class="section-title">
+              <span>Paso 5</span>
+              <h2>Construir el marco teórico</h2>
+            </div>
+
+            <p>
+              El marco teórico es una de las partes más extensas de la tesis y también una de las que más trabajo da. Aquí no solo se colocan conceptos; aquí se sostiene teóricamente todo el estudio. Sirve para mostrar qué se ha dicho sobre el tema, cuáles son las bases conceptuales más relevantes, qué antecedentes existen y desde qué perspectiva se analizará el problema.
+            </p>
+
+            <p>
+              Un buen marco teórico no es una colección de definiciones copiadas. Debe tener orden, apartados claros y una secuencia que vaya construyendo poco a poco la comprensión del tema. Conviene dividirlo por secciones y subtemas, de manera que el lector pueda entender cómo se conecta cada idea con el objeto de estudio.
+            </p>
+
+            <p>
+              También es muy importante que el marco teórico dialogue con tu problema y con tus objetivos. No se trata de escribir muchas páginas por llenar espacio, sino de elegir y desarrollar los contenidos teóricos que sí ayudan a sostener tu investigación.
+            </p>
+          </article>
+
+          <article class="panel reveal-up" id="paso-6" data-section>
+            <div class="section-title">
+              <span>Paso 6</span>
+              <h2>Diseñar la metodología</h2>
+            </div>
+
+            <p>
+              La metodología explica cómo vas a investigar. Aquí se describe el enfoque del estudio, el tipo de investigación, la población o muestra, los instrumentos que utilizarás y el procedimiento general para obtener la información.
+            </p>
+
+            <p>
+              Esta sección suele generar muchas dudas porque depende bastante del tipo de tesis. No es lo mismo una investigación cuantitativa que una cualitativa, y tampoco es igual un proyecto documental que uno de campo. Por eso conviene ser muy claro desde el principio sobre qué clase de estudio estás realizando.
+            </p>
+
+            <div class="lead-box">
+              <div class="mini-card">
+                <h3>Preguntas clave de metodología</h3>
+                <p>¿Qué tipo de estudio harás? ¿A quién investigarás? ¿Cómo obtendrás los datos? ¿Qué instrumento usarás? ¿Cómo analizarás la información?</p>
+              </div>
+              <div class="mini-card">
+                <h3>Errores comunes</h3>
+                <p>Copiar metodologías sin adaptarlas al tema, no definir población o muestra, o poner instrumentos que no corresponden con el enfoque del estudio.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel reveal-up" id="paso-7" data-section>
+            <div class="section-title">
+              <span>Paso 7</span>
+              <h2>Presentar resultados y análisis</h2>
+            </div>
+
+            <p>
+              Cuando la investigación ya se aplicó o ya se reunió la información necesaria, toca presentar los resultados. Aquí debes mostrar lo que encontraste, pero también interpretarlo. En muchas tesis no basta con poner tablas o gráficas; se necesita explicar qué significan esos datos y cómo se relacionan con los objetivos del estudio.
+            </p>
+
+            <p>
+              El análisis es el puente entre los datos y las conclusiones. Es donde tomas distancia y explicas el sentido de la información obtenida. Por eso esta parte requiere orden, claridad y coherencia. Lo mejor es presentar la información de forma organizada y comentar cada hallazgo con lógica.
+            </p>
+          </article>
+
+          <article class="panel reveal-up" id="paso-8" data-section>
+            <div class="section-title">
+              <span>Paso 8</span>
+              <h2>Redactar conclusiones</h2>
+            </div>
+
+            <p>
+              Las conclusiones no son un resumen general del documento. Son el espacio donde respondes qué se obtuvo con la investigación, qué se confirmó, qué se comprendió mejor y qué aportes dejó el estudio.
+            </p>
+
+            <p>
+              Una buena conclusión debe tener relación con los objetivos y con los resultados. También puede incluir limitaciones del estudio, recomendaciones o líneas futuras de trabajo si tu institución lo permite o lo solicita.
+            </p>
+
+            <ul class="pretty-list">
+              <li>Retoma los objetivos planteados al inicio.</li>
+              <li>Conecta las conclusiones con los resultados obtenidos.</li>
+              <li>No metas información nueva que no se haya trabajado antes.</li>
+              <li>Escribe con claridad y evita repetir párrafos del desarrollo.</li>
+            </ul>
+          </article>
+
+          <article class="panel reveal-up" id="tabla" data-section>
+            <div class="section-title">
+              <span>Resumen visual</span>
+              <h2>Tabla rápida de las partes de una tesis</h2>
+            </div>
+
+            <div class="thesis-table-wrap">
+              <table class="thesis-table">
+                <thead>
+                  <tr>
+                    <th>Parte</th>
+                    <th>¿Para qué sirve?</th>
+                    <th>Qué cuidar</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Tema</td>
+                    <td>Define el enfoque del estudio.</td>
+                    <td>Que sea viable, claro y delimitado.</td>
+                  </tr>
+                  <tr>
+                    <td>Planteamiento del problema</td>
+                    <td>Explica qué situación se investigará.</td>
+                    <td>Que sea concreta y no demasiado amplia.</td>
+                  </tr>
+                  <tr>
+                    <td>Objetivos</td>
+                    <td>Marcan el rumbo de la investigación.</td>
+                    <td>Que sean coherentes con el problema.</td>
+                  </tr>
+                  <tr>
+                    <td>Justificación</td>
+                    <td>Explica por qué el estudio vale la pena.</td>
+                    <td>Que tenga utilidad real y no frases vacías.</td>
+                  </tr>
+                  <tr>
+                    <td>Marco teórico</td>
+                    <td>Fundamenta el estudio con teoría y antecedentes.</td>
+                    <td>Que tenga orden, apartados y sustento.</td>
+                  </tr>
+                  <tr>
+                    <td>Metodología</td>
+                    <td>Describe cómo se hará la investigación.</td>
+                    <td>Que sea adecuada al tipo de estudio.</td>
+                  </tr>
+                  <tr>
+                    <td>Resultados</td>
+                    <td>Muestran lo encontrado en el estudio.</td>
+                    <td>Presentarlos con claridad e interpretación.</td>
+                  </tr>
+                  <tr>
+                    <td>Conclusiones</td>
+                    <td>Cierran el trabajo con los principales aportes.</td>
+                    <td>Relacionarlas con objetivos y hallazgos.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="panel reveal-up" id="errores" data-section>
+            <div class="section-title">
+              <span>Errores comunes</span>
+              <h2>Errores que hacen más pesada una tesis</h2>
+            </div>
+
+            <p>
+              Hay errores muy frecuentes que retrasan el proceso. Algunos tienen que ver con la redacción, otros con la estructura y otros con la falta de organización. Identificarlos a tiempo puede ahorrarte muchas correcciones después.
+            </p>
+
+            <ul class="pretty-list">
+              <li>Elegir un tema demasiado amplio o poco delimitado.</li>
+              <li>Redactar objetivos que no tienen relación con el problema.</li>
+              <li>Hacer un marco teórico desordenado o sin apartados claros.</li>
+              <li>Usar una metodología que no corresponde con el estudio.</li>
+              <li>No cuidar el formato académico o las referencias.</li>
+              <li>Esperar demasiado para empezar y dejar todo para el final.</li>
+            </ul>
+          </article>
+
+          <article class="panel reveal-up" id="faq" data-section>
+            <div class="section-title">
+              <span>Dudas comunes</span>
+              <h2>Preguntas frecuentes sobre cómo hacer una tesis</h2>
+            </div>
+
+            <div class="faq-list">
+              <div class="faq-item">
+                <button class="faq-btn" type="button">
+                  <span>¿Cuánto tiempo tarda hacer una tesis?</span>
+                  <span>+</span>
+                </button>
+                <div class="faq-content">
+                  <div class="faq-content-inner">
+                    Depende del nivel académico, de la complejidad del tema, de los lineamientos institucionales y del tiempo que le dediques de forma constante. Algunas tesis avanzan por capítulos y otras requieren más correcciones.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-btn" type="button">
+                  <span>¿Se puede hacer una tesis por partes?</span>
+                  <span>+</span>
+                </button>
+                <div class="faq-content">
+                  <div class="faq-content-inner">
+                    Sí. Muchas personas avanzan primero el planteamiento del problema, luego objetivos y justificación, después marco teórico, metodología y así sucesivamente.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-btn" type="button">
+                  <span>¿Qué parte suele costar más trabajo?</span>
+                  <span>+</span>
+                </button>
+                <div class="faq-content">
+                  <div class="faq-content-inner">
+                    Para muchas personas, el marco teórico y la metodología son las partes más pesadas, porque requieren orden, claridad conceptual y buena relación con el tema.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-btn" type="button">
+                  <span>¿Se puede pedir ayuda con tesis?</span>
+                  <span>+</span>
+                </button>
+                <div class="faq-content">
+                  <div class="faq-content-inner">
+                    Sí. Hay personas que necesitan orientación, otras revisión de avances y otras apoyo con apartados específicos como objetivos, marco teórico, metodología o formato APA.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel cta-panel reveal-up" id="cta-final" data-section>
+            <div>
+              <span class="tag">✨ ¿Te sientes atorada con tu tesis?</span>
+              <h2>Puedo ayudarte con tu tesis completa o por apartados</h2>
+              <p>
+                Si ya tienes un avance o si apenas vas a empezar, puedo apoyarte con planteamiento del problema, objetivos, justificación, marco teórico, metodología, resultados, conclusiones, formato APA y presentación final.
+              </p>
+
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="https://wa.me/528116718765" target="_blank" rel="noopener noreferrer">Pedir ayuda por WhatsApp</a>
+                <a class="btn btn-secondary" href="../index.html">Ver página de tesis</a>
+              </div>
+
+              <div class="back-links">
+                <a href="../blog.html">Volver al inicio</a>
+                <a href="../index.html">Hacer tareas</a>
+                <a href="../index.html">Ayuda con tareas</a>
+              </div>
+            </div>
+
+            <div>
+              <img src="../imgs/logo-cohete.webp" alt="Ayuda académica para tesis">
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const revealItems = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal-visible');
+          }
+        });
+      }, { threshold: 0.12 });
+
+      revealItems.forEach(el => observer.observe(el));
+
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(item => {
+        const btn = item.querySelector('.faq-btn');
+        const content = item.querySelector('.faq-content');
+
+        btn.addEventListener('click', () => {
+          const isActive = item.classList.contains('active');
+
+          faqItems.forEach(other => {
+            other.classList.remove('active');
+            other.querySelector('.faq-content').style.maxHeight = null;
+          });
+
+          if (!isActive) {
+            item.classList.add('active');
+            content.style.maxHeight = content.scrollHeight + 'px';
+          }
+        });
+      });
+
+      const progressBar = document.getElementById('progressBar');
+      const updateProgress = () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+        progressBar.style.width = progress + '%';
+      };
+
+      updateProgress();
+      window.addEventListener('scroll', updateProgress);
+
+      const sections = document.querySelectorAll('[data-section]');
+      const tocLinks = document.querySelectorAll('#tocList a');
+
+      const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            tocLinks.forEach(link => {
+              link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+            });
+          }
+        });
+      }, {
+        threshold: 0.34,
+        rootMargin: '-10% 0px -40% 0px'
+      });
+
+      sections.forEach(section => sectionObserver.observe(section));
+    });
+  </script>
+</body>
+</html>

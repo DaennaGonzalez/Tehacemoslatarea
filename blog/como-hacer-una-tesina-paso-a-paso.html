@@ -1,0 +1,1822 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Cómo hacer una tesina paso a paso | Guía completa para estudiantes</title>
+  <meta name="description" content="Aprende cómo hacer una tesina paso a paso con esta guía completa. Descubre cómo elegir el tema, estructurarla, redactarla, qué apartados debe llevar y qué errores evitar.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tehagolatarea.com/blog/como-hacer-una-tesina-paso-a-paso.html" />
+
+  <meta property="og:title" content="Cómo hacer una tesina paso a paso | Guía completa">
+  <meta property="og:description" content="Guía clara y extensa para hacer una tesina desde cero: estructura, tema, objetivos, marco teórico, redacción y errores comunes.">
+  <meta property="og:image" content="https://tehagolatarea.com/imgs/preview.jpg">
+  <meta property="og:url" content="https://tehagolatarea.com/blog/como-hacer-una-tesina-paso-a-paso.html">
+  <meta property="og:type" content="article">
+
+  <script>
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Figtree:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/webp" href="../imgs/logo-principal.webp">
+
+  <style>
+    :root{
+      --bg-1:#c8f4ff;
+      --bg-2:#fff0a8;
+      --bg-3:#d8ffd9;
+      --white:#ffffff;
+      --dark:#1e2434;
+      --text:#31445d;
+      --muted:#5f728f;
+      --line:rgba(30,36,52,.10);
+
+      --primary:#1cc96b;
+      --primary-dark:#13a857;
+      --secondary:#08a9c4;
+      --accent:#ffd75e;
+      --accent-2:#ff8eb2;
+      --accent-3:#9d8cff;
+      --card:#ffffffd9;
+
+      --shadow-soft:0 12px 30px rgba(23, 33, 61, 0.08);
+      --shadow-medium:0 20px 48px rgba(23, 33, 61, 0.14);
+      --shadow-strong:0 28px 70px rgba(23, 33, 61, 0.20);
+
+      --radius-xl:34px;
+      --radius-lg:24px;
+      --radius-md:18px;
+
+      --max:1240px;
+      --header-height:96px;
+    }
+
+    *{
+      box-sizing:border-box;
+      min-width:0;
+    }
+
+    html{
+      scroll-behavior:smooth;
+      scroll-padding-top:calc(var(--header-height) + 22px);
+    }
+
+    body{
+      margin:0;
+      font-family:'Figtree',sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(255,255,255,.9), transparent 25%),
+        linear-gradient(120deg,var(--bg-1),var(--bg-3) 45%,var(--bg-2));
+      min-height:100vh;
+      overflow-x:hidden;
+      padding-top:var(--header-height);
+      word-break:normal;
+      overflow-wrap:break-word;
+    }
+
+    body::before,
+    body::after{
+      content:"";
+      position:fixed;
+      inset:auto;
+      width:320px;
+      height:320px;
+      border-radius:50%;
+      filter:blur(60px);
+      opacity:.25;
+      pointer-events:none;
+      z-index:0;
+    }
+
+    body::before{
+      top:-80px;
+      left:-80px;
+      background:#8fe7ff;
+    }
+
+    body::after{
+      right:-80px;
+      bottom:-80px;
+      background:#ffe281;
+    }
+
+    img{
+      max-width:100%;
+      height:auto;
+    }
+
+    .container{
+      width:min(var(--max), calc(100% - 32px));
+      margin-inline:auto;
+      position:relative;
+      z-index:1;
+    }
+
+    .progress-bar{
+      position:fixed;
+      top:0;
+      left:0;
+      height:5px;
+      width:0%;
+      background:linear-gradient(90deg,var(--secondary),var(--primary),var(--accent-2));
+      z-index:9999;
+      box-shadow:0 6px 16px rgba(0,0,0,.12);
+    }
+
+    .floating-whatsapp{
+      position:fixed;
+      right:16px;
+      bottom:16px;
+      z-index:999;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      text-decoration:none;
+      background:linear-gradient(135deg,var(--primary),#12b76a);
+      color:#fff;
+      padding:12px 18px;
+      border-radius:999px;
+      box-shadow:var(--shadow-medium);
+      font-weight:800;
+      transition:.25s ease;
+      max-width:min(92vw, 340px);
+    }
+
+    .floating-whatsapp:hover{
+      transform:translateY(-4px) scale(1.02);
+      box-shadow:var(--shadow-strong);
+    }
+
+    .floating-whatsapp img{
+      width:24px;
+      height:24px;
+      object-fit:contain;
+      flex-shrink:0;
+    }
+
+    .floating-whatsapp span{
+      line-height:1.3;
+    }
+
+    .header{
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      z-index:1000;
+      backdrop-filter:blur(18px);
+      -webkit-backdrop-filter:blur(18px);
+      background:rgba(255,255,255,.76);
+      border-bottom:1px solid rgba(255,255,255,.45);
+      box-shadow:0 10px 30px rgba(23, 33, 61, 0.08);
+    }
+
+    .header-inner{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+      min-height:var(--header-height);
+      padding:12px 0;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      text-decoration:none;
+      color:var(--dark);
+      min-width:0;
+      flex:1 1 auto;
+    }
+
+    .brand img{
+      width:62px;
+      height:62px;
+      object-fit:contain;
+      filter:drop-shadow(0 10px 18px rgba(0,0,0,.12));
+      flex-shrink:0;
+    }
+
+    .brand-text{
+      display:flex;
+      flex-direction:column;
+      min-width:0;
+    }
+
+    .brand-text strong{
+      font-family:'Outfit',sans-serif;
+      font-size:1.15rem;
+      line-height:1.1;
+      word-break:break-word;
+    }
+
+    .brand-text span{
+      color:var(--muted);
+      font-size:.94rem;
+      line-height:1.2;
+    }
+
+    .nav{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+      flex:0 1 auto;
+    }
+
+    .nav a{
+      text-decoration:none;
+      color:var(--dark);
+      font-weight:800;
+      padding:11px 14px;
+      border-radius:999px;
+      transition:.22s ease;
+      white-space:normal;
+      text-align:center;
+      line-height:1.2;
+    }
+
+    .nav a:hover{
+      background:rgba(255,255,255,.78);
+      transform:translateY(-2px);
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      min-height:52px;
+      padding:12px 22px;
+      border:none;
+      border-radius:999px;
+      text-decoration:none;
+      font-weight:900;
+      font-family:'Outfit',sans-serif;
+      transition:.25s ease;
+      cursor:pointer;
+      text-align:center;
+      line-height:1.25;
+      white-space:normal;
+    }
+
+    .btn-primary{
+      color:#fff;
+      background:linear-gradient(135deg,var(--primary),var(--primary-dark));
+      box-shadow:0 16px 30px rgba(28,201,107,.28);
+    }
+
+    .btn-secondary{
+      color:var(--dark);
+      background:rgba(255,255,255,.84);
+      border:1px solid rgba(30,36,52,.08);
+      box-shadow:var(--shadow-soft);
+    }
+
+    .btn:hover{
+      transform:translateY(-4px) scale(1.02);
+    }
+
+    .hero{
+      padding:46px 0 26px;
+      overflow:hidden;
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.08fr .92fr;
+      gap:30px;
+      align-items:center;
+    }
+
+    .hero-copy{
+      display:grid;
+      gap:18px;
+      position:relative;
+      z-index:2;
+      min-width:0;
+    }
+
+    .tag{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:14px 18px;
+      border-radius:999px;
+      background:rgba(255,255,255,.72);
+      width:max-content;
+      max-width:100%;
+      box-shadow:var(--shadow-soft);
+      border:1px solid rgba(255,255,255,.55);
+      font-weight:900;
+      color:var(--dark);
+      line-height:1.3;
+      white-space:normal;
+    }
+
+    .hero h1{
+      margin:0;
+      font-family:'Balsamiq Sans',cursive;
+      font-size:clamp(2.2rem, 5vw, 4.8rem);
+      line-height:1.02;
+      color:#ffe888;
+      -webkit-text-stroke:4px #2b2218;
+      paint-order:stroke fill;
+      text-shadow:
+        0 4px 0 rgba(255,255,255,.14),
+        0 12px 22px rgba(23,33,61,.12);
+      overflow-wrap:anywhere;
+    }
+
+    .hero p{
+      margin:0;
+      font-size:1.08rem;
+      line-height:1.85;
+      color:var(--text);
+      max-width:760px;
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+      margin-top:6px;
+    }
+
+    .hero-badges{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      padding:0;
+      margin:6px 0 0;
+      list-style:none;
+    }
+
+    .hero-badges li{
+      padding:12px 16px;
+      background:rgba(255,255,255,.78);
+      border-radius:999px;
+      box-shadow:var(--shadow-soft);
+      font-weight:800;
+      color:var(--dark);
+      line-height:1.3;
+    }
+
+    .hero-visual{
+      position:relative;
+      min-height:520px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      isolation:isolate;
+      z-index:1;
+      min-width:0;
+    }
+
+    .hero-card{
+      position:relative;
+      z-index:1;
+      width:min(100%, 540px);
+      background:linear-gradient(180deg, rgba(255,255,255,.70), rgba(255,255,255,.88));
+      border-radius:38px;
+      padding:18px;
+      box-shadow:var(--shadow-medium);
+      overflow:hidden;
+      transform-origin:center;
+      animation:softFloat 4.8s ease-in-out infinite;
+    }
+
+    .hero-card img{
+      width:100%;
+      max-height:470px;
+      object-fit:contain;
+      display:block;
+      margin:0 auto;
+      filter:drop-shadow(0 20px 28px rgba(0,0,0,.14));
+      position:relative;
+      z-index:1;
+    }
+
+    .hero-bubble{
+      position:absolute;
+      z-index:3;
+      background:rgba(255,255,255,.92);
+      border-radius:24px;
+      padding:14px 16px;
+      box-shadow:var(--shadow-soft);
+      font-weight:900;
+      color:var(--dark);
+      max-width:210px;
+      line-height:1.35;
+      animation:softBounce 3.5s ease-in-out infinite;
+      border:1px solid rgba(255,255,255,.6);
+      backdrop-filter:blur(8px);
+      -webkit-backdrop-filter:blur(8px);
+      overflow-wrap:anywhere;
+    }
+
+    .bubble-1{ top:18px; left:-8px; }
+    .bubble-2{ top:54px; right:-6px; animation-delay:.4s; }
+    .bubble-3{ bottom:28px; left:8px; animation-delay:.8s; }
+
+    .article-shell{
+      padding:18px 0 70px;
+    }
+
+    .article-layout{
+      display:grid;
+      grid-template-columns:290px minmax(0, 1fr);
+      gap:28px;
+      align-items:start;
+    }
+
+    .toc{
+      position:sticky;
+      top:calc(var(--header-height) + 18px);
+      background:rgba(255,255,255,.78);
+      border:1px solid rgba(255,255,255,.58);
+      border-radius:28px;
+      box-shadow:var(--shadow-soft);
+      padding:22px 18px;
+      backdrop-filter:blur(14px);
+      -webkit-backdrop-filter:blur(14px);
+      min-width:0;
+    }
+
+    .toc h3{
+      margin:0 0 14px;
+      font-family:'Outfit',sans-serif;
+      font-size:1.18rem;
+      color:var(--dark);
+    }
+
+    .toc ul{
+      list-style:none;
+      padding:0;
+      margin:0;
+      display:grid;
+      gap:10px;
+    }
+
+    .toc a{
+      text-decoration:none;
+      color:var(--text);
+      font-weight:800;
+      display:block;
+      padding:10px 12px;
+      border-radius:14px;
+      transition:.2s ease;
+      line-height:1.35;
+    }
+
+    .toc a:hover,
+    .toc a.active{
+      background:linear-gradient(135deg, rgba(8,169,196,.14), rgba(28,201,107,.12));
+      color:var(--dark);
+      transform:translateX(4px);
+    }
+
+    .article-main{
+      display:grid;
+      gap:24px;
+      min-width:0;
+    }
+
+    .panel{
+      background:var(--card);
+      border:1px solid rgba(255,255,255,.65);
+      border-radius:30px;
+      box-shadow:var(--shadow-soft);
+      padding:28px;
+      backdrop-filter:blur(12px);
+      -webkit-backdrop-filter:blur(12px);
+      min-width:0;
+      scroll-margin-top:calc(var(--header-height) + 24px);
+    }
+
+    .section-title{
+      display:grid;
+      gap:10px;
+      margin-bottom:18px;
+      min-width:0;
+    }
+
+    .section-title span{
+      font-weight:900;
+      color:var(--secondary);
+      letter-spacing:.02em;
+    }
+
+    .section-title h2{
+      margin:0;
+      font-family:'Balsamiq Sans',cursive;
+      font-size:clamp(1.8rem, 3vw, 3rem);
+      line-height:1.1;
+      color:var(--dark);
+      overflow-wrap:anywhere;
+    }
+
+    .article-main p{
+      margin:0 0 14px;
+      line-height:1.9;
+      font-size:1.04rem;
+      color:var(--text);
+      overflow-wrap:break-word;
+      word-break:normal;
+      hyphens:auto;
+    }
+
+    .lead-box{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
+      margin-top:18px;
+    }
+
+    .mini-card{
+      background:linear-gradient(180deg, rgba(255,255,255,.88), rgba(255,255,255,.72));
+      border-radius:22px;
+      padding:18px;
+      border:1px solid rgba(30,36,52,.06);
+      box-shadow:var(--shadow-soft);
+      min-width:0;
+    }
+
+    .mini-card h3{
+      margin:0 0 10px;
+      font-family:'Outfit',sans-serif;
+      color:var(--dark);
+      font-size:1.12rem;
+      line-height:1.25;
+      overflow-wrap:anywhere;
+    }
+
+    .steps-grid{
+      display:grid;
+      grid-template-columns:repeat(2, 1fr);
+      gap:18px;
+    }
+
+    .step-card{
+      position:relative;
+      border-radius:24px;
+      padding:22px 20px 20px;
+      overflow:hidden;
+      box-shadow:var(--shadow-soft);
+      background:linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.78));
+      border:1px solid rgba(30,36,52,.06);
+      transition:.25s ease;
+      min-width:0;
+    }
+
+    .step-card:hover{
+      transform:translateY(-6px) rotate(-.4deg);
+      box-shadow:var(--shadow-medium);
+    }
+
+    .step-number{
+      width:54px;
+      height:54px;
+      display:grid;
+      place-items:center;
+      border-radius:18px;
+      font-family:'Outfit',sans-serif;
+      font-size:1.3rem;
+      font-weight:900;
+      color:#fff;
+      background:linear-gradient(135deg, var(--secondary), var(--accent-3));
+      box-shadow:0 14px 22px rgba(8,169,196,.22);
+      margin-bottom:14px;
+    }
+
+    .step-card h3{
+      margin:0 0 10px;
+      font-family:'Outfit',sans-serif;
+      color:var(--dark);
+      font-size:1.22rem;
+      line-height:1.25;
+      overflow-wrap:anywhere;
+    }
+
+    .pretty-list{
+      display:grid;
+      gap:12px;
+      padding:0;
+      margin:0;
+      list-style:none;
+    }
+
+    .pretty-list li{
+      position:relative;
+      padding:16px 16px 16px 54px;
+      border-radius:18px;
+      background:rgba(255,255,255,.74);
+      box-shadow:var(--shadow-soft);
+      font-weight:700;
+      color:var(--text);
+      line-height:1.6;
+      overflow-wrap:break-word;
+    }
+
+    .pretty-list li::before{
+      content:"✓";
+      position:absolute;
+      left:16px;
+      top:50%;
+      transform:translateY(-50%);
+      width:26px;
+      height:26px;
+      display:grid;
+      place-items:center;
+      border-radius:999px;
+      color:#fff;
+      font-weight:900;
+      background:linear-gradient(135deg,var(--primary),var(--secondary));
+      box-shadow:0 8px 18px rgba(28,201,107,.25);
+    }
+
+    .color-box-grid{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:18px;
+    }
+
+    .color-box{
+      border-radius:24px;
+      padding:22px;
+      box-shadow:var(--shadow-soft);
+      color:var(--dark);
+      transition:.22s ease;
+      min-width:0;
+    }
+
+    .color-box:hover{
+      transform:translateY(-6px) scale(1.01);
+    }
+
+    .color-box:nth-child(1){background:linear-gradient(135deg,#d9fbff,#f5ffff)}
+    .color-box:nth-child(2){background:linear-gradient(135deg,#fff2b9,#fffaf0)}
+    .color-box:nth-child(3){background:linear-gradient(135deg,#ffe0ea,#fff6f9)}
+
+    .color-box h3{
+      margin:0 0 10px;
+      font-family:'Outfit',sans-serif;
+      font-size:1.16rem;
+      line-height:1.25;
+      overflow-wrap:anywhere;
+    }
+
+    .comparison-grid{
+      display:grid;
+      grid-template-columns:repeat(2, 1fr);
+      gap:18px;
+      margin-top:18px;
+    }
+
+    .comparison-card{
+      border-radius:22px;
+      padding:20px;
+      box-shadow:var(--shadow-soft);
+      min-width:0;
+    }
+
+    .comparison-card.good{
+      background:linear-gradient(135deg,#dcffe9,#fafffc);
+      border:1px solid rgba(28,201,107,.18);
+    }
+
+    .comparison-card.bad{
+      background:linear-gradient(135deg,#ffe2ea,#fffafb);
+      border:1px solid rgba(255,142,178,.24);
+    }
+
+    .comparison-card h3{
+      margin:0 0 10px;
+      font-family:'Outfit',sans-serif;
+      font-size:1.1rem;
+      color:var(--dark);
+    }
+
+    .thesis-table-wrap{
+      overflow:auto;
+      border-radius:22px;
+      box-shadow:var(--shadow-soft);
+      background:#fff;
+      -webkit-overflow-scrolling:touch;
+    }
+
+    .thesis-table{
+      width:100%;
+      border-collapse:collapse;
+      min-width:760px;
+      font-size:1rem;
+    }
+
+    .thesis-table th,
+    .thesis-table td{
+      padding:16px 18px;
+      border-bottom:1px solid var(--line);
+      text-align:left;
+      vertical-align:top;
+    }
+
+    .thesis-table th{
+      background:linear-gradient(135deg, rgba(8,169,196,.14), rgba(157,140,255,.14));
+      color:var(--dark);
+      font-family:'Outfit',sans-serif;
+      font-size:1rem;
+    }
+
+    .thesis-table tr:hover td{
+      background:rgba(8,169,196,.04);
+    }
+
+    .faq-list{
+      display:grid;
+      gap:14px;
+    }
+
+    .faq-item{
+      background:rgba(255,255,255,.84);
+      border-radius:22px;
+      box-shadow:var(--shadow-soft);
+      overflow:hidden;
+      border:1px solid rgba(30,36,52,.06);
+      min-width:0;
+    }
+
+    .faq-btn{
+      width:100%;
+      border:none;
+      background:transparent;
+      text-align:left;
+      padding:20px 22px;
+      font-family:'Outfit',sans-serif;
+      font-size:1.08rem;
+      font-weight:900;
+      color:var(--dark);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      cursor:pointer;
+      line-height:1.35;
+    }
+
+    .faq-btn span:first-child{
+      flex:1 1 auto;
+      min-width:0;
+    }
+
+    .faq-btn span:last-child{
+      min-width:36px;
+      width:36px;
+      height:36px;
+      border-radius:999px;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(135deg,var(--secondary),var(--primary));
+      color:#fff;
+      box-shadow:0 12px 18px rgba(8,169,196,.18);
+      transition:.22s ease;
+      flex-shrink:0;
+    }
+
+    .faq-item.active .faq-btn span:last-child{
+      transform:rotate(45deg);
+    }
+
+    .faq-content{
+      max-height:0;
+      overflow:hidden;
+      transition:max-height .35s ease;
+    }
+
+    .faq-content-inner{
+      padding:0 22px 20px;
+      color:var(--text);
+      line-height:1.85;
+      overflow-wrap:break-word;
+    }
+
+    .cta-panel{
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:24px;
+      align-items:center;
+      background:linear-gradient(135deg, rgba(28,201,107,.16), rgba(8,169,196,.14), rgba(255,215,94,.18));
+    }
+
+    .cta-panel h2{
+      margin:0 0 12px;
+      font-family:'Balsamiq Sans',cursive;
+      font-size:clamp(1.8rem, 3vw, 3rem);
+      line-height:1.08;
+      color:var(--dark);
+      overflow-wrap:anywhere;
+    }
+
+    .cta-panel img{
+      width:100%;
+      max-width:320px;
+      display:block;
+      margin:0 auto;
+      filter:drop-shadow(0 16px 24px rgba(0,0,0,.12));
+      animation:softFloat 4.5s ease-in-out infinite;
+    }
+
+    .back-links{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:8px;
+    }
+
+    .back-links a{
+      text-decoration:none;
+      font-weight:900;
+      color:var(--dark);
+      background:rgba(255,255,255,.82);
+      padding:11px 16px;
+      border-radius:999px;
+      box-shadow:var(--shadow-soft);
+      transition:.22s ease;
+      line-height:1.2;
+      text-align:center;
+    }
+
+    .back-links a:hover{
+      transform:translateY(-3px);
+    }
+
+    .reveal-up,
+    .reveal-left,
+    .reveal-right{
+      opacity:0;
+      transition:opacity .7s ease, transform .7s ease;
+      will-change:transform, opacity;
+    }
+
+    .reveal-up{transform:translateY(36px)}
+    .reveal-left{transform:translateX(-36px)}
+    .reveal-right{transform:translateX(36px)}
+    .reveal-visible{
+      opacity:1 !important;
+      transform:none !important;
+    }
+
+    @keyframes softFloat{
+      0%,100%{transform:translateY(0)}
+      50%{transform:translateY(-10px)}
+    }
+
+    @keyframes softBounce{
+      0%,100%{transform:translateY(0)}
+      50%{transform:translateY(-7px)}
+    }
+
+    @media (max-width: 1100px){
+      :root{
+        --header-height:88px;
+      }
+
+      .hero-grid,
+      .article-layout,
+      .cta-panel{
+        grid-template-columns:1fr;
+      }
+
+      .toc{
+        position:relative;
+        top:auto;
+        order:-1;
+      }
+
+      .hero-copy,
+      .hero{
+        text-align:center;
+      }
+
+      .tag{
+        margin-inline:auto;
+      }
+
+      .hero-actions,
+      .hero-badges,
+      .back-links{
+        justify-content:center;
+      }
+
+      .hero-visual{
+        min-height:520px;
+        margin-top:8px;
+      }
+
+      .hero-card{
+        width:min(100%, 520px);
+      }
+
+      .bubble-1{ top:12px; left:12px; }
+      .bubble-2{ top:44px; right:12px; }
+      .bubble-3{ bottom:18px; left:18px; }
+
+      .toc ul{
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 920px){
+      .header-inner{
+        gap:12px;
+      }
+
+      .nav{
+        gap:8px;
+      }
+
+      .nav a{
+        padding:9px 12px;
+        font-size:.95rem;
+      }
+    }
+
+    @media (max-width: 820px){
+      :root{
+        --header-height:84px;
+      }
+
+      .lead-box,
+      .steps-grid,
+      .color-box-grid,
+      .comparison-grid{
+        grid-template-columns:1fr;
+      }
+
+      .nav{
+        display:none;
+      }
+
+      .hero{
+        padding:34px 0 18px;
+      }
+
+      .hero h1{
+        -webkit-text-stroke:2.5px #2b2218;
+        font-size:clamp(2rem, 9vw, 3.6rem);
+      }
+
+      .hero p{
+        font-size:1rem;
+        line-height:1.8;
+      }
+
+      .panel{
+        padding:22px 18px;
+      }
+
+      .hero-visual{
+        min-height:470px;
+      }
+
+      .hero-card{
+        padding:16px;
+        border-radius:28px;
+      }
+
+      .hero-card img{
+        max-height:390px;
+      }
+
+      .hero-bubble{
+        max-width:190px;
+        font-size:.92rem;
+        padding:12px 14px;
+      }
+
+      .bubble-1{ top:6px; left:8px; }
+      .bubble-2{ top:34px; right:8px; }
+      .bubble-3{ bottom:12px; left:14px; }
+
+      .faq-btn{
+        font-size:1rem;
+        padding:18px;
+      }
+
+      .toc{
+        padding:16px;
+        overflow-x:auto;
+      }
+
+      .toc h3{
+        margin-bottom:12px;
+      }
+
+      .toc ul{
+        display:flex;
+        gap:10px;
+        flex-wrap:nowrap;
+        overflow-x:auto;
+        padding-bottom:4px;
+        scrollbar-width:thin;
+      }
+
+      .toc li{
+        flex:0 0 auto;
+      }
+
+      .toc a{
+        white-space:nowrap;
+      }
+    }
+
+    @media (max-width: 640px){
+      :root{
+        --header-height:78px;
+      }
+
+      .container{
+        width:min(var(--max), calc(100% - 20px));
+      }
+
+      .floating-whatsapp{
+        right:12px;
+        bottom:12px;
+        padding:12px 14px;
+        max-width:64px;
+        justify-content:center;
+      }
+
+      .floating-whatsapp span{
+        display:none;
+      }
+
+      .brand img{
+        width:54px;
+        height:54px;
+      }
+
+      .brand-text strong{
+        font-size:1rem;
+      }
+
+      .brand-text span{
+        display:none;
+      }
+
+      .hero{
+        padding-top:24px;
+      }
+
+      .tag{
+        width:100%;
+        justify-content:center;
+        font-size:.95rem;
+        padding:12px 14px;
+      }
+
+      .hero-actions{
+        flex-direction:column;
+        align-items:stretch;
+      }
+
+      .hero-actions .btn{
+        width:100%;
+      }
+
+      .hero-badges{
+        justify-content:center;
+      }
+
+      .hero-badges li{
+        width:100%;
+        text-align:center;
+      }
+
+      .hero-visual{
+        min-height:400px;
+      }
+
+      .hero-card{
+        width:100%;
+        max-width:100%;
+        padding:14px;
+      }
+
+      .hero-card img{
+        max-height:300px;
+      }
+
+      .hero-bubble{
+        max-width:150px;
+        font-size:.82rem;
+        line-height:1.25;
+        padding:10px 12px;
+        border-radius:18px;
+      }
+
+      .bubble-1{ top:4px; left:2px; }
+      .bubble-2{ top:26px; right:2px; }
+      .bubble-3{ bottom:10px; left:8px; }
+
+      .section-title h2{
+        font-size:clamp(1.55rem, 7vw, 2.2rem);
+      }
+
+      .article-main p,
+      .pretty-list li,
+      .mini-card p,
+      .color-box p,
+      .faq-content-inner{
+        font-size:.98rem;
+        line-height:1.8;
+      }
+
+      .thesis-table{
+        min-width:620px;
+        font-size:.95rem;
+      }
+
+      .cta-panel img{
+        max-width:240px;
+      }
+    }
+
+    @media (max-width: 480px){
+      :root{
+        --header-height:74px;
+      }
+
+      .header-inner{
+        min-height:var(--header-height);
+        padding:10px 0;
+      }
+
+      .hero h1{
+        font-size:clamp(1.75rem, 10vw, 2.7rem);
+        line-height:1.05;
+        -webkit-text-stroke:2px #2b2218;
+      }
+
+      .hero p{
+        font-size:.96rem;
+      }
+
+      .panel{
+        padding:18px 14px;
+        border-radius:24px;
+      }
+
+      .hero-visual{
+        min-height:350px;
+      }
+
+      .hero-card{
+        border-radius:22px;
+        padding:12px;
+      }
+
+      .hero-card img{
+        max-height:250px;
+      }
+
+      .hero-bubble{
+        max-width:128px;
+        font-size:.74rem;
+        padding:8px 10px;
+      }
+
+      .bubble-1{ top:0; left:0; }
+      .bubble-2{ top:22px; right:0; }
+      .bubble-3{ bottom:8px; left:4px; }
+
+      .faq-btn{
+        padding:16px 14px;
+        font-size:.95rem;
+        align-items:flex-start;
+      }
+
+      .faq-content-inner{
+        padding:0 14px 16px;
+      }
+
+      .back-links a,
+      .btn{
+        min-height:48px;
+      }
+
+      .toc{
+        border-radius:22px;
+      }
+
+      .toc a{
+        font-size:.92rem;
+        padding:10px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="progress-bar" id="progressBar"></div>
+
+  <a class="floating-whatsapp" href="https://wa.me/528116718765" target="_blank" rel="noopener noreferrer" aria-label="Enviar mensaje por WhatsApp">
+    <img src="../imgs/icono-whatsapp.png" alt="WhatsApp">
+    <span>¿Necesitas ayuda con tu tesina?</span>
+  </a>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand" aria-label="Ir al inicio">
+        <img src="../imgs/logo-principal.webp" alt="Logo Te Hago La Tarea">
+        <span class="brand-text">
+          <strong>Te Hago La Tarea</strong>
+          <span>Blog académico</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="../index.html">Inicio</a>
+        <a href="../index.html">Hacer tareas</a>
+        <a href="../index.html">Tesis</a>
+        <a href="../index.html">Ayuda con tareas</a>
+        <a href="../index.html">Proyectos universidad</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal-left">
+          <span class="tag">📘 Guía clara para estudiantes</span>
+          <h1>Cómo hacer una tesina paso a paso</h1>
+          <p>
+            Hacer una tesina puede parecer menos pesada que una tesis, pero aun así requiere estructura, orden, redacción clara y una base académica bien trabajada. Muchas personas comienzan sin saber qué apartados debe llevar, cómo elegir el tema o qué tan extensa debe ser. En esta guía vas a entender cómo hacer una tesina paso a paso, desde la idea inicial hasta el cierre del documento.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#guia-completa">Empezar la guía</a>
+            <a class="btn btn-secondary" href="https://wa.me/528116718765" target="_blank" rel="noopener noreferrer">Pedir ayuda por WhatsApp</a>
+          </div>
+
+          <ul class="hero-badges">
+            <li>Explicado paso a paso</li>
+            <li>Con estructura clara</li>
+            <li>Ideal para licenciatura y especialidad</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal-right">
+          <div class="hero-card">
+            <img src="../imgs/blog-13.webp" alt="Estudiante desarrollando una tesina paso a paso">
+          </div>
+
+          <div class="hero-bubble bubble-1">📚 Tema, estructura y desarrollo</div>
+          <div class="hero-bubble bubble-2">🧠 Más clara que una tesis, pero formal</div>
+          <div class="hero-bubble bubble-3">✍️ Aprende a organizarla bien</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-shell" id="guia-completa">
+      <div class="container article-layout">
+
+        <aside class="toc reveal-left">
+          <h3>Contenido del artículo</h3>
+          <ul id="tocList">
+            <li><a href="#intro">Introducción</a></li>
+            <li><a href="#paso-1">1. Qué es una tesina</a></li>
+            <li><a href="#paso-2">2. Diferencia entre tesina y tesis</a></li>
+            <li><a href="#paso-3">3. Qué apartados debe llevar</a></li>
+            <li><a href="#paso-4">4. Cómo elegir el tema</a></li>
+            <li><a href="#paso-5">5. Cómo estructurarla</a></li>
+            <li><a href="#paso-6">6. Cómo redactarla paso a paso</a></li>
+            <li><a href="#paso-7">7. Errores comunes</a></li>
+            <li><a href="#paso-8">8. Recomendaciones finales</a></li>
+            <li><a href="#tabla">Tabla resumen</a></li>
+            <li><a href="#faq">Preguntas frecuentes</a></li>
+            <li><a href="#cta-final">Ayuda con tesina</a></li>
+          </ul>
+        </aside>
+
+        <div class="article-main">
+
+          <article class="panel reveal-up" id="intro" data-section>
+            <div class="section-title">
+              <span>Introducción</span>
+              <h2>¿Por qué hacer una tesina también requiere orden y estrategia?</h2>
+            </div>
+
+            <p>
+              A veces se piensa que una tesina es solo un trabajo largo o una versión pequeña de una tesis, pero en realidad también exige estructura, coherencia y un desarrollo formal. Aunque suele ser más breve y menos compleja que una tesis completa, no deja de ser un documento académico que necesita tema claro, objetivos bien definidos, sustento teórico y una redacción ordenada.
+            </p>
+
+            <p>
+              Muchas personas se confunden al empezar porque no saben qué apartados debe llevar, cuánto desarrollar cada parte o qué tanto se espera en términos de profundidad. También es común no saber si la tesina debe investigarse igual que una tesis o si puede construirse de otra manera según el nivel académico.
+            </p>
+
+            <p>
+              La buena noticia es que sí se puede trabajar de forma más sencilla cuando se entiende la lógica general del documento. Esa es la idea de esta guía: ayudarte a ver la tesina por partes, para que no se sienta como algo enredado o imposible de organizar.
+            </p>
+
+            <div class="lead-box">
+              <div class="mini-card">
+                <h3>¿Para quién sirve esta guía?</h3>
+                <p>Para estudiantes que necesitan elaborar una tesina en licenciatura, especialidad o cualquier nivel donde se pida un trabajo académico formal con estructura investigativa.</p>
+              </div>
+              <div class="mini-card">
+                <h3>¿Qué vas a aprender aquí?</h3>
+                <p>Qué es una tesina, en qué se diferencia de una tesis, qué apartados debe llevar, cómo organizarla y qué errores conviene evitar para que quede clara y bien presentada.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel reveal-up" id="paso-1" data-section>
+            <div class="section-title">
+              <span>Paso 1</span>
+              <h2>Qué es una tesina</h2>
+            </div>
+
+            <p>
+              Una tesina es un trabajo académico formal que desarrolla un tema específico con base en una estructura ordenada, revisión de información y redacción argumentada. Dependiendo de la institución, puede pedir más o menos profundidad, pero en general se espera que tenga coherencia, sustento teórico y una presentación seria.
+            </p>
+
+            <p>
+              No siempre implica una investigación tan amplia como una tesis, pero sí necesita mostrar que el estudiante puede trabajar un tema con base académica, organizarlo en apartados y desarrollar una idea central de manera clara.
+            </p>
+
+            <ul class="pretty-list">
+              <li>Es un trabajo académico formal.</li>
+              <li>Desarrolla un tema específico con cierta profundidad.</li>
+              <li>Suele ser más breve que una tesis.</li>
+              <li>Necesita estructura, fuentes y redacción clara.</li>
+              <li>Puede incluir planteamiento, objetivos, marco teórico y conclusiones.</li>
+            </ul>
+          </article>
+
+          <article class="panel reveal-up" id="paso-2" data-section>
+            <div class="section-title">
+              <span>Paso 2</span>
+              <h2>Diferencia entre una tesina y una tesis</h2>
+            </div>
+
+            <p>
+              Aunque se parecen en varias cosas, una tesina y una tesis no son exactamente lo mismo. La tesis suele implicar un trabajo más amplio, con mayor profundidad metodológica y, en muchos casos, una investigación más robusta. La tesina, en cambio, suele ser más breve y más acotada, aunque eso depende mucho de la institución.
+            </p>
+
+            <div class="comparison-grid">
+              <div class="comparison-card good">
+                <h3>Tesina</h3>
+                <p>Suele ser más breve, más delimitada y con un nivel de complejidad menor que una tesis, aunque sigue siendo formal y académica.</p>
+              </div>
+
+              <div class="comparison-card bad">
+                <h3>Tesis</h3>
+                <p>Generalmente implica mayor profundidad, desarrollo metodológico más amplio y una investigación más extensa.</p>
+              </div>
+            </div>
+
+            <div class="color-box-grid">
+              <div class="color-box">
+                <h3>Extensión</h3>
+                <p>La tesina suele tener menos páginas y un alcance más acotado que una tesis.</p>
+              </div>
+              <div class="color-box">
+                <h3>Profundidad</h3>
+                <p>La tesis normalmente exige mayor complejidad teórica y metodológica.</p>
+              </div>
+              <div class="color-box">
+                <h3>Propósito</h3>
+                <p>Ambas buscan demostrar dominio académico, pero la tesina suele ser más manejable y concreta.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel reveal-up" id="paso-3" data-section>
+          <div class="section-title">
+              <span>Paso 3</span>
+              <h2>Qué apartados debe llevar una tesina</h2>
+            </div>
+
+            <p>
+              Los apartados de una tesina pueden cambiar según la escuela o universidad, pero normalmente incluyen portada, índice, introducción, planteamiento del tema o problema, objetivos, justificación, marco teórico, desarrollo del contenido, conclusiones y referencias. Algunas instituciones también piden metodología, aunque no siempre con el mismo nivel de detalle que en una tesis.
+            </p>
+
+            <p>
+              Lo importante es que la estructura tenga lógica. No se trata solo de poner títulos para cumplir, sino de construir un documento donde cada parte ayude a desarrollar mejor el tema.
+            </p>
+
+            <div class="steps-grid">
+              <div class="step-card">
+                <div class="step-number">1</div>
+                <h3>Introducción</h3>
+                <p>Presenta el tema, su contexto general y la intención del trabajo.</p>
+              </div>
+
+              <div class="step-card">
+                <div class="step-number">2</div>
+                <h3>Objetivos y justificación</h3>
+                <p>Explican qué se busca con la tesina y por qué vale la pena desarrollar ese tema.</p>
+              </div>
+
+              <div class="step-card">
+                <div class="step-number">3</div>
+                <h3>Marco teórico o desarrollo conceptual</h3>
+                <p>Reúne las bases teóricas, conceptos y antecedentes que sostienen el trabajo.</p>
+              </div>
+
+              <div class="step-card">
+                <div class="step-number">4</div>
+                <h3>Conclusiones y referencias</h3>
+                <p>Cierran el documento y presentan las fuentes utilizadas en el trabajo.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel reveal-up" id="paso-4" data-section>
+            <div class="section-title">
+              <span>Paso 4</span>
+              <h2>Cómo elegir el tema de una tesina</h2>
+            </div>
+
+            <p>
+              Elegir el tema es uno de los primeros pasos importantes porque de ahí sale el resto del trabajo. Lo mejor es optar por un tema que tenga relación con tu área de estudio, que te interese lo suficiente para desarrollarlo y que también sea viable con el tiempo y las fuentes que tienes disponibles.
+            </p>
+
+            <p>
+              Un error común es elegir temas demasiado amplios. En una tesina conviene mucho delimitar, porque al ser un trabajo más breve que una tesis, necesitas un enfoque claro y manejable. Entre más específico sea el tema, más fácil será desarrollarlo con orden.
+            </p>
+
+            <ul class="pretty-list">
+              <li>Escoge un tema relacionado con tu carrera o área académica.</li>
+              <li>Busca un enfoque que sí puedas trabajar con el tiempo que tienes.</li>
+              <li>Evita temas demasiado generales.</li>
+              <li>Revisa si existen fuentes suficientes para desarrollarlo.</li>
+              <li>Piensa si el tema permite una estructura clara y ordenada.</li>
+            </ul>
+          </article>
+
+          <article class="panel reveal-up" id="paso-5" data-section>
+            <div class="section-title">
+              <span>Paso 5</span>
+              <h2>Cómo estructurar una tesina de forma clara</h2>
+            </div>
+
+            <p>
+              Una vez que ya tienes el tema, conviene hacer un esquema previo con los apartados principales y sus subtítulos. Eso ayuda mucho porque evita que el trabajo se vuelva improvisado o repetitivo. También te permite ver desde el inicio qué parte será más teórica, cuál necesitará más desarrollo y cómo se relaciona cada sección con la idea central.
+            </p>
+
+            <p>
+              Lo ideal es ir de lo general a lo particular. Primero presentas el tema, luego explicas su importancia, después desarrollas la base conceptual y finalmente cierras con conclusiones claras. Cuando existe esa lógica, la tesina se siente mucho más sólida.
+            </p>
+
+            <div class="lead-box">
+              <div class="mini-card">
+                <h3>Consejo práctico</h3>
+                <p>Haz primero un índice tentativo con apartados y subtítulos antes de redactar. Eso te da una ruta clara de trabajo.</p>
+              </div>
+              <div class="mini-card">
+                <h3>Qué ayuda mucho</h3>
+                <p>Dividir el trabajo en partes pequeñas facilita más el avance que intentar escribir todo de una sola vez.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel reveal-up" id="paso-6" data-section>
+            <div class="section-title">
+              <span>Paso 6</span>
+              <h2>Cómo redactar una tesina paso a paso</h2>
+            </div>
+
+            <p>
+              Redactar una tesina funciona mejor cuando lo haces por partes. Primero puedes trabajar la introducción y los objetivos, luego desarrollar el marco teórico o los apartados centrales, y al final cerrar con conclusiones y referencias. Esa manera de avanzar suele ser mucho más práctica que querer resolver el documento completo desde el principio.
+            </p>
+
+            <p>
+              También ayuda mucho trabajar con subtítulos claros, porque eso mantiene ordenado el contenido y evita que los párrafos se vuelvan demasiado largos o confusos. Cada apartado debe tener una función concreta dentro del trabajo.
+            </p>
+
+            <div class="color-box-grid">
+              <div class="color-box">
+                <h3>Primero estructura</h3>
+                <p>Antes de redactar, conviene tener claro el índice o esquema general de la tesina.</p>
+              </div>
+              <div class="color-box">
+                <h3>Después desarrolla</h3>
+                <p>Trabaja cada apartado por separado, con calma y conectándolo con la idea central del tema.</p>
+              </div>
+              <div class="color-box">
+                <h3>Al final revisa</h3>
+                <p>Comprueba que el documento tenga coherencia, redacción limpia y referencias bien integradas.</p>
+              </div>
+            </div>
+
+            <div class="steps-grid" style="margin-top:18px;">
+              <div class="step-card">
+                <div class="step-number">1</div>
+                <h3>Haz el esquema</h3>
+                <p>Organiza títulos, subtítulos y orden de apartados antes de empezar a escribir.</p>
+              </div>
+
+              <div class="step-card">
+                <div class="step-number">2</div>
+                <h3>Reúne tus fuentes</h3>
+                <p>Busca libros, artículos, tesis o materiales que sí aporten al desarrollo del tema.</p>
+              </div>
+
+              <div class="step-card">
+                <div class="step-number">3</div>
+                <h3>Redacta por bloques</h3>
+                <p>Trabaja cada parte con claridad, evitando copiar fragmentos sin conexión.</p>
+              </div>
+
+              <div class="step-card">
+                <div class="step-number">4</div>
+                <h3>Corrige y ajusta</h3>
+                <p>Revisa redacción, coherencia, citas, formato y cierre final del documento.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel reveal-up" id="paso-7" data-section>
+            <div class="section-title">
+              <span>Paso 7</span>
+              <h2>Errores comunes al hacer una tesina</h2>
+            </div>
+
+            <p>
+              Uno de los errores más comunes es pensar que, por ser más breve que una tesis, la tesina puede hacerse sin mucha planeación. Eso suele llevar a trabajos desordenados, repetitivos o poco claros. Otro error frecuente es escoger un tema demasiado amplio o redactar apartados sin relación entre sí.
+            </p>
+
+            <p>
+              También es muy común descuidar el sustento teórico, usar fuentes poco confiables o dejar las referencias para el final. Aunque la tesina sea más corta, necesita base académica y una estructura bien cuidada.
+            </p>
+
+            <ul class="pretty-list">
+              <li>Elegir un tema demasiado amplio o poco claro.</li>
+              <li>Redactar sin una estructura previa.</li>
+              <li>Repetir ideas o llenar apartados sin sentido.</li>
+              <li>No conectar los objetivos con el desarrollo.</li>
+              <li>Descuidar citas y referencias.</li>
+              <li>Pensar que por ser tesina no necesita formalidad académica.</li>
+            </ul>
+          </article>
+
+          <article class="panel reveal-up" id="paso-8" data-section>
+            <div class="section-title">
+              <span>Paso 8</span>
+              <h2>Recomendaciones finales para que tu tesina quede mejor</h2>
+            </div>
+
+            <p>
+              Una buena recomendación es trabajar tu tesina por partes y no esperar a tener todo perfecto para comenzar. Muchas veces el avance sale mejor cuando primero haces un esquema, luego desarrollas tus apartados y más tarde corriges con calma. Ese proceso permite que el documento se construya con más orden.
+            </p>
+
+            <p>
+              También conviene releer varias veces para verificar si los apartados están bien conectados. A veces una sección por sí sola parece estar bien, pero al integrarla al documento completo ya no encaja del todo. Hacer ese filtro ayuda mucho a mejorar la coherencia.
+            </p>
+
+            <p>
+              Y algo importante: una buena tesina no se mide solo por la cantidad de páginas, sino por la claridad del tema, la organización de sus partes y la forma en que el contenido sostiene la idea central del trabajo.
+            </p>
+
+            <div class="steps-grid">
+              <div class="step-card">
+                <div class="step-number">1</div>
+                <h3>Planea antes de escribir</h3>
+                <p>Tener una estructura previa evita que el trabajo se vuelva desordenado o repetitivo.</p>
+              </div>
+
+              <div class="step-card">
+                <div class="step-number">2</div>
+                <h3>Delimita bien el tema</h3>
+                <p>Entre más claro sea tu enfoque, más manejable será el desarrollo de la tesina.</p>
+              </div>
+
+              <div class="step-card">
+                <div class="step-number">3</div>
+                <h3>Cuida las fuentes</h3>
+                <p>Usa materiales confiables y relacionados directamente con el contenido que desarrollas.</p>
+              </div>
+
+              <div class="step-card">
+                <div class="step-number">4</div>
+                <h3>Revisa el cierre</h3>
+                <p>Las conclusiones deben mostrar claramente qué aportó tu tesina y cómo se cierra el tema.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel reveal-up" id="tabla" data-section>
+            <div class="section-title">
+              <span>Resumen visual</span>
+              <h2>Tabla rápida para hacer una tesina paso a paso</h2>
+            </div>
+
+            <div class="thesis-table-wrap">
+              <table class="thesis-table">
+                <thead>
+                  <tr>
+                    <th>Parte</th>
+                    <th>¿Qué implica?</th>
+                    <th>Qué cuidar</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Elegir el tema</td>
+                    <td>Definir un tema claro, académico y manejable.</td>
+                    <td>Evitar temas demasiado amplios.</td>
+                  </tr>
+                  <tr>
+                    <td>Hacer el esquema</td>
+                    <td>Organizar apartados y subtítulos antes de redactar.</td>
+                    <td>Que exista lógica entre las partes.</td>
+                  </tr>
+                  <tr>
+                    <td>Buscar fuentes</td>
+                    <td>Reunir información confiable para sostener el trabajo.</td>
+                    <td>No usar materiales poco serios o irrelevantes.</td>
+                  </tr>
+                  <tr>
+                    <td>Redactar</td>
+                    <td>Desarrollar cada parte con claridad y coherencia.</td>
+                    <td>No copiar ni repetir ideas sin conexión.</td>
+                  </tr>
+                  <tr>
+                    <td>Concluir</td>
+                    <td>Cerrar el trabajo retomando lo más importante.</td>
+                    <td>Que las conclusiones sí se relacionen con el contenido.</td>
+                  </tr>
+                  <tr>
+                    <td>Corregir</td>
+                    <td>Revisar redacción, formato y referencias.</td>
+                    <td>No dejar la revisión para el último momento.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="panel reveal-up" id="faq" data-section>
+            <div class="section-title">
+              <span>Dudas comunes</span>
+              <h2>Preguntas frecuentes sobre cómo hacer una tesina</h2>
+            </div>
+
+            <div class="faq-list">
+              <div class="faq-item">
+                <button class="faq-btn" type="button">
+                  <span>¿La tesina es más fácil que la tesis?</span>
+                  <span>+</span>
+                </button>
+                <div class="faq-content">
+                  <div class="faq-content-inner">
+                    En muchos casos sí suele ser más breve y menos compleja, pero eso no significa que pueda hacerse sin estructura ni sin cuidado académico. También requiere orden, redacción y sustento.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-btn" type="button">
+                  <span>¿Cuántas páginas debe tener una tesina?</span>
+                  <span>+</span>
+                </button>
+                <div class="faq-content">
+                  <div class="faq-content-inner">
+                    Depende de la institución y de los lineamientos específicos. Lo importante no es solo la cantidad de páginas, sino que el trabajo tenga una estructura clara y contenido suficiente para desarrollar bien el tema.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-btn" type="button">
+                  <span>¿Una tesina lleva metodología?</span>
+                  <span>+</span>
+                </button>
+                <div class="faq-content">
+                  <div class="faq-content-inner">
+                    A veces sí y a veces no, dependiendo del tipo de tesina y de lo que pida tu institución. En algunos casos basta con una estructura más teórica y documental; en otros sí se solicita un apartado metodológico.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-btn" type="button">
+                  <span>¿Puedo hacer una tesina por partes?</span>
+                  <span>+</span>
+                </button>
+                <div class="faq-content">
+                  <div class="faq-content-inner">
+                    Sí, de hecho es una de las mejores maneras de avanzar. Trabajar por apartados ayuda a que el documento sea más manejable y permite corregir con mayor claridad.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel cta-panel reveal-up" id="cta-final" data-section>
+            <div>
+              <span class="tag">✨ ¿Se te complica tu tesina?</span>
+              <h2>Puedo ayudarte a desarrollar tu tesina paso a paso</h2>
+              <p>
+                Si ya tienes un tema o si apenas estás empezando, puedo apoyarte con la estructura, los objetivos, la organización de apartados, la redacción del contenido, el formato APA y la revisión general para que tu tesina quede clara, ordenada y bien trabajada.
+              </p>
+
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="https://wa.me/528116718765" target="_blank" rel="noopener noreferrer">Pedir ayuda por WhatsApp</a>
+                <a class="btn btn-secondary" href="../tesis.html">Ver página de tesis</a>
+              </div>
+
+              <div class="back-links">
+                <a href="../blog.html">Volver al inicio</a>
+                <a href="../index.html">Hacer tareas</a>
+                <a href="../index.html">Ayuda con tareas</a>
+              </div>
+            </div>
+
+            <div>
+              <img src="../imgs/logo-cohete.webp" alt="Ayuda académica para hacer una tesina">
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const revealItems = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal-visible');
+          }
+        });
+      }, { threshold: 0.12 });
+
+      revealItems.forEach(el => observer.observe(el));
+
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(item => {
+        const btn = item.querySelector('.faq-btn');
+        const content = item.querySelector('.faq-content');
+
+        btn.addEventListener('click', () => {
+          const isActive = item.classList.contains('active');
+
+          faqItems.forEach(other => {
+            other.classList.remove('active');
+            other.querySelector('.faq-content').style.maxHeight = null;
+          });
+
+          if (!isActive) {
+            item.classList.add('active');
+            content.style.maxHeight = content.scrollHeight + 'px';
+          }
+        });
+      });
+
+      const progressBar = document.getElementById('progressBar');
+      const updateProgress = () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+        progressBar.style.width = progress + '%';
+      };
+
+      updateProgress();
+      window.addEventListener('scroll', updateProgress);
+
+      const sections = document.querySelectorAll('[data-section]');
+      const tocLinks = document.querySelectorAll('#tocList a');
+
+      const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            tocLinks.forEach(link => {
+              link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+            });
+          }
+        });
+      }, {
+        threshold: 0.34,
+        rootMargin: '-10% 0px -40% 0px'
+      });
+
+      sections.forEach(section => sectionObserver.observe(section));
+    });
+  </script>
+</body>
+</html>
