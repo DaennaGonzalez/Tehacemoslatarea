@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog académico | Tesis, APA, ensayos y trabajos escolares | Te Hago La Tarea</title>
+  <meta name="description" content="Explora el blog de Te Hago La Tarea con artículos sobre tesis, marco teórico, APA, ensayos, tesinas, metodología, introducciones, conclusiones y más." />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Blog académico | Te Hago La Tarea">
+  <meta property="og:description" content="Artículos sobre tesis, formato APA, ensayos, investigaciones, trabajos escolares y más.">
+  <meta property="og:image" content="https://tehagolatarea.com/imgs/preview.jpg">
+  <meta property="og:url" content="https://tehagolatarea.com/blog.html">
+  <meta property="og:type" content="website">
+
+  <script>
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/webp" href="imgs/logo-principal.webp">
+
+  <style>
+    :root {
+      --color-blue: #0cc0df;
+      --color-green: #56d8b2;
+      --color-yellow: #ffde59;
+      --color-pink: #ff9b6a;
+      --color-orange: #ffb347;
+      --color-dark: #0f172a;
+      --color-light: #f8fafc;
+      --color-white: #ffffff;
+      --color-gray: #e2e8f0;
+      --color-text: #172033;
+      --color-muted: #48606c;
+
+      --shadow-soft: 0 12px 40px rgba(15, 23, 42, 0.08);
+      --shadow-medium: 0 18px 45px rgba(15, 23, 42, 0.12);
+      --shadow-strong: 0 24px 60px rgba(12, 192, 223, 0.20);
+
+      --radius-sm: 16px;
+      --radius-md: 24px;
+      --radius-lg: 34px;
+      --radius-xl: 52px;
+      --radius-pill: 999px;
+
+      --container: 1200px;
+      --header-height: 92px;
+
+      --transition-fast: 0.25s ease;
+      --transition-medium: 0.4s ease;
+
+      --page-gradient: linear-gradient(90deg, #0cc0df 0%, #ffde59 100%);
+      --section-light-top: rgba(255,255,255,0.82);
+      --section-light-bottom: rgba(255,255,255,0.88);
+      --section-light-gradient: linear-gradient(
+        180deg,
+        var(--section-light-top) 0%,
+        var(--section-light-bottom) 100%
+      );
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      max-width: 100%;
+    }
+
+    body {
+      font-family: 'Figtree', sans-serif;
+      color: var(--color-text);
+      overflow-x: hidden;
+      background: var(--page-gradient);
+      background-attachment: fixed;
+      position: relative;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    button,
+    a,
+    input,
+    textarea {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+      border: 0;
+      background: none;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    p, h1, h2, h3, h4 {
+      margin-top: 0;
+    }
+
+    .container {
+      width: min(var(--container), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .section {
+      position: relative;
+      padding: 110px 0;
+    }
+
+    .section-light {
+      background: var(--section-light-gradient);
+    }
+
+    .section-dark {
+      background: linear-gradient(135deg, #0f172a 0%, #133247 100%);
+      color: var(--color-white);
+    }
+
+    .section-heading {
+      max-width: 850px;
+      margin: 0 auto 46px;
+      text-align: center;
+    }
+
+    .section-heading h2 {
+      font-family: 'Balsamiq Sans', cursive;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.05;
+      margin-bottom: 16px;
+    }
+
+    .section-heading p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: var(--color-muted);
+    }
+
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 18px;
+      border-radius: var(--radius-pill);
+      background:
+        linear-gradient(90deg, rgba(12, 192, 223, 0.12), rgba(255, 222, 89, 0.16)),
+        rgba(255,255,255,0.86);
+      border: 1px solid rgba(12, 192, 223, 0.16);
+      color: #08788f;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .site-background {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 10% 12%, rgba(255,255,255,0.18), transparent 18%),
+        radial-gradient(circle at 84% 16%, rgba(255,255,255,0.14), transparent 16%),
+        radial-gradient(circle at 18% 78%, rgba(255,255,255,0.12), transparent 18%),
+        radial-gradient(circle at 82% 72%, rgba(255,255,255,0.10), transparent 18%);
+      z-index: -2;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 56px;
+      padding: 14px 28px;
+      border-radius: var(--radius-pill);
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      transition:
+        transform var(--transition-fast),
+        box-shadow var(--transition-fast),
+        background var(--transition-fast),
+        color var(--transition-fast);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .btn-primary {
+      color: #ffffff;
+      background: linear-gradient(135deg, #25D366 0%, #1ebe5d 40%, #128C7E 100%);
+      box-shadow:
+        0 10px 20px rgba(37, 211, 102, 0.35),
+        0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px) scale(1.02);
+    }
+
+    .btn-secondary {
+      color: var(--color-dark);
+      background: rgba(255,255,255,0.88);
+      border: 1px solid rgba(15, 23, 42, 0.08);
+    }
+
+    .btn-secondary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 35px rgba(255, 222, 89, 0.18);
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      right: 16px;
+      bottom: 16px;
+      z-index: 120;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px 12px 12px;
+      background: linear-gradient(135deg, #25D366, #14b85a);
+      color: white;
+      border-radius: var(--radius-pill);
+      box-shadow: 0 18px 35px rgba(37, 211, 102, 0.30);
+      animation: floatBubble 2.6s ease-in-out infinite;
+      transition: transform 0.3s ease;
+    }
+
+    .floating-whatsapp img {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
+    }
+
+    .floating-whatsapp span {
+      font-weight: 700;
+      font-family: 'Outfit', sans-serif;
+      white-space: nowrap;
+    }
+
+    .main-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 300;
+      background: transparent;
+    }
+
+    .header-container {
+      min-height: var(--header-height);
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 20px;
+      padding: 16px 24px;
+      background: rgba(255, 255, 255, 0.62);
+      border: 1px solid rgba(255, 255, 255, 0.34);
+      box-shadow: 0 10px 26px rgba(15, 23, 42, 0.05);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: 0 0 30px 30px;
+    }
+
+    .main-header.is-scrolled .header-container {
+      background: rgba(255, 255, 255, 0.76);
+      box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+    }
+
+    .brand-logo {
+      width: 150px;
+      max-width: 100%;
+    }
+
+    .main-nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px 22px;
+    }
+
+    .main-nav a {
+      position: relative;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      color: var(--color-dark);
+      transition: color var(--transition-fast), transform var(--transition-fast);
+    }
+
+    .main-nav a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 3px;
+      transform: scaleX(0);
+      transform-origin: left;
+      border-radius: var(--radius-pill);
+      background: linear-gradient(90deg, var(--color-blue), var(--color-yellow));
+      transition: transform var(--transition-fast);
+    }
+
+    .main-nav a:hover,
+    .main-nav a[aria-current="page"] {
+      transform: translateY(-2px);
+      color: #087a91;
+    }
+
+    .main-nav a:hover::after,
+    .main-nav a[aria-current="page"]::after {
+      transform: scaleX(1);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 52px;
+      height: 52px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.78);
+      box-shadow: 0 10px 22px rgba(15, 23, 42, 0.06);
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .menu-toggle span {
+      width: 22px;
+      height: 2.5px;
+      background: var(--color-dark);
+      border-radius: 2px;
+      transition: var(--transition-fast);
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    .blog-page .blog-hero {
+      position: relative;
+      padding-top: 245px;
+      padding-bottom: 90px;
+      overflow: hidden;
+    }
+
+    
+
+    .blog-page .blog-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 14% 22%, rgba(255,255,255,0.22), transparent 20%),
+        radial-gradient(circle at 86% 26%, rgba(255,255,255,0.12), transparent 18%),
+        linear-gradient(
+          180deg,
+          rgba(255,255,255,0.08) 0%,
+          rgba(255,255,255,0.02) 55%,
+          rgba(255,255,255,0) 100%
+        );
+      z-index: 0;
+    }
+
+    .blog-hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 34px;
+      align-items: center;
+    }
+
+    .blog-hero-copy h1 {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 900;
+      font-size: clamp(2.5rem, 5vw, 5rem);
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+      margin-bottom: 18px;
+      color: #fff4a8;
+      -webkit-text-stroke: 3px #2b2218;
+      paint-order: stroke fill;
+      text-shadow:
+        0 2px 0 rgba(255,255,255,0.18),
+        0 4px 0 rgba(43,34,24,0.16),
+        0 12px 18px rgba(15,23,42,0.12);
+    }
+
+    .blog-hero-copy p {
+      max-width: 700px;
+      font-size: 1.08rem;
+      line-height: 1.85;
+      color: #294956;
+      margin-bottom: 24px;
+    }
+
+    .blog-hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    .blog-hero-mini-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .blog-hero-mini-list li {
+      padding: 12px 18px;
+      border-radius: var(--radius-pill);
+      background: rgba(255,255,255,0.86);
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(15,23,42,0.06);
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      color: var(--color-dark);
+    }
+
+    .blog-hero-visual {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 440px;
+    }
+
+    .blog-hero-visual::before {
+      content: '';
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,255,255,0.34) 0%, rgba(255,255,255,0.08) 55%, transparent 75%);
+      filter: blur(4px);
+    }
+
+    .blog-hero-main-image {
+      position: relative;
+      z-index: 2;
+      width: min(100%, 420px);
+      height: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 28px 46px rgba(15, 23, 42, 0.18));
+      animation: heroFloatCentered 4s ease-in-out infinite;
+    }
+
+    .blog-hero-badge {
+      position: absolute;
+      z-index: 3;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 16px;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.90);
+      box-shadow: var(--shadow-soft);
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      color: var(--color-dark);
+      backdrop-filter: blur(10px);
+      text-align: center;
+    }
+
+    .blog-hero-badge.badge-one {
+      top: 26px;
+      left: 0;
+      background: linear-gradient(135deg, rgba(12,192,223,0.20), rgba(255,255,255,0.92));
+    }
+
+    .blog-hero-badge.badge-two {
+      right: 0;
+      bottom: 48px;
+      background: linear-gradient(135deg, rgba(255,222,89,0.22), rgba(255,255,255,0.92));
+    }
+
+    .blog-categories-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .blog-filter-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 18px;
+      border-radius: var(--radius-pill);
+      background: rgba(255,255,255,0.88);
+      border: 1px solid rgba(15,23,42,0.07);
+      box-shadow: var(--shadow-soft);
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      color: var(--color-dark);
+      transition: transform var(--transition-fast), background var(--transition-fast), color var(--transition-fast);
+    }
+
+    .blog-filter-btn:hover,
+    .blog-filter-btn.active {
+      transform: translateY(-3px);
+      background: linear-gradient(90deg, rgba(12,192,223,0.16), rgba(255,222,89,0.20));
+      color: #087a91;
+    }
+
+    .blog-featured-grid {
+      display: grid;
+      grid-template-columns: 1.12fr 0.88fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .blog-featured-main {
+      position: relative;
+      overflow: hidden;
+      border-radius: 34px;
+      background: rgba(255,255,255,0.96);
+      box-shadow: var(--shadow-medium);
+      border: 1px solid rgba(15,23,42,0.06);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 100%;
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    }
+
+    .blog-featured-image-wrap {
+      min-height: 100%;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(12,192,223,0.12), rgba(255,222,89,0.18));
+    }
+
+    .blog-featured-image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .blog-featured-body {
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .blog-card-category {
+      display: inline-flex;
+      width: fit-content;
+      padding: 9px 14px;
+      border-radius: var(--radius-pill);
+      background: linear-gradient(90deg, rgba(12,192,223,0.14), rgba(255,222,89,0.18));
+      color: #08788f;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: 0.85rem;
+      margin-bottom: 14px;
+    }
+
+    .blog-featured-body h3,
+    .blog-side-card h3,
+    .blog-card h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.42rem;
+      line-height: 1.18;
+      margin-bottom: 14px;
+      color: var(--color-dark);
+    }
+
+    .blog-featured-body p,
+    .blog-side-card p,
+    .blog-card p {
+      color: var(--color-muted);
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+
+    .blog-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      color: #08788f;
+    }
+
+    .blog-link::after {
+      content: '→';
+      transition: transform var(--transition-fast);
+    }
+
+    .blog-link:hover::after {
+      transform: translateX(4px);
+    }
+
+    .blog-featured-side {
+      display: grid;
+      gap: 22px;
+    }
+
+    .blog-side-card {
+      border-radius: 30px;
+      background: rgba(255,255,255,0.96);
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(15,23,42,0.06);
+      overflow: hidden;
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    }
+
+    .blog-side-card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+
+    .blog-side-card-body {
+      padding: 20px 20px 22px;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .blog-card {
+      display: flex;
+      flex-direction: column;
+      background: rgba(255,255,255,0.96);
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(15,23,42,0.06);
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    }
+
+    .blog-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .blog-card-body {
+      padding: 22px 22px 24px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .blog-card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .blog-meta-chip {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 7px 12px;
+      border-radius: var(--radius-pill);
+      background: rgba(15,23,42,0.05);
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #425467;
+    }
+
+    .blog-card p {
+      flex: 1;
+    }
+
+    .blog-card.hidden-by-filter {
+      display: none;
+    }
+
+    .blog-info-strip {
+      border-radius: 34px;
+      padding: 28px;
+      background:
+        linear-gradient(
+          135deg,
+          rgba(12,192,223,0.20) 0%,
+          rgba(86,216,178,0.18) 40%,
+          rgba(255,222,89,0.22) 100%
+        );
+      border: 1px solid rgba(255,255,255,0.28);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .blog-info-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .blog-info-item {
+      min-height: 120px;
+      padding: 18px;
+      border-radius: 26px;
+      background: rgba(255,255,255,0.88);
+      box-shadow: var(--shadow-soft);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .blog-info-item span {
+      font-size: 1.8rem;
+    }
+
+    .blog-info-item strong {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1rem;
+      color: var(--color-dark);
+    }
+
+    .final-cta {
+      background: linear-gradient(180deg, rgba(255,255,255,0.56), rgba(255,255,255,0.78));
+    }
+
+    .final-cta-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .final-cta-content h2 {
+      font-family: 'Balsamiq Sans', cursive;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      margin-bottom: 18px;
+    }
+
+    .final-cta-content p {
+      color: var(--color-muted);
+      line-height: 1.85;
+    }
+
+    .final-cta-visual {
+      display: flex;
+      justify-content: center;
+    }
+
+    .final-cta-visual img {
+      width: min(100%, 360px);
+      filter: drop-shadow(0 18px 34px rgba(12, 192, 223, 0.20));
+      animation: floatBubble 3s ease-in-out infinite;
+    }
+
+    .main-footer {
+      position: relative;
+      background:
+        linear-gradient(135deg, #0f172a 0%, #13263a 45%, #17364e 100%);
+      color: #ffffff;
+      overflow: hidden;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr 1fr;
+      gap: 42px;
+      padding: 64px 0 38px;
+      align-items: start;
+    }
+
+    .footer-brand {
+      max-width: 420px;
+    }
+
+    .footer-logo {
+      width: min(100%, 260px);
+      margin-bottom: 18px;
+      filter: drop-shadow(0 10px 20px rgba(0,0,0,0.22));
+    }
+
+    .footer-brand p {
+      margin: 0;
+      color: rgba(255,255,255,0.78);
+      line-height: 1.85;
+      font-size: 1rem;
+    }
+
+    .footer-links h4,
+    .footer-contact h4 {
+      margin: 0 0 16px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .footer-links,
+    .footer-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links a,
+    .footer-contact a {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      color: rgba(255,255,255,0.76);
+      line-height: 1.75;
+      transition: color 0.25s ease, transform 0.25s ease;
+    }
+
+    .footer-links a:hover,
+    .footer-contact a:hover {
+      color: #ffffff;
+      transform: translateX(5px);
+    }
+
+    .footer-location {
+      margin-top: 10px;
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.10);
+      color: rgba(255,255,255,0.88);
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      background: rgba(0,0,0,0.10);
+    }
+
+    .footer-bottom-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 18px 0 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-bottom-content p {
+      margin: 0;
+      color: rgba(255,255,255,0.70);
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+
+    .reveal-up,
+    .reveal-left,
+    .reveal-right {
+      opacity: 0;
+      transform: translateY(26px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal-left {
+      transform: translateX(-28px);
+    }
+
+    .reveal-right {
+      transform: translateX(28px);
+    }
+
+    .reveal-visible {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+
+    .no-js .reveal-up,
+    .no-js .reveal-left,
+    .no-js .reveal-right {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+
+    .seo-hidden {
+      position: absolute;
+      left: -9999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
+    @keyframes floatBubble {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes heroFloatCentered {
+      0%, 100% { transform: translate3d(0, 0, 0); }
+      50% { transform: translate3d(0, -12px, 0); }
+    }
+
+    @media (max-width: 1199px) {
+      .blog-hero-grid,
+      .blog-featured-grid,
+      .final-cta-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .blog-featured-main {
+        grid-template-columns: 1fr;
+      }
+
+      .blog-grid,
+      .blog-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 34px;
+        padding: 56px 0 34px;
+      }
+
+      .footer-brand {
+        grid-column: 1 / -1;
+        max-width: 100%;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      .footer-logo {
+        margin-inline: auto;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .header-container {
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+      }
+
+      .menu-toggle {
+        display: inline-flex;
+      }
+
+      .header-actions {
+        display: none;
+      }
+
+      .main-nav {
+        position: absolute;
+        left: 16px;
+        right: 16px;
+        top: calc(100% + 10px);
+        padding: 18px;
+        background: rgba(255,255,255,0.92);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        border-radius: 24px;
+        box-shadow: var(--shadow-medium);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 320;
+      }
+
+      .main-nav.open {
+        display: flex;
+      }
+
+      .blog-page .blog-hero {
+        padding-top: 150px;
+      }
+
+      .blog-hero-copy,
+      .final-cta-content {
+        text-align: center;
+      }
+
+      .blog-hero-copy p {
+        margin-inline: auto;
+      }
+
+      .blog-hero-actions,
+      .blog-hero-mini-list {
+        justify-content: center;
+      }
+
+      .blog-grid,
+      .blog-info-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-bottom-content {
+        justify-content: center;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 767px) {
+      :root {
+        --header-height: 78px;
+      }
+
+      .container {
+        width: min(100% - 24px, var(--container));
+      }
+
+      .section {
+        padding: 74px 0;
+      }
+
+      .header-container {
+        min-height: 78px;
+        padding: 12px 16px;
+        border-radius: 0 0 22px 22px;
+      }
+
+      .brand-logo {
+        width: 120px;
+      }
+
+      .menu-toggle {
+        width: 48px;
+        height: 48px;
+        border-radius: 16px;
+      }
+
+      .main-nav {
+        top: calc(100% + 8px);
+        left: 12px;
+        right: 12px;
+      }
+
+      .floating-whatsapp {
+        right: 12px;
+        bottom: 12px;
+        padding-right: 14px;
+      }
+
+      .floating-whatsapp span {
+        display: none;
+      }
+
+      .blog-page .blog-hero {
+        padding-top: 118px;
+        padding-bottom: 70px;
+      }
+
+      .blog-hero-copy h1 {
+        font-size: clamp(2rem, 9vw, 3.3rem);
+        -webkit-text-stroke: 2px #2b2218;
+      }
+
+      .blog-hero-visual {
+        min-height: 320px;
+      }
+
+      .blog-hero-main-image {
+        width: min(100%, 250px);
+      }
+
+      .blog-hero-badge {
+        position: static;
+        margin-top: 14px;
+        width: 100%;
+      }
+
+      .blog-hero-visual {
+        display: grid;
+        gap: 12px;
+      }
+
+      .blog-featured-grid,
+      .blog-grid,
+      .blog-info-grid,
+      .final-cta-grid,
+      .footer-content {
+        grid-template-columns: 1fr;
+      }
+
+      .blog-featured-main,
+      .blog-side-card,
+      .blog-card,
+      .blog-info-strip {
+        border-radius: 26px;
+      }
+
+      .blog-featured-body,
+      .blog-card-body {
+        padding: 20px;
+      }
+
+      .blog-side-card img,
+      .blog-card img {
+        height: 220px;
+      }
+
+      .blog-filter-btn {
+        width: 100%;
+      }
+
+      .footer-content {
+        gap: 28px;
+        padding: 46px 0 28px;
+        text-align: center;
+      }
+
+      .footer-links,
+      .footer-contact {
+        align-items: center;
+      }
+
+      .footer-links a,
+      .footer-contact a {
+        width: auto;
+        justify-content: center;
+      }
+
+      .footer-links a:hover,
+      .footer-contact a:hover {
+        transform: none;
+      }
+
+      .footer-location {
+        margin-inline: auto;
+      }
+
+      .footer-bottom-content {
+        flex-direction: column;
+        gap: 8px;
+        padding: 16px 0 18px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+
+      .reveal-up,
+      .reveal-left,
+      .reveal-right {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+@media (max-width: 480px) {
+  .blog-page .blog-hero {
+    padding-top: 135px;
+    padding-bottom: 65px;
+  }
+}
+
+@media (max-width: 767px) {
+  .blog-page .blog-hero {
+    padding-top: 200px; /* antes 118px */
+    padding-bottom: 70px;
+  }
+}
+
+@media (max-width: 991px) {
+  .blog-page .blog-hero {
+    padding-top: 240px; /* antes 150px */
+    padding-bottom: 80px;
+  }
+}
+
+  </style>
+</head>
+<body class="blog-page">
+  <div class="site-background" aria-hidden="true"></div>
+
+  <a class="floating-whatsapp" href="https://wa.me/528116718765" target="_blank" rel="noopener noreferrer" aria-label="Enviar mensaje por WhatsApp">
+    <img src="imgs/icono-whatsapp.png" alt="WhatsApp" />
+    <span>¿Qué tarea necesitas?</span>
+  </a>
+
+  <header class="main-header" id="mainHeader">
+    <div class="container header-container">
+      <a href="index.html" class="brand" aria-label="Ir al inicio">
+        <img src="imgs/logo-principal.webp" alt="Logo Te Hago La Tarea" class="brand-logo" />
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html#inicio">Inicio</a>
+        <a href="index.html#servicios">Servicios</a>
+        <a href="index.html#areas">Carreras y materias</a>
+        <a href="index.html#niveles">Niveles</a>
+        <a href="index.html#evidencias">Evidencias</a>
+        <a href="index.html#resenas">Reseñas</a>
+        <a href="index.html#proceso">Cómo funciona</a>
+        <a href="index.html#contacto">Contacto</a>
+        <a href="blog.html" aria-current="page">Blog</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-primary" href="https://wa.me/528116718765" target="_blank" rel="noopener noreferrer">Pedir ayuda ahora</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="blog-hero">
+      <div class="container blog-hero-grid">
+        <div class="blog-hero-copy reveal-left">
+          <span class="section-tag">📚 Blog académico</span>
+          <h1>Guías claras para tesis, APA, ensayos y trabajos escolares</h1>
+          <p>
+            En este blog encontrarás artículos pensados para ayudarte a entender mejor cómo hacer una tesis, redactar apartados de investigación, usar formato APA y desarrollar distintos tipos de trabajos escolares paso a paso.
+          </p>
+
+          <div class="blog-hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/528116718765" target="_blank" rel="noopener noreferrer">Pedir ayuda por WhatsApp</a>
+            <a class="btn btn-secondary" href="#articulos">Ver artículos</a>
+          </div>
+
+          <ul class="blog-hero-mini-list">
+            <li>Tesis e investigación</li>
+            <li>APA y redacción</li>
+            <li>Trabajos paso a paso</li>
+          </ul>
+        </div>
+
+        <div class="blog-hero-visual reveal-right">
+          <img src="imgs/libros-der.webp" alt="Libros flotantes decorativos del blog" class="blog-hero-main-image" />
+          <div class="blog-hero-badge badge-one">✨ Guías sencillas y útiles</div>
+          <div class="blog-hero-badge badge-two">📝 30 artículos listos para explorar</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-heading reveal-up">
+          <span class="section-tag">Explora por categoría</span>
+          <h2>Filtra el contenido según lo que necesitas</h2>
+          <p>
+            Puedes revisar solo artículos sobre tesis, apartados de investigación, APA o trabajos escolares generales.
+          </p>
+        </div>
+
+        <div class="blog-categories-wrap reveal-up">
+          <button class="blog-filter-btn active" type="button" data-filter="all">Todos</button>
+          <button class="blog-filter-btn" type="button" data-filter="tesis">Tesis</button>
+          <button class="blog-filter-btn" type="button" data-filter="apartados">Apartados de investigación</button>
+          <button class="blog-filter-btn" type="button" data-filter="apa">Formato APA</button>
+          <button class="blog-filter-btn" type="button" data-filter="trabajos">Trabajos escolares</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="destacados">
+      <div class="container">
+        <div class="section-heading reveal-up">
+          <span class="section-tag">Artículos destacados</span>
+          <h2>Empieza por los temas más buscados</h2>
+          <p>
+            Estos artículos suelen ser de los más útiles para estudiantes que están empezando una tesis o necesitan estructurar mejor sus trabajos.
+          </p>
+        </div>
+
+        <div class="blog-featured-grid">
+          <article class="blog-featured-main reveal-left">
+            <a class="blog-featured-image-wrap" href="blog/como-hacer-una-tesis.html" aria-label="Leer artículo Cómo hacer una tesis paso a paso">
+              <img src="imgs/blog-1.webp" alt="Cómo hacer una tesis paso a paso" />
+            </a>
+            <div class="blog-featured-body">
+              <span class="blog-card-category">Tesis</span>
+              <h3>Cómo hacer una tesis paso a paso</h3>
+              <p>
+                Una guía para entender la estructura general de una tesis, cómo organizar cada apartado y por dónde conviene empezar si todavía no sabes cómo aterrizar tu tema.
+              </p>
+              <a class="blog-link" href="blog/como-hacer-una-tesis.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <div class="blog-featured-side reveal-right">
+            <article class="blog-side-card">
+              <a href="blog/como-hacer-un-marco-teorico.html" aria-label="Leer artículo Cómo hacer un marco teórico paso a paso">
+                <img src="imgs/blog-02.webp" alt="Cómo hacer un marco teórico paso a paso" />
+              </a>
+              <div class="blog-side-card-body">
+                <span class="blog-card-category">Apartados de investigación</span>
+                <h3>Cómo hacer un marco teórico paso a paso</h3>
+                <p>Aprende a organizar autores, ideas y antecedentes para que tu marco teórico tenga orden y sentido.</p>
+                <a class="blog-link" href="blog/como-hacer-un-marco-teorico.html">Leer artículo</a>
+              </div>
+            </article>
+
+            <article class="blog-side-card">
+              <a href="blog/como-hacer-referencias-en-formato-apa.html" aria-label="Leer artículo Cómo hacer referencias en formato APA">
+                <img src="imgs/blog-03.webp" alt="Cómo hacer referencias en formato APA" />
+              </a>
+              <div class="blog-side-card-body">
+                <span class="blog-card-category">Formato APA</span>
+                <h3>Cómo hacer referencias en formato APA</h3>
+                <p>Una guía sencilla para entender cómo escribir referencias bibliográficas correctamente.</p>
+                <a class="blog-link" href="blog/como-hacer-referencias-en-formato-apa.html">Leer artículo</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="blog-info-strip reveal-up">
+          <div class="blog-info-grid">
+            <article class="blog-info-item">
+              <span>🎓</span>
+              <strong>Contenido para tesis y tesinas</strong>
+            </article>
+            <article class="blog-info-item">
+              <span>📄</span>
+              <strong>Explicaciones paso a paso</strong>
+            </article>
+            <article class="blog-info-item">
+              <span>✍️</span>
+              <strong>Ayuda con redacción académica</strong>
+            </article>
+            <article class="blog-info-item">
+              <span>💬</span>
+              <strong>Con apoyo directo por WhatsApp</strong>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="articulos">
+      <div class="container">
+        <div class="section-heading reveal-up">
+          <span class="section-tag">Todos los artículos</span>
+          <h2>Explora el blog completo</h2>
+          <p>
+            Aquí tienes todos los artículos organizados para que puedas encontrar con más facilidad el tema que estás buscando.
+          </p>
+        </div>
+
+        <div class="blog-grid">
+          <article class="blog-card reveal-up" data-category="tesis">
+            <a href="blog/como-hacer-una-tesis.html"><img src="imgs/blog-1.webp" alt="Cómo hacer una tesis paso a paso" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Tesis</span></div>
+              <h3>Cómo hacer una tesis paso a paso</h3>
+              <p>Guía general para entender la estructura y el proceso de elaboración de una tesis.</p>
+              <a class="blog-link" href="blog/como-hacer-una-tesis.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="apartados">
+            <a href="blog/como-hacer-un-marco-teorico.html"><img src="imgs/blog-02.webp" alt="Cómo hacer un marco teórico paso a paso" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Apartados de investigación</span></div>
+              <h3>Cómo hacer un marco teórico paso a paso</h3>
+              <p>Consejos para organizar autores, teorías y antecedentes dentro de tu investigación.</p>
+              <a class="blog-link" href="blog/como-hacer-un-marco-teorico.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="apartados">
+            <a href="blog/como-hacer-una-introduccion-para-tesis.html"><img src="imgs/blog-03.webp" alt="Cómo hacer una introducción para tesis" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Apartados de investigación</span></div>
+              <h3>Cómo hacer una introducción para tesis</h3>
+              <p>Aprende qué incluir en una introducción y cómo redactarla de forma clara.</p>
+              <a class="blog-link" href="blog/como-hacer-una-introduccion-para-tesis.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="apartados">
+            <a href="blog/como-redactar-objetivos-de-investigacion.html"><img src="imgs/blog-04.webp" alt="Cómo redactar objetivos de investigación" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Apartados de investigación</span></div>
+              <h3>Cómo redactar objetivos de investigación</h3>
+              <p>Descubre cómo formular objetivos claros, coherentes y bien enfocados.</p>
+              <a class="blog-link" href="blog/como-redactar-objetivos-de-investigacion.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="apartados">
+            <a href="blog/como-hacer-un-planteamiento-del-problema.html"><img src="imgs/blog-05.webp" alt="Cómo hacer un planteamiento del problema" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Apartados de investigación</span></div>
+              <h3>Cómo hacer un planteamiento del problema</h3>
+              <p>Una guía para explicar con claridad la situación que origina tu investigación.</p>
+              <a class="blog-link" href="blog/como-hacer-un-planteamiento-del-problema.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="apartados">
+            <a href="blog/como-hacer-una-justificacion-de-tesis.html"><img src="imgs/blog-06.webp" alt="Cómo hacer una justificación de tesis" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Apartados de investigación</span></div>
+              <h3>Cómo hacer una justificación de tesis</h3>
+              <p>Aprende a explicar por qué tu tema vale la pena y para qué puede servir.</p>
+              <a class="blog-link" href="blog/como-hacer-una-justificacion-de-tesis.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="apartados">
+            <a href="blog/como-hacer-hipotesis-de-investigacion.html"><img src="imgs/blog-07.webp" alt="Cómo hacer hipótesis de investigación" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Apartados de investigación</span></div>
+              <h3>Cómo hacer hipótesis de investigación</h3>
+              <p>Guía para redactar hipótesis de forma lógica y relacionada con tu problema.</p>
+              <a class="blog-link" href="blog/como-hacer-hipotesis-de-investigacion.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="tesis">
+            <a href="blog/como-elegir-un-tema-de-tesis.html"><img src="imgs/blog-08.webp" alt="Cómo elegir un tema de tesis" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Tesis</span></div>
+              <h3>Cómo elegir un tema de tesis</h3>
+              <p>Ideas para encontrar un tema que sí puedas desarrollar y que tenga sentido para tu carrera.</p>
+              <a class="blog-link" href="blog/como-elegir-un-tema-de-tesis.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="apartados">
+            <a href="blog/como-hacer-la-metodologia-de-una-investigacion.html"><img src="imgs/blog-09.webp" alt="Cómo hacer la metodología de una investigación" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Apartados de investigación</span></div>
+              <h3>Cómo hacer la metodología de una investigación</h3>
+              <p>Entiende cómo describir el tipo de estudio, enfoque, técnicas e instrumentos.</p>
+              <a class="blog-link" href="blog/como-hacer-la-metodologia-de-una-investigacion.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="apartados">
+            <a href="blog/como-hacer-conclusiones-de-una-tesis.html"><img src="imgs/blog-10.webp" alt="Cómo hacer conclusiones de una tesis" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Apartados de investigación</span></div>
+              <h3>Cómo hacer conclusiones de una tesis</h3>
+              <p>Aprende a cerrar tu trabajo retomando objetivos, resultados y aportes.</p>
+              <a class="blog-link" href="blog/como-hacer-conclusiones-de-una-tesis.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="apa">
+            <a href="blog/como-hacer-referencias-en-formato-apa.html"><img src="imgs/blog-11.webp" alt="Cómo hacer referencias en formato APA" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Formato APA</span></div>
+              <h3>Cómo hacer referencias en formato APA</h3>
+              <p>Conoce la estructura básica de referencias para libros, artículos, tesis y páginas web.</p>
+              <a class="blog-link" href="blog/como-hacer-referencias-en-formato-apa.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="apa">
+            <a href="blog/como-citar-en-apa-dentro-del-texto.html"><img src="imgs/blog-12.webp" alt="Cómo citar en APA dentro del texto" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Formato APA</span></div>
+              <h3>Cómo citar en APA dentro del texto</h3>
+              <p>Aprende cuándo usar autor, año, cita textual o parafraseo dentro del contenido.</p>
+              <a class="blog-link" href="blog/como-citar-en-apa-dentro-del-texto.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="tesis">
+            <a href="blog/como-hacer-una-tesina-paso-a-paso.html"><img src="imgs/blog-13.webp" alt="Cómo hacer una tesina paso a paso" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Tesis</span></div>
+              <h3>Cómo hacer una tesina paso a paso</h3>
+              <p>Guía para entender la estructura de una tesina y cómo organizarla bien.</p>
+              <a class="blog-link" href="blog/como-hacer-una-tesina-paso-a-paso.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="tesis">
+            <a href="blog/como-hacer-un-protocolo-de-investigacion.html"><img src="imgs/blog-14.webp" alt="Cómo hacer un protocolo de investigación" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Tesis</span></div>
+              <h3>Cómo hacer un protocolo de investigación</h3>
+              <p>Conoce qué apartados suele llevar un protocolo y cómo estructurarlo.</p>
+              <a class="blog-link" href="blog/como-hacer-un-protocolo-de-investigacion.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="apartados">
+            <a href="blog/como-hacer-un-estado-del-arte.html"><img src="imgs/blog-15.webp" alt="Cómo hacer un estado del arte" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Apartados de investigación</span></div>
+              <h3>Cómo hacer un estado del arte</h3>
+              <p>Descubre cómo revisar investigaciones previas y organizarlas dentro de tu trabajo.</p>
+              <a class="blog-link" href="blog/como-hacer-un-estado-del-arte.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="apartados">
+            <a href="blog/como-hacer-antecedentes-de-investigacion.html"><img src="imgs/blog-16.webp" alt="Cómo hacer antecedentes de investigación" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Apartados de investigación</span></div>
+              <h3>Cómo hacer antecedentes de investigación</h3>
+              <p>Aprende a seleccionar y redactar estudios previos relacionados con tu tema.</p>
+              <a class="blog-link" href="blog/como-hacer-antecedentes-de-investigacion.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="apartados">
+            <a href="blog/como-hacer-una-pregunta-de-investigacion.html"><img src="imgs/blog-17.webp" alt="Cómo hacer una pregunta de investigación" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Apartados de investigación</span></div>
+              <h3>Cómo hacer una pregunta de investigación</h3>
+              <p>Consejos para formular una pregunta clara, delimitada y útil para tu estudio.</p>
+              <a class="blog-link" href="blog/como-hacer-una-pregunta-de-investigacion.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="apartados">
+            <a href="blog/como-delimitar-un-tema-de-investigacion.html"><img src="imgs/blog-18.webp" alt="Cómo delimitar un tema de investigación" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Apartados de investigación</span></div>
+              <h3>Cómo delimitar un tema de investigación</h3>
+              <p>Aprende a acotar el tema para que sea más realista y fácil de desarrollar.</p>
+              <a class="blog-link" href="blog/como-delimitar-un-tema-de-investigacion.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="apartados">
+            <a href="blog/como-hacer-resultados-y-discusion-en-una-tesis.html"><img src="imgs/blog-19.webp" alt="Cómo hacer resultados y discusión en una tesis" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Apartados de investigación</span></div>
+              <h3>Cómo hacer resultados y discusión en una tesis</h3>
+              <p>Entiende cómo presentar hallazgos e interpretarlos dentro de tu trabajo.</p>
+              <a class="blog-link" href="blog/como-hacer-resultados-y-discusion-en-una-tesis.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="apartados">
+            <a href="blog/como-hacer-un-marco-conceptual.html"><img src="imgs/blog-20.webp" alt="Cómo hacer un marco conceptual" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Apartados de investigación</span></div>
+              <h3>Cómo hacer un marco conceptual</h3>
+              <p>Guía para definir conceptos clave y explicar su relación con el tema.</p>
+              <a class="blog-link" href="blog/como-hacer-un-marco-conceptual.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="tesis">
+            <a href="blog/como-hacer-un-indice-para-tesis.html"><img src="imgs/blog-21.webp" alt="Cómo hacer un índice para tesis" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Tesis</span></div>
+              <h3>Cómo hacer un índice para tesis</h3>
+              <p>Consejos para organizar apartados y subapartados de forma lógica.</p>
+              <a class="blog-link" href="blog/como-hacer-un-indice-para-tesis.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="tesis">
+            <a href="blog/como-empezar-una-tesis-desde-cero.html"><img src="imgs/blog-22.webp" alt="Cómo empezar una tesis desde cero" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Tesis</span></div>
+              <h3>Cómo empezar una tesis desde cero</h3>
+              <p>Una guía pensada para estudiantes que todavía no saben por dónde arrancar.</p>
+              <a class="blog-link" href="blog/como-empezar-una-tesis-desde-cero.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="trabajos">
+            <a href="blog/como-hacer-un-ensayo-paso-a-paso.html"><img src="imgs/blog-23.webp" alt="Cómo hacer un ensayo paso a paso" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Trabajos escolares</span></div>
+              <h3>Cómo hacer un ensayo paso a paso</h3>
+              <p>Aprende a estructurar introducción, desarrollo y conclusión dentro de un ensayo.</p>
+              <a class="blog-link" href="blog/como-hacer-un-ensayo-paso-a-paso.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="trabajos">
+            <a href="blog/como-hacer-una-monografia.html"><img src="imgs/blog-24.webp" alt="Cómo hacer una monografía" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Trabajos escolares</span></div>
+              <h3>Cómo hacer una monografía</h3>
+              <p>Descubre cómo desarrollar una monografía con mejor orden y profundidad.</p>
+              <a class="blog-link" href="blog/como-hacer-una-monografia.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="trabajos">
+            <a href="blog/como-hacer-un-mapa-conceptual.html"><img src="imgs/blog-25.webp" alt="Cómo hacer un mapa conceptual" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Trabajos escolares</span></div>
+              <h3>Cómo hacer un mapa conceptual</h3>
+              <p>Guía sencilla para organizar ideas y conectarlas visualmente.</p>
+              <a class="blog-link" href="blog/como-hacer-un-mapa-conceptual.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="trabajos">
+            <a href="blog/como-hacer-un-cuadro-comparativo.html"><img src="imgs/blog-26.webp" alt="Cómo hacer un cuadro comparativo" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Trabajos escolares</span></div>
+              <h3>Cómo hacer un cuadro comparativo</h3>
+              <p>Aprende a contrastar información de forma clara y bien ordenada.</p>
+              <a class="blog-link" href="blog/como-hacer-un-cuadro-comparativo.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="trabajos">
+            <a href="blog/como-hacer-una-resena-critica.html"><img src="imgs/blog-27.webp" alt="Cómo hacer una reseña crítica" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Trabajos escolares</span></div>
+              <h3>Cómo hacer una reseña crítica</h3>
+              <p>Consejos para resumir, analizar y opinar sobre un texto o contenido.</p>
+              <a class="blog-link" href="blog/como-hacer-una-resena-critica.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="trabajos">
+            <a href="blog/como-hacer-una-conclusion-para-un-trabajo.html"><img src="imgs/blog-28.webp" alt="Cómo hacer una conclusión para un trabajo" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Trabajos escolares</span></div>
+              <h3>Cómo hacer una conclusión para un trabajo</h3>
+              <p>Aprende a cerrar tus trabajos retomando ideas principales sin repetir demasiado.</p>
+              <a class="blog-link" href="blog/como-hacer-una-conclusion-para-un-trabajo.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="trabajos">
+            <a href="blog/como-hacer-una-introduccion-para-un-trabajo.html"><img src="imgs/blog-29.webp" alt="Cómo hacer una introducción para un trabajo" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Trabajos escolares</span></div>
+              <h3>Cómo hacer una introducción para un trabajo</h3>
+              <p>Guía rápida para redactar una introducción clara, breve y bien enfocada.</p>
+              <a class="blog-link" href="blog/como-hacer-una-introduccion-para-un-trabajo.html">Leer artículo</a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" data-category="trabajos">
+            <a href="blog/como-hacer-un-reporte-de-lectura.html"><img src="imgs/blog-30.webp" alt="Cómo hacer un reporte de lectura" /></a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta"><span class="blog-meta-chip">Trabajos escolares</span></div>
+              <h3>Cómo hacer un reporte de lectura</h3>
+              <p>Descubre cómo resumir, organizar y comentar una lectura de forma correcta.</p>
+              <a class="blog-link" href="blog/como-hacer-un-reporte-de-lectura.html">Leer artículo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta section">
+      <div class="container final-cta-grid">
+        <div class="final-cta-content reveal-left">
+          <span class="section-tag">¿Necesitas ayuda con tu trabajo?</span>
+          <h2>Si tu tesis, tarea o proyecto ya te está rebasando, escríbeme</h2>
+          <p>
+            Puedes mandarme tu actividad por WhatsApp y revisamos si te puedo apoyar según la fecha de entrega, el tipo de trabajo y el nivel que necesitas.
+          </p>
+          <div class="blog-hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/528116718765" target="_blank" rel="noopener noreferrer">Enviar mensaje por WhatsApp</a>
+            <a class="btn btn-secondary" href="mailto:daenna2001@gmail.com">Enviar correo</a>
+          </div>
+        </div>
+        <div class="final-cta-visual reveal-right">
+          <img src="imgs/logo-cohete.webp" alt="Personaje decorativo" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="seo-hidden">
+    <h2>Blog de tesis, formato APA y trabajos escolares</h2>
+    <p>
+      En el blog de Te Hago La Tarea compartimos artículos sobre cómo hacer una tesis, cómo redactar un marco teórico, cómo escribir objetivos de investigación, cómo usar formato APA y cómo desarrollar distintos trabajos escolares paso a paso.
+    </p>
+    <h2>Artículos sobre investigación académica</h2>
+    <p>
+      Aquí puedes encontrar contenido útil sobre metodología, antecedentes, hipótesis, conclusiones, estado del arte, introducciones y otros apartados importantes de la investigación académica.
+    </p>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <img src="imgs/logo-horizontal.webp" alt="Logo horizontal Te Hago La Tarea" class="footer-logo" />
+        <p>
+          Tu apoyo académico de confianza en Monterrey. Tareas, proyectos, tesis, presentaciones e investigaciones con atención personalizada.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Enlaces</h4>
+        <a href="index.html#inicio">Inicio</a>
+        <a href="index.html#servicios">Servicios</a>
+        <a href="index.html#areas">Carreras y materias</a>
+        <a href="index.html#niveles">Niveles</a>
+        <a href="index.html#evidencias">Evidencias</a>
+        <a href="index.html#contacto">Contacto</a>
+        <a href="blog.html">Blog</a>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <a href="https://wa.me/528116718765" target="_blank" rel="noopener noreferrer">WhatsApp: +52 81 1671 8765</a>
+        <a href="mailto:daenna2001@gmail.com">daenna2001@gmail.com</a>
+        <a href="https://www.facebook.com/tehagolatarea.daenna" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <span class="footer-location">Monterrey, Nuevo León, México</span>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <p>© 2026 Te Hago La Tarea. Todos los derechos reservados.</p>
+        <p>By Daenna González</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const revealItems = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right');
+      const menuToggle = document.getElementById('menuToggle');
+      const mainNav = document.getElementById('mainNav');
+      const mainHeader = document.getElementById('mainHeader');
+      const filterButtons = document.querySelectorAll('.blog-filter-btn');
+      const blogCards = document.querySelectorAll('.blog-card');
+
+      revealItems.forEach((el) => el.classList.add('reveal-visible'));
+
+      if (menuToggle && mainNav) {
+        menuToggle.addEventListener('click', function () {
+          const isOpen = mainNav.classList.toggle('open');
+          menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+          document.body.classList.toggle('menu-open', isOpen);
+        });
+
+        mainNav.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', function () {
+            mainNav.classList.remove('open');
+            document.body.classList.remove('menu-open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 20) {
+          mainHeader.classList.add('is-scrolled');
+        } else {
+          mainHeader.classList.remove('is-scrolled');
+        }
+      });
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function () {
+          const filter = this.getAttribute('data-filter');
+
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          this.classList.add('active');
+
+          blogCards.forEach(card => {
+            const category = card.getAttribute('data-category');
+            const shouldShow = filter === 'all' || category === filter;
+            card.classList.toggle('hidden-by-filter', !shouldShow);
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
