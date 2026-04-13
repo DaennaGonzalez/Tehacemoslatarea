@@ -3,30 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hacer tareas | Ayuda para secundaria, preparatoria, bachillerato y universidad | Te Hago La Tarea</title>
+  <title>¿No entiendes tu tarea? Te ayudo con tareas, tesis y proyectos | Te Hago La Tarea</title>
+  <!-- Open Graph para Facebook -->
+<meta property="og:title" content="¿No le entiendes a tu tarea? ¡Yo te ayudo!">
+<meta property="og:description" content="Tareas, tesis, proyectos y presentaciones. Apoyo académico profesional con entrega puntual y 100% confidencial.">
+<meta property="og:image" content="https://tehagolatarea.com/imgs/preview.jpg">
+<meta property="og:url" content="https://tehagolatarea.com">
+<meta property="og:type" content="website">
 
-  <meta name="description" content="Te ayudo con tareas de secundaria, preparatoria, bachillerato y universidad. Trabajos, investigaciones, ejercicios, presentaciones y actividades en línea con atención personalizada en Monterrey y todo México.">
+<meta property="fb:app_id" content="1461844285322192">
+
+<meta name="description" content="¿No entiendes tu tarea? Te ayudo con tareas, tesis, proyectos y presentaciones. Trabajos académicos personalizados, sin plagio y entrega puntual en Monterrey y todo México. Escríbeme por WhatsApp.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://tehagolatarea.com/hacer-tareas.html" />
-
-  <meta property="og:title" content="Hacer tareas | Secundaria, preparatoria, bachillerato y universidad">
-  <meta property="og:description" content="Ayuda con tareas, trabajos, investigaciones, ejercicios y presentaciones. Atención personalizada y entrega puntual.">
-  <meta property="og:image" content="https://tehagolatarea.com/imgs/preview.jpg">
-  <meta property="og:url" content="https://tehagolatarea.com/hacer-tareas.html">
-  <meta property="og:type" content="website">
-
   <script>
     document.documentElement.classList.remove('no-js');
     document.documentElement.classList.add('js');
   </script>
 
+  <!-- Fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/webp" href="imgs/logo-principal.webp">
+  <!-- Hoja de estilos -->
   <link rel="stylesheet" href="styles.css" />
 
+
+  <meta property="og:image" content="https://tehagolatarea.com/imgs/preview.jpg">
+
+
+  <!-- Fallback visual para que se vea aunque aún no cargues el JS completo -->
   <style>
     .no-js .reveal-up,
     .no-js .reveal-left,
@@ -46,7 +53,7 @@
 
   <header class="main-header">
     <div class="container header-container">
-      <a href="index.html#inicio" class="brand" aria-label="Ir al inicio">
+      <a href="#inicio" class="brand" aria-label="Ir al inicio">
         <img src="imgs/logo-principal.webp" alt="Logo Te Hago La Tarea" class="brand-logo" />
       </a>
 
@@ -57,14 +64,15 @@
       </button>
 
       <nav class="main-nav" id="mainNav">
-        <a href="index.html#inicio">Inicio</a>
-        <a href="index.html#servicios">Servicios</a>
-        <a href="index.html#areas">Carreras y materias</a>
-        <a href="hacer-tareas.html" aria-current="page">Hacer tareas</a>
-        <a href="tesis.html">Tesis</a>
-        <a href="ayuda-con-tareas.html">Ayuda con tareas</a>
-        <a href="proyectos-universidad.html">Proyectos universidad</a>
-        <a href="index.html#contacto">Contacto</a>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#areas">Carreras y materias</a>
+        <a href="#niveles">Niveles</a>
+        <a href="#evidencias">Evidencias</a>
+        <a href="#resenas">Reseñas</a>
+        <a href="#proceso">Cómo funciona</a>
+        <a href="#contacto">Contacto</a>
+        <a href="blog.html">Blog</a>
       </nav>
 
       <div class="header-actions">
@@ -73,274 +81,872 @@
     </div>
   </header>
 
-  <main class="service-alt-page">
+  <main>
 
-    <section class="service-alt-hero section" id="inicio">
-      <div class="container service-alt-hero-grid">
-        <div class="service-alt-copy reveal-left">
-          <span class="section-tag">Ayuda con tareas en línea</span>
-          <h1>Apoyo para hacer tareas, trabajos, ejercicios e investigaciones</h1>
-          <p class="service-alt-lead">
-            Si tienes una actividad pendiente y no sabes por dónde empezar, aquí puedes recibir apoyo con tareas escolares y universitarias. Se revisan instrucciones, tiempo de entrega, dificultad y tipo de materia para confirmar si sí se puede trabajar.
+    
+<!-- HERO -->
+<section class="hero section" id="inicio">
+  <div class="container hero-grid">
+    <div class="hero-badge textured-card texture-cuadro reveal-up">
+      <span>🤓💻 Tu apoyo académico de confianza</span>
+    </div>
+
+    <div class="hero-content reveal-up">
+      <h1>
+        <span>¿No le entiendes a tu tarea?</span>
+        <strong>¡No te estreses! Yo te ayudo.</strong>
+      </h1>
+    </div>
+
+    <div class="hero-main reveal-up">
+      <div class="hero-visual-wrap">
+        
+        <img src="imgs/libros-izq.webp" alt="" class="hero-libro hero-libro-izq" aria-hidden="true">
+<img src="imgs/libros-der.webp" alt="" class="hero-libro hero-libro-der" aria-hidden="true">
+
+        <div class="hero-bubble bubble-top-left reveal-up">
+          <strong>4.9/5.0</strong>
+          <span>Calificación promedio</span>
+        </div>
+
+        <div class="hero-bubble bubble-top-right reveal-up">
+          <strong>+10,000</strong>
+          <span>estudiantes felices</span>
+        </div>
+
+        <div class="hero-bubble bubble-left-middle reveal-up">
+          <strong>100%</strong>
+          <span>confidencial</span>
+        </div>
+
+        <div class="hero-bubble bubble-right-middle reveal-up">
+          <strong>Entrega</strong>
+          <span>puntual</span>
+        </div>
+
+        <div class="hero-bubble bubble-bottom-left reveal-up">
+          <strong>Anti-plagio</strong>
+          <span>e IA</span>
+        </div>
+
+        <div class="hero-bubble bubble-bottom-right reveal-up">
+          <strong>Puntualidad</strong>
+          <span>garantizada</span>
+        </div>
+
+        <a
+          class="hero-bubble hero-bubble-social bubble-facebook reveal-up"
+          href="https://www.facebook.com/tehagolatarea.daenna"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook Te Hago La Tarea"
+        >
+          <img src="imgs/logo-facebook.png" alt="Facebook" />
+          <span>Facebook</span>
+        </a>
+
+        <div class="hero-student-wrap reveal-up">
+          <img
+            src="imgs/estudiante-estresado.webp"
+            alt="Estudiante estresado"
+            class="hero-student-alone"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-bottom reveal-up">
+      <p class="hero-text hero-text-main">
+        Tareas, proyectos, tesis, presentaciones, investigaciones y mucho más.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://wa.me/528116718765" target="_blank" rel="noopener noreferrer">
+          Enviar mensaje por WhatsApp
+        </a>
+        <a class="btn btn-secondary" href="#servicios">Ver servicios</a>
+      </div>
+
+      <ul class="hero-features">
+        <li>8 años de experiencia</li>
+        <li>Atención desde Monterrey</li>
+        <li>Trabajos personalizados</li>
+      </ul>
+    </div>
+  </div>
+
+
+</section>
+
+
+
+
+   <section class="trust-strip section section-light">
+  <div class="trust-wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 220" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      
+      <!-- capa superior: será el color del hero -->
+      <path
+        class="trust-wave-top"
+        d="M0,0H1440V0
+           C1320,0 1200,0 1080,0
+           C960,0 840,0 720,0
+           C600,0 480,0 360,0
+           C240,0 120,0 0,0
+           Z" />
+
+      <!-- capa inferior: será el color de la sección de abajo -->
+      <path
+        class="trust-wave-bottom"
+        d="M0,110
+           C120,85 220,55 360,78
+           C520,104 610,176 760,168
+           C900,160 1010,92 1150,88
+           C1280,84 1360,118 1440,106
+           L1440,220
+           L0,220
+           Z" />
+    </svg>
+  </div>
+
+  <div class="container">
+    <div class="trust-grid">
+      <article class="trust-item reveal-up"><span>✅</span><strong>8 años de experiencia</strong></article>
+      <article class="trust-item reveal-up"><span>📲</span><strong>Atención por WhatsApp</strong></article>
+      <article class="trust-item reveal-up"><span>💬</span><strong>Cotización sin compromiso</strong></article>
+      <article class="trust-item reveal-up"><span>🎓</span><strong>Múltiples áreas académicas</strong></article>
+      <article class="trust-item reveal-up"><span>✨</span><strong>Clientes satisfechos</strong></article>
+    </div>
+  </div>
+</section>
+
+    
+    <section class="areas section" id="areas">
+      <div class="container">
+        <div class="section-heading reveal-up">
+          <span class="section-tag">Carreras, áreas y materias</span>
+          <h2>Manejamos muchísimas áreas académicas</h2>
+          <p>
+            Da clic en cada categoría para ver el listado completo de materias. Si no se encuentra alguna de tu interés, manda mensaje.
           </p>
+        </div>
 
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="https://wa.me/528116718765" target="_blank" rel="noopener noreferrer">Pedir ayuda por WhatsApp</a>
-            <a class="btn btn-secondary" href="#niveles-apoyo">Ver niveles</a>
+        <div class="accordion-list">
+          <article class="accordion-item reveal-up">
+            <button class="accordion-trigger" type="button">
+              <span class="accordion-title-wrap">
+                <img src="imgs/icono-metodologia.webp" alt="Icono" class="accordion-icon" />
+                <span>Metodología de la investigación y tesis</span>
+              </span>
+              <span class="accordion-arrow">+</span>
+            </button>
+            <div class="accordion-content">
+              <ul>
+                <li>Metodología de la investigación (cuantitativa, cualitativa y mixta)</li>
+                <li>Planteamiento del problema</li>
+                <li>Justificación, delimitación y objetivos</li>
+                <li>Marco teórico y estado del arte</li>
+                <li>Diseño metodológico</li>
+                <li>Instrumentos de investigación (encuestas, entrevistas, etc.)</li>
+                <li>Análisis e interpretación de resultados</li>
+                <li>Discusión y conclusiones</li>
+                <li>Elaboración completa de tesis (licenciatura, maestría)</li>
+                <li>Artículos científicos y papers</li>
+                <li>Protocolos de investigación</li>
+                <li>Corrección de estilo y redacción académica</li>
+                <li>Formato APA, IEEE, Vancouver, Chicago</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="accordion-item reveal-up">
+            <button class="accordion-trigger" type="button">
+              <span class="accordion-title-wrap">
+                <img src="imgs/icono-matematicas.webp" alt="Icono" class="accordion-icon" />
+                <span>Matemáticas, estadística y análisis cuantitativo</span>
+              </span>
+              <span class="accordion-arrow">+</span>
+            </button>
+            <div class="accordion-content">
+              <ul>
+                <li>Matemáticas básicas y avanzadas</li>
+                <li>Álgebra</li>
+                <li>Geometría y trigonometría</li>
+                <li>Cálculo diferencial e integral</li>
+                <li>Ecuaciones diferenciales</li>
+                <li>Probabilidad</li>
+                <li>Estadística descriptiva e inferencial</li>
+                <li>Regresión y correlación</li>
+                <li>Análisis multivariado</li>
+                <li>Series de tiempo</li>
+                <li>Matemáticas financieras</li>
+                <li>Interés simple y compuesto</li>
+                <li>Anualidades</li>
+                <li>Amortización y tablas financieras</li>
+                <li>Valor presente y futuro</li>
+                <li>Investigación de operaciones</li>
+                <li>Modelos matemáticos</li>
+                <li>Uso de software (Excel, SPSS, R, Python)</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="accordion-item reveal-up">
+            <button class="accordion-trigger" type="button">
+              <span class="accordion-title-wrap">
+                <img src="imgs/icono-administracion.webp" alt="Icono" class="accordion-icon" />
+                <span>Administración de empresas</span>
+              </span>
+              <span class="accordion-arrow">+</span>
+            </button>
+            <div class="accordion-content">
+              <ul>
+                <li>Administración general</li>
+                <li>Planeación estratégica</li>
+                <li>Organización empresarial</li>
+                <li>Dirección y liderazgo</li>
+                <li>Control administrativo</li>
+                <li>Desarrollo organizacional</li>
+                <li>Cultura organizacional</li>
+                <li>Gestión del talento humano</li>
+                <li>Comportamiento organizacional</li>
+                <li>Toma de decisiones</li>
+                <li>Emprendimiento</li>
+                <li>Planes de negocio</li>
+                <li>Gestión de proyectos</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="accordion-item reveal-up">
+            <button class="accordion-trigger" type="button">
+              <span class="accordion-title-wrap">
+                <img src="imgs/icono-finanzas.webp" alt="Icono" class="accordion-icon" />
+                <span>Contaduría y finanzas</span>
+              </span>
+              <span class="accordion-arrow">+</span>
+            </button>
+            <div class="accordion-content">
+              <ul>
+                <li>Contabilidad financiera</li>
+                <li>Contabilidad administrativa</li>
+                <li>Contabilidad de costos</li>
+                <li>Estados financieros</li>
+                <li>Balance general</li>
+                <li>Estado de resultados</li>
+                <li>Flujo de efectivo</li>
+                <li>Análisis financiero</li>
+                <li>Presupuestos</li>
+                <li>Auditoría</li>
+                <li>Impuestos (ISR, IVA, etc.)</li>
+                <li>Finanzas corporativas</li>
+                <li>Evaluación de proyectos</li>
+                <li>Costeo ABC</li>
+                <li>Control interno</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="accordion-item reveal-up">
+            <button class="accordion-trigger" type="button">
+              <span class="accordion-title-wrap">
+                <img src="imgs/icono-derecho.webp" alt="Icono" class="accordion-icon" />
+                <span>Derecho</span>
+              </span>
+              <span class="accordion-arrow">+</span>
+            </button>
+            <div class="accordion-content">
+              <ul>
+                <li>Derecho civil</li>
+                <li>Derecho penal</li>
+                <li>Derecho laboral</li>
+                <li>Derecho mercantil</li>
+                <li>Derecho constitucional</li>
+                <li>Derecho fiscal</li>
+                <li>Derecho administrativo</li>
+                <li>Derecho internacional</li>
+                <li>Elaboración de contratos</li>
+                <li>Demandas y escritos legales</li>
+                <li>Análisis de casos jurídicos</li>
+                <li>Argumentación jurídica</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="accordion-item reveal-up">
+            <button class="accordion-trigger" type="button">
+              <span class="accordion-title-wrap">
+                <img src="imgs/icono-industrial.webp" alt="Icono" class="accordion-icon" />
+                <span>Ingeniería industrial</span>
+              </span>
+              <span class="accordion-arrow">+</span>
+            </button>
+            <div class="accordion-content">
+              <ul>
+                <li>Ingeniería de métodos</li>
+                <li>Estudio del trabajo</li>
+                <li>Diseño de procesos</li>
+                <li>Logística</li>
+                <li>Cadena de suministro</li>
+                <li>Control de calidad</li>
+                <li>Lean Manufacturing</li>
+                <li>Six Sigma</li>
+                <li>Planeación de la producción</li>
+                <li>Simulación de sistemas</li>
+                <li>Ergonomía</li>
+                <li>Seguridad e higiene</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="accordion-item reveal-up">
+            <button class="accordion-trigger" type="button">
+              <span class="accordion-title-wrap">
+                <img src="imgs/icono-sistemas.webp" alt="Icono" class="accordion-icon" />
+                <span>Ingeniería en sistemas / software / TI</span>
+              </span>
+              <span class="accordion-arrow">+</span>
+            </button>
+            <div class="accordion-content">
+              <ul>
+                <li>Programación (Java, Python, C++, JavaScript)</li>
+                <li>Desarrollo web (HTML, CSS, JS)</li>
+                <li>Desarrollo backend y frontend</li>
+                <li>Bases de datos (SQL, PostgreSQL, MySQL)</li>
+                <li>Ingeniería de software</li>
+                <li>Análisis de sistemas</li>
+                <li>Desarrollo de apps móviles</li>
+                <li>Inteligencia artificial</li>
+                <li>Machine Learning</li>
+                <li>Ciberseguridad</li>
+                <li>DevOps</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="accordion-item reveal-up">
+            <button class="accordion-trigger" type="button">
+              <span class="accordion-title-wrap">
+                <img src="imgs/icono-disenografico.webp" alt="Icono" class="accordion-icon" />
+                <span>Diseño gráfico y multimedia</span>
+              </span>
+              <span class="accordion-arrow">+</span>
+            </button>
+            <div class="accordion-content">
+              <ul>
+                <li>Diseño gráfico</li>
+                <li>Branding e identidad corporativa</li>
+                <li>Diseño publicitario</li>
+                <li>Edición de imágenes</li>
+                <li>UX/UI</li>
+                <li>Animación</li>
+                <li>Video y edición audiovisual</li>
+                <li>Presentaciones profesionales</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="accordion-item reveal-up">
+            <button class="accordion-trigger" type="button">
+              <span class="accordion-title-wrap">
+                <img src="imgs/icono-salud.webp" alt="Icono" class="accordion-icon" />
+                <span>Enfermería y ciencias de la salud</span>
+              </span>
+              <span class="accordion-arrow">+</span>
+            </button>
+            <div class="accordion-content">
+              <ul>
+                <li>Proceso de atención de enfermería (PAE)</li>
+                <li>Casos clínicos</li>
+                <li>Anatomía y fisiología</li>
+                <li>Farmacología</li>
+                <li>Microbiología</li>
+                <li>Bioética</li>
+                <li>Salud pública</li>
+                <li>Enfermería comunitaria</li>
+                <li>Cuidados intensivos</li>
+                <li>Pediatría y geriatría</li>
+                <li>Epidemiología</li>
+                <li>Planes de cuidado</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="accordion-item reveal-up">
+            <button class="accordion-trigger" type="button">
+              <span class="accordion-title-wrap">
+                <img src="imgs/icono-psicologia.webp" alt="Icono" class="accordion-icon" />
+                <span>Psicología</span>
+              </span>
+              <span class="accordion-arrow">+</span>
+            </button>
+            <div class="accordion-content">
+              <ul>
+                <li>Psicología clínica</li>
+                <li>Psicología social</li>
+                <li>Psicología organizacional</li>
+                <li>Psicometría</li>
+                <li>Evaluaciones psicológicas</li>
+                <li>Desarrollo humano</li>
+                <li>Intervención psicológica</li>
+                <li>Pruebas psicométricas</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="accordion-item reveal-up">
+            <button class="accordion-trigger" type="button">
+              <span class="accordion-title-wrap">
+                <img src="imgs/icono-pedagogia.webp" alt="Icono" class="accordion-icon" />
+                <span>Educación y pedagogía</span>
+              </span>
+              <span class="accordion-arrow">+</span>
+            </button>
+            <div class="accordion-content">
+              <ul>
+                <li>Planeaciones didácticas</li>
+                <li>Estrategias de enseñanza</li>
+                <li>Evaluación educativa</li>
+                <li>Diseño curricular</li>
+                <li>Educación por competencias</li>
+                <li>Material didáctico</li>
+                <li>Proyectos educativos</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="accordion-item reveal-up">
+            <button class="accordion-trigger" type="button">
+              <span class="accordion-title-wrap">
+                <img src="imgs/icono-economia.webp" alt="Icono" class="accordion-icon" />
+                <span>Economía y negocios internacionales</span>
+              </span>
+              <span class="accordion-arrow">+</span>
+            </button>
+            <div class="accordion-content">
+              <ul>
+                <li>Microeconomía</li>
+                <li>Macroeconomía</li>
+                <li>Comercio internacional</li>
+                <li>Globalización</li>
+                <li>Política económica</li>
+                <li>Finanzas internacionales</li>
+                <li>Análisis de mercados</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="accordion-item reveal-up">
+            <button class="accordion-trigger" type="button">
+              <span class="accordion-title-wrap">
+                <img src="imgs/icono-ingenieria.webp" alt="Icono" class="accordion-icon" />
+                <span>Ingenierías y otras áreas técnicas</span>
+              </span>
+              <span class="accordion-arrow">+</span>
+            </button>
+            <div class="accordion-content">
+              <ul>
+                <li>Ingeniería civil</li>
+                <li>Ingeniería mecánica</li>
+                <li>Ingeniería eléctrica</li>
+                <li>Ingeniería electrónica</li>
+                <li>Ingeniería química</li>
+                <li>Diagramas técnicos</li>
+                <li>Simulaciones</li>
+                <li>Cálculos estructurales básicos</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="accordion-item reveal-up">
+            <button class="accordion-trigger" type="button">
+              <span class="accordion-title-wrap">
+                <img src="imgs/icono-filosofia.webp" alt="Icono" class="accordion-icon" />
+                <span>Humanidades y filosofía</span>
+              </span>
+              <span class="accordion-arrow">+</span>
+            </button>
+            <div class="accordion-content">
+              <ul>
+                <li>Filosofía</li>
+                <li>Ética</li>
+                <li>Lógica</li>
+                <li>Historia</li>
+                <li>Literatura</li>
+                <li>Ensayos argumentativos</li>
+                <li>Análisis crítico</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="accordion-item reveal-up">
+            <button class="accordion-trigger" type="button">
+              <span class="accordion-title-wrap">
+                <img src="imgs/icono-idiomas.webp" alt="Icono" class="accordion-icon" />
+                <span>Idiomas y redacción</span>
+              </span>
+              <span class="accordion-arrow">+</span>
+            </button>
+            <div class="accordion-content">
+              <ul>
+                <li>Traducción inglés-español</li>
+                <li>Ensayos en inglés</li>
+                <li>Redacción académica</li>
+                <li>Corrección de textos</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="accordion-item reveal-up">
+            <button class="accordion-trigger" type="button">
+              <span class="accordion-title-wrap">
+                <img src="imgs/icono-otros.webp" alt="Icono" class="accordion-icon" />
+                <span>Otros servicios académicos</span>
+              </span>
+              <span class="accordion-arrow">+</span>
+            </button>
+            <div class="accordion-content">
+              <ul>
+                <li>Presentaciones (PowerPoint, Canva)</li>
+                <li>Infografías</li>
+                <li>Mapas conceptuales</li>
+                <li>Cuadros sinópticos</li>
+                <li>Resúmenes</li>
+                <li>Guías resueltas</li>
+                <li>Actividades en línea</li>
+                <li>Proyectos integradores</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="levels section section-light" id="niveles">
+      <div class="container">
+        <div class="section-heading reveal-up">
+          <span class="section-tag">Niveles que se atienden</span>
+          <h2>Apoyo para distintos niveles académicos</h2>
+          <p>Cada trabajo se adapta al nivel académico, instrucciones del profesor y fecha de entrega.</p>
+        </div>
+
+        <div class="levels-grid">
+          <article class="level-card reveal-up"><h3>Licenciaturas</h3></article>
+          <article class="level-card reveal-up"><h3>Ingenierías</h3></article>
+          <article class="level-card reveal-up"><h3>Maestrías</h3></article>
+          <article class="level-card reveal-up"><h3>Especialidades</h3></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="servicios">
+      <div class="container">
+        <div class="section-heading reveal-up">
+          <span class="section-tag">Servicios académicos profesionales</span>
+          <h2>Te ayudo con mucho más que tareas</h2>
+          <p>
+            Apoyo integral en tareas, proyectos, investigaciones, tesis, presentaciones, diseños, mapas conceptuales, esquemas, correcciones, formato APA y otros trabajos académicos.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card textured-card texture-cartoncito reveal-up">
+            <h3>Tareas y proyectos</h3>
+            <p>Actividades académicas desarrolladas con base en instrucciones, rúbricas y material de clase.</p>
+          </article>
+          <article class="service-card textured-card texture-cuadro reveal-up">
+            <h3>Tesis e investigación</h3>
+            <p>Desde planteamiento del problema hasta conclusiones, redacción académica y formato.</p>
+          </article>
+          <article class="service-card textured-card texture-raya reveal-up">
+            <h3>Presentaciones y diseños</h3>
+            <p>PowerPoint, Canva, recursos visuales, láminas, esquemas, cuadros y materiales para exposición.</p>
+          </article>
+          <article class="service-card textured-card texture-cuadro reveal-up">
+            <h3>Correcciones y formato</h3>
+            <p>Apoyo con APA, IEEE, Vancouver, Chicago, estructura, estilo y mejoras de redacción.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee-section section-dark">
+      <div class="marquee-row marquee-left">
+        <div class="marquee-track">
+          <span>Tareas escolares</span>
+          <span>Proyectos finales</span>
+          <span>Investigaciones</span>
+          <span>Tesis</span>
+          <span>Formato APA</span>
+          <span>Matemáticas</span>
+          <span>Estadística</span>
+          <span>Programación</span>
+          <span>Presentaciones</span>
+          <span>Diseños</span>
+        </div>
+      </div>
+      <div class="marquee-row marquee-right">
+        <div class="marquee-track">
+          <span>Administración</span>
+          <span>Derecho</span>
+          <span>Finanzas</span>
+          <span>Psicología</span>
+          <span>Enfermería</span>
+          <span>Ingeniería</span>
+          <span>Ensayos</span>
+          <span>Actividades en línea</span>
+          <span>Mapas conceptuales</span>
+          <span>Cuadros sinópticos</span>
+        </div>
+      </div>
+      <div class="marquee-row marquee-left">
+        <div class="marquee-track">
+          <span>SPSS</span>
+          <span>Excel</span>
+          <span>R</span>
+          <span>Python</span>
+          <span>PowerPoint</span>
+          <span>Word</span>
+          <span>Estadística inferencial</span>
+          <span>Contabilidad</span>
+          <span>Metodología</span>
+          <span>Investigación de operaciones</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-daenna section section-light">
+      <div class="container about-grid">
+        <div class="about-photo reveal-left">
+          <div class="photo-frame">
+            <img src="imgs/daenna.webp" alt="Daenna González" />
           </div>
         </div>
-
-        <div class="service-alt-visual reveal-right">
-          <div class="service-alt-visual-card textured-card texture-cuadro">
-            <img src="imgs/estudiante-estresado.webp" alt="Estudiante que necesita ayuda con tareas escolares y universitarias" class="service-alt-main-image">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-light" id="niveles-apoyo">
-      <div class="container">
-        <div class="section-heading reveal-up">
-          <span class="section-tag">Niveles académicos</span>
-          <h2>Apoyo para secundaria, preparatoria, bachillerato, universidad y más</h2>
+        <div class="about-content reveal-right">
+          <span class="section-tag">Tu apoyo académico en Monterrey</span>
+          <h2>Soy quien realiza los trabajos: su servidora, Daenna González</h2>
           <p>
-            Esta página está enfocada en explicar mejor el servicio de tareas. No se limita solo a universidad. También puede haber apoyo para niveles previos o actividades que requieren redacción, investigación, ejercicios, análisis o material visual.
-          </p>
-        </div>
-
-        <div class="service-levels-grid">
-          <article class="level-card reveal-up">
-            <h3>Secundaria</h3>
-            <p>Tareas, ejercicios, resúmenes, investigaciones y trabajos escolares con lenguaje claro y estructura sencilla.</p>
-          </article>
-
-          <article class="level-card reveal-up">
-            <h3>Preparatoria</h3>
-            <p>Apoyo con actividades más completas, exposiciones, problemas, ejercicios y tareas de distintas materias.</p>
-          </article>
-
-          <article class="level-card reveal-up">
-            <h3>Bachillerato</h3>
-            <p>Trabajos académicos, reportes, tareas por competencias, presentaciones, proyectos y actividades integradoras.</p>
-          </article>
-
-          <article class="level-card reveal-up">
-            <h3>Licenciatura e ingeniería</h3>
-            <p>Tareas universitarias, investigaciones, análisis, actividades técnicas, Excel, estadística, programación y más.</p>
-          </article>
-
-          <article class="level-card reveal-up">
-            <h3>Maestría y especialidad</h3>
-            <p>Apoyo en actividades con mayor profundidad, estructura formal, revisión de formato y entregables académicos más extensos.</p>
-          </article>
-
-          <article class="level-card reveal-up">
-            <h3>Actividades en línea</h3>
-            <p>Cuestionarios, foros, desarrollos, tareas por plataforma y otros trabajos que deban presentarse digitalmente.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="que-se-hace">
-      <div class="container service-split-grid">
-        <div class="service-split-copy reveal-left">
-          <span class="section-tag">Qué tipo de apoyo se brinda</span>
-          <h2>No solo se hacen tareas simples</h2>
-          <p>
-            Muchas personas llegan buscando “hacer una tarea”, pero en realidad la actividad puede ser un trabajo completo, un proyecto corto, una investigación, un análisis, una exposición o una actividad técnica. Por eso esta página explica mejor el alcance del servicio.
+            Soy de Monterrey (México) y personalmente reviso cada solicitud para confirmar si puedo apoyarte de acuerdo con la fecha, hora de entrega y tipo de actividad que necesitas.
           </p>
           <p>
-            Aquí se puede apoyar con tareas escritas, ejercicios, tablas, presentaciones, actividades en línea, trabajos escolares, investigaciones, cuadros comparativos, mapas conceptuales, reportes y otros entregables académicos.
+            Mi objetivo es que te sientas con confianza al pedirme una tarea, proyecto, tesis o presentación, sabiendo que recibirás atención clara, trato directo y trabajo bien elaborado.
           </p>
-        </div>
-
-        <div class="service-split-cards reveal-right">
-          <article class="service-card textured-card texture-cartoncito">
-            <h3>Tareas escritas</h3>
-            <p>Ensayos, resúmenes, respuestas, reportes, análisis, cuadros y actividades redactadas según indicaciones.</p>
-          </article>
-
-          <article class="service-card textured-card texture-raya">
-            <h3>Ejercicios y resolución</h3>
-            <p>Problemas de matemáticas, estadística, finanzas, contabilidad, operaciones, cálculo o materias técnicas.</p>
-          </article>
-
-          <article class="service-card textured-card texture-cuadro">
-            <h3>Investigaciones</h3>
-            <p>Trabajos con introducción, desarrollo, conclusiones, referencias y estructura académica según lo que pidan.</p>
-          </article>
-
-          <article class="service-card textured-card texture-cartoncito">
-            <h3>Presentaciones</h3>
-            <p>Diapositivas en PowerPoint o Canva para tareas, exposiciones, proyectos y entregas visuales.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-light" id="materias">
-      <div class="container">
-        <div class="section-heading reveal-up">
-          <span class="section-tag">Materias y áreas</span>
-          <h2>Materias donde más suelen pedir ayuda con tareas</h2>
-          <p>
-            El index ya muestra muchas áreas, pero aquí se aterriza mejor lo que más suelen buscar cuando alguien necesita ayuda concreta con una tarea.
-          </p>
-        </div>
-
-        <div class="task-topic-grid">
-          <article class="trust-item reveal-up"><span>📐</span><strong>Matemáticas y cálculo</strong></article>
-          <article class="trust-item reveal-up"><span>📊</span><strong>Estadística y Excel</strong></article>
-          <article class="trust-item reveal-up"><span>💼</span><strong>Administración</strong></article>
-          <article class="trust-item reveal-up"><span>💰</span><strong>Contabilidad y finanzas</strong></article>
-          <article class="trust-item reveal-up"><span>⚖️</span><strong>Derecho</strong></article>
-          <article class="trust-item reveal-up"><span>🧠</span><strong>Psicología</strong></article>
-          <article class="trust-item reveal-up"><span>💻</span><strong>Programación y sistemas</strong></article>
-          <article class="trust-item reveal-up"><span>🏥</span><strong>Enfermería y salud</strong></article>
-          <article class="trust-item reveal-up"><span>📚</span><strong>Educación y pedagogía</strong></article>
-          <article class="trust-item reveal-up"><span>🌍</span><strong>Economía y negocios</strong></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="como-se-cotiza">
-      <div class="container">
-        <div class="section-heading reveal-up">
-          <span class="section-tag">Cómo se revisa una tarea</span>
-          <h2>Qué debes mandar para cotizar bien una actividad</h2>
-          <p>
-            Una de las partes más importantes es la información inicial. Cuando se manda bien desde el principio, la revisión y la respuesta suelen ser mucho más rápidas y claras.
-          </p>
-        </div>
-
-        <div class="process-grid">
-          <article class="process-card textured-card texture-raya reveal-up">
-            <span class="process-number">1</span>
-            <h3>Instrucciones completas</h3>
-            <p>Manda captura, PDF, documento, plataforma o cualquier indicación donde venga exactamente lo que te pidieron.</p>
-          </article>
-
-          <article class="process-card textured-card texture-cuadro reveal-up">
-            <span class="process-number">2</span>
-            <h3>Fecha y hora reales</h3>
-            <p>Es importante saber cuándo se entrega, porque no es lo mismo una tarea para mañana que una para dentro de varios días.</p>
-          </article>
-
-          <article class="process-card textured-card texture-cartoncito reveal-up">
-            <span class="process-number">3</span>
-            <h3>Rúbrica o formato</h3>
-            <p>Si tu profesor pidió estructura, extensión, APA, número de páginas o apartados, conviene compartirlo desde el inicio.</p>
-          </article>
-
-          <article class="process-card textured-card texture-raya reveal-up">
-            <span class="process-number">4</span>
-            <h3>Material de apoyo</h3>
-            <p>Lecturas, diapositivas, apuntes, ejemplos o cualquier archivo base ayudan a adaptar mejor la actividad a tu materia.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-light" id="urgencias">
-      <div class="container service-urgency-grid">
-        <div class="service-urgency-copy reveal-left">
-          <span class="section-tag">Tareas urgentes y tiempos</span>
-          <h2>No todas las tareas tardan lo mismo</h2>
-          <p>
-            Algunas actividades son breves y pueden revisarse rápido. Otras requieren leer instrucciones, investigar, redactar, diseñar o resolver ejercicios, así que llevan más tiempo.
-          </p>
-          <p>
-            También hay tareas urgentes, pero primero se revisa si el tiempo disponible realmente alcanza para hacer un trabajo bien cuidado. La idea no es aceptar por aceptar, sino confirmar cuando sí es viable.
-          </p>
-        </div>
-
-        <div class="service-urgency-box reveal-right textured-card texture-cuadro">
-          <h3>Factores que influyen en el tiempo</h3>
-          <ul>
-            <li>Dificultad de la materia</li>
-            <li>Cantidad de instrucciones</li>
-            <li>Si requiere investigación</li>
-            <li>Si lleva formato especial</li>
-            <li>Si incluye ejercicios o tablas</li>
-            <li>Si también necesita presentación</li>
+          <ul class="about-highlights">
+            <li>Atención directa y personalizada</li>
+            <li>Revisión según tiempo real de entrega</li>
+            <li>Apoyo en múltiples áreas académicas</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section class="works section" id="por-que-buscan-ayuda">
-      <div class="container works-grid-layout">
-        <div class="works-content reveal-left">
-          <span class="section-tag">Por qué suelen pedir apoyo</span>
-          <h2>Razones comunes por las que una persona busca ayuda con tareas</h2>
-          <p>
-            A veces el problema no es flojera. Muchas veces pasa que no se entiende el tema, el tiempo ya no alcanza, la actividad viene muy cargada, el formato está confuso o se juntaron varias entregas al mismo tiempo.
-          </p>
-          <p>
-            También hay tareas que parecen simples, pero al abrirlas resultan ser más largas o técnicas de lo que se pensaba. Por eso esta página busca ser más informativa y no solo promocional.
-          </p>
+
+    <section class="process section" id="proceso">
+      <div class="container">
+        <div class="section-heading reveal-up">
+          <span class="section-tag">¿Cómo funciona?</span>
+          <h2>Así puedes pedirme tu tarea o proyecto</h2>
         </div>
 
-        <div class="vertical-marquee reveal-right">
-          <div class="marquee-column up">
-            <div class="marquee-column-track">
-              <article class="work-card">
-                <img src="imgs/trabajorealizado1.webp" alt="Ejemplo de tarea escolar realizada">
-              </article>
-              <article class="work-card">
-                <img src="imgs/trabajorealizado2.webp" alt="Ejemplo de trabajo académico desarrollado">
-              </article>
-              <article class="work-card">
-                <img src="imgs/trabajorealizado3.webp" alt="Ejemplo de apoyo con presentaciones y tareas">
-              </article>
-            </div>
-          </div>
-
-          <div class="marquee-column down">
-            <div class="marquee-column-track">
-              <article class="work-card">
-                <img src="imgs/trabajorealizado6.webp" alt="Ejemplo de proyecto universitario terminado">
-              </article>
-              <article class="work-card">
-                <img src="imgs/trabajorealizado7.webp" alt="Ejemplo de tarea visual y académica">
-              </article>
-              <article class="work-card">
-                <img src="imgs/trabajorealizado8.webp" alt="Ejemplo de actividad académica entregada">
-              </article>
-            </div>
-          </div>
+        <div class="process-grid">
+          <article class="process-card textured-card texture-raya reveal-up">
+            <span class="process-number">1</span>
+            <h3>Envíame mensaje</h3>
+            <p>Mándame las instrucciones, fecha de entrega, rúbrica y material de clase si aplica.</p>
+          </article>
+          <article class="process-card textured-card texture-cuadro reveal-up">
+            <span class="process-number">2</span>
+            <h3>Reviso tu actividad</h3>
+            <p>Te confirmo si puedo apoyarte según el día, hora de entrega y tipo de trabajo.</p>
+          </article>
+          <article class="process-card textured-card texture-cartoncito reveal-up">
+            <span class="process-number">3</span>
+            <h3>Te paso cotización</h3>
+            <p>Una vez revisado, te comparto el costo y decides si deseas continuar.</p>
+          </article>
+          <article class="process-card textured-card texture-raya reveal-up">
+            <span class="process-number">4</span>
+            <h3>Desarrollo y entrega</h3>
+            <p>Podemos manejar pago completo antes o enviarte un avance primero para revisión.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="reviews section section-light" id="preguntas-frecuentes">
+    <section class="evidences section section-light" id="evidencias">
       <div class="container">
         <div class="section-heading reveal-up">
-          <span class="section-tag">Preguntas frecuentes</span>
-          <h2>Dudas comunes sobre el servicio para hacer tareas</h2>
+          <span class="section-tag">Resultados reales</span>
+          <h2>Evidencias y entregas realizadas</h2>
+          <p>
+            Aquí algunas evidencias de trabajos entregados, capturas y resultados de clientes satisfechos. Más abajo hay archivos en PDF que puedes visualizar directamente para confirmar mis entregas.
+          </p>
         </div>
 
-        <div class="service-faq-grid">
-          <article class="review-card reveal-up">
-            <h3>¿Solo se ayudan tareas de universidad?</h3>
-            <p>No. También puede haber apoyo para secundaria, preparatoria y bachillerato, además de licenciatura, ingeniería, maestría y especialidad.</p>
-          </article>
+        <div class="evidence-gallery" id="evidenceGallery">
 
-          <article class="review-card reveal-up">
-            <h3>¿Se hacen actividades en línea?</h3>
-            <p>Sí, dependiendo del tipo de plataforma, del contenido de la actividad y del tiempo disponible para trabajarla correctamente.</p>
-          </article>
+  <!-- visibles -->
+  <article class="evidence-card reveal-up">
+    <img src="imgs/evidenciayentrega1.webp" alt="Evidencia 1">
+  </article>
 
-          <article class="review-card reveal-up">
-            <h3>¿También se pueden hacer trabajos con ejercicios?</h3>
-            <p>Sí. Hay actividades que incluyen problemas, tablas, cálculos, Excel, estadística, programación o apartados técnicos.</p>
-          </article>
+  <article class="evidence-card reveal-up">
+    <img src="imgs/evidenciayentrega2.webp" alt="Evidencia 2">
+  </article>
 
-          <article class="review-card reveal-up">
-            <h3>¿Qué pasa si mi actividad incluye presentación?</h3>
-            <p>También se puede revisar, ya que hay tareas que además del documento escrito requieren diapositivas o material visual para exponer.</p>
+  <article class="evidence-card reveal-up">
+    <img src="imgs/evidenciayentrega3.webp" alt="Evidencia 3">
+  </article>
+
+  <article class="evidence-card reveal-up">
+    <img src="imgs/evidenciayentrega4.webp" alt="Evidencia 4">
+  </article>
+
+  <article class="evidence-card reveal-up">
+    <img src="imgs/evidenciayentrega5.webp" alt="Evidencia 5">
+  </article>
+
+  <!-- ocultas -->
+  <article class="evidence-card hidden-evidence">
+    <img src="imgs/evidenciayentrega6.webp" alt="Evidencia 6">
+  </article>
+
+  <article class="evidence-card hidden-evidence">
+    <img src="imgs/evidenciayentrega7.webp" alt="Evidencia 7">
+  </article>
+
+  <article class="evidence-card hidden-evidence">
+    <img src="imgs/evidenciayentrega8.webp" alt="Evidencia 8">
+  </article>
+
+  <article class="evidence-card hidden-evidence">
+    <img src="imgs/evidenciayentrega9.webp" alt="Evidencia 9">
+  </article>
+
+  <article class="evidence-card hidden-evidence">
+    <img src="imgs/evidenciayentrega10.webp" alt="Evidencia 10">
+  </article>
+
+  <article class="evidence-card hidden-evidence">
+    <img src="imgs/evidenciayentrega11.webp" alt="Evidencia 11">
+  </article>
+
+   <article class="evidence-card hidden-evidence">
+    <img src="imgs/evidenciayentrega12.webp" alt="Evidencia 12">
+  </article>
+
+  <article class="evidence-card hidden-evidence">
+    <img src="imgs/evidenciayentrega13.webp" alt="Evidencia 13">
+  </article>
+
+  <!-- aquí puedes seguir hasta 25 -->
+</div>
+
+<!-- BOTÓN -->
+<div class="evidence-more">
+  <button id="btnVerMas" class="btn btn-secondary">
+    Ver más evidencias
+  </button>
+</div>
+      </div>
+    </section>
+
+    <section class="works section">
+  <div class="container works-grid-layout">
+    <div class="works-content reveal-left">
+      <span class="section-tag">Trabajos realizados</span>
+      <h2>Tesis, presentaciones, diseños, mapas, esquemas e investigaciones</h2>
+      <p>
+        Más ejemplos de entregas de presentaciones, diseños, documentos académicos, reportes, infografías, mapas conceptuales y otros trabajos realizados.
+      </p>
+    </div>
+
+    <div class="vertical-marquee reveal-right">
+      <div class="marquee-column up">
+        <div class="marquee-column-track">
+          <article class="work-card">
+            <img src="imgs/trabajorealizado1.webp" alt="Trabajo realizado 1">
           </article>
+          <article class="work-card">
+            <img src="imgs/trabajorealizado2.webp" alt="Trabajo realizado 2">
+          </article>
+          <article class="work-card">
+            <img src="imgs/trabajorealizado3.webp" alt="Trabajo realizado 3">
+          </article>
+           <article class="work-card">
+            <img src="imgs/trabajorealizado4.webp" alt="Trabajo realizado 4">
+          </article>
+           <article class="work-card">
+            <img src="imgs/MATERIALVISUAL-LINEATIEMPO-1.webp" alt="Trabajo realizado 5">
+          </article>
+        </div>
+      </div>
+
+      <div class="marquee-column down">
+        <div class="marquee-column-track">
+          <article class="work-card">
+            <img src="imgs/trabajorealizado6.webp" alt="Trabajo realizado 6">
+          </article>
+          <article class="work-card">
+            <img src="imgs/trabajorealizado7.webp" alt="Trabajo realizado 7">
+          </article>
+          <article class="work-card">
+            <img src="imgs/trabajorealizado8.webp" alt="Trabajo realizado 8">
+          </article>
+          <article class="work-card">
+            <img src="imgs/trabajorealizado9.webp" alt="Trabajo realizado 9">
+          </article>
+          <article class="work-card">
+            <img src="imgs/trabajorealizado10.webp" alt="Trabajo realizado 10">
+          </article>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="reviews section section-light" id="resenas">
+      <div class="container">
+        <div class="section-heading reveal-up">
+          <span class="section-tag">Opiniones</span>
+          <h2>Lo que opinan nuestros clientes</h2>
+        </div>
+
+        <div class="reviews-slider">
+          <article class="review-card reveal-up">
+            <div class="stars">★★★★★</div>
+            <p>Muy responsable, me ayudó muchísimo y entregó a tiempo, ya me habian quedado mal y me urgía y de buenas alcanzó a ayudarme y todo perfectoo.</p>
+            <strong>Eduardo Mendoza</strong>
+          </article>
+          <article class="review-card reveal-up">
+            <div class="stars">★★★★★</div>
+            <p>Todo super bien, explicado y ordenado, ocupaba exponer y me hizo la presentación en Ppt y en Canva y aparte me dio la explicación para lo que tendría que decir al exponer y nombree me facilitó todavía más ya mínimo no me puse tan nerviosa.</p>
+            <strong>Laura Monzón</strong>
+          </article>
+          <article class="review-card reveal-up">
+            <div class="stars">★★★★★</div>
+            <p>Me dio confianza desde el inicio no sé porque jajaj, me ayudó con la tesis pero ya me la habian recomendado y todo estuvo muy bien, muchas graciass!</p>
+            <strong>Carolina Rodríguez</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="guarantee section section-dark">
+      <div class="container guarantee-grid">
+        <div class="guarantee-content reveal-left">
+          <span class="section-tag">Confianza y respaldo</span>
+          <h2>Compromiso con la calidad y satisfacción</h2>
+          <p>
+            Cada actividad se trabaja con cuidado, atención a las instrucciones y enfoque en la calidad. Si llegara a existir algún problema importante con el trabajo entregado, revisamos el caso y, dependiendo de la situación, puede aplicarse solución o reembolso del 100%.
+          </p>
+          <p>
+            Hasta ahora nuestros clientes suelen quedar satisfechos y seguimos cuidando cada entrega para mantener esa confianza.
+          </p>
+        </div>
+        <div class="guarantee-side reveal-right">
+          <div class="guarantee-badge">100%<span>posible reembolso según revisión del caso</span></div>
         </div>
       </div>
     </section>
@@ -348,132 +954,1545 @@
     <section class="contact section" id="contacto">
       <div class="container">
         <div class="section-heading reveal-up">
-          <span class="section-tag">Contacto para tareas</span>
-          <h2>Si quieres cotizar una tarea, manda la información completa</h2>
-          <p>
-            La forma más rápida de revisar una actividad es por WhatsApp. Desde Monterrey se atienden solicitudes para otras partes de México, siempre que la tarea se pueda revisar y trabajar dentro del tiempo disponible.
-          </p>
+          <span class="section-tag">Contacto</span>
+          <h2>Contáctame y revisamos tu actividad</h2>
+          <p>Puedes enviarme mensaje por WhatsApp, correo o visitar mi página de Facebook.</p>
         </div>
 
         <div class="contact-grid">
           <article class="contact-card reveal-up">
             <img src="imgs/icono-whatsapp.png" alt="WhatsApp" class="contact-icon" />
             <h3>WhatsApp</h3>
-            <p>Comparte capturas, archivos, rúbrica, fecha y todo lo necesario para revisar tu tarea.</p>
+            <p>+52 81 1671 8765</p>
             <a href="https://wa.me/528116718765" target="_blank" rel="noopener noreferrer">Enviar mensaje</a>
           </article>
-
           <article class="contact-card reveal-up">
             <img src="imgs/logo-email.webp" alt="Correo electrónico" class="contact-icon" />
             <h3>Correo</h3>
-            <p>También puedes mandar por correo tareas, trabajos, documentos base o dudas más extensas.</p>
+            <p>daenna2001@gmail.com</p>
             <a href="mailto:daenna2001@gmail.com">Enviar correo</a>
           </article>
-
           <article class="contact-card reveal-up">
             <img src="imgs/logo-facebook.png" alt="Facebook" class="contact-icon" />
             <h3>Facebook</h3>
-            <p>Si prefieres ver más contenido o escribir por otra vía, también está disponible la página de Facebook.</p>
+            <p>Te Hago La Tarea By Daenna</p>
             <a href="https://www.facebook.com/tehagolatarea.daenna" target="_blank" rel="noopener noreferrer">Ir a Facebook</a>
           </article>
         </div>
       </div>
     </section>
 
+ <section class="payments section section-light">
+  <div class="container payments-grid">
+
+    <!-- TEXTO -->
+    <div class="payments-content reveal-left">
+      <span class="section-tag">Formas de pago</span>
+      <h2>Transferencia y PayPal</h2>
+
+      <p>
+        Se aceptan pagos por transferencia bancaria. Para pagos desde otro país también se acepta PayPal, considerando el 10% adicional correspondiente a comisión.
+      </p>
+
+      <p>
+        Los datos exactos de pago pueden compartirse al momento de confirmar el servicio. Atención desde Monterrey, Nuevo León.
+      </p>
+
+      <!-- ICONOS -->
+      <div class="payments-logos">
+
+        <div class="payment-item">
+          <img src="imgs/icono-bbva.webp" alt="BBVA" class="payment-logo payment-logo-bbva">
+          <span>Transferencia BBVA</span>
+        </div>
+
+        <div class="payment-item">
+          <img src="imgs/icono-paypal.webp" alt="PayPal" class="payment-logo payment-logo-paypal">
+          <span>Pagos internacionales</span>
+        </div>
+
+        <div class="payment-item payment-mexico">
+          <img src="imgs/icono-mexico.webp" alt="México" class="payment-logo payment-logo-mexico">
+          <span>Servicio en México</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- TARJETA DERECHA -->
+    <div class="payments-card textured-card texture-cartoncito reveal-right">
+      <h3>Opciones de pago</h3>
+      <ul>
+        <li>Transferencia bancaria</li>
+        <li>PayPal para otros países</li>
+        <li>10% adicional en PayPal por comisión</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+    
+
+<!-- =========================
+     SECCIÓN PDF / EVIDENCIAS
+========================== -->
+<section class="pdf-evidences section section-light" id="documentos-pdf">
+  <div class="container">
+    <div class="section-heading reveal-up">
+      <span class="section-tag">Evidencias en PDF</span>
+      <h2>Aquí puedes ver en PDF algunas de mis evidencias entregadas</h2>
+      <p>
+        Explora algunos de mis trabajos, como ejemplo de lo que puedo desarrollarte. Da clic en cualquiera que te interese para que revises su contenido.
+      </p>
+    </div>
+
+    <!-- =========================
+         MATERIAL VISUAL
+    ========================== -->
+    <div class="pdf-category-block pdf-step-block is-visible reveal-up">
+      <div class="pdf-category-head">
+        <h3>Material visual</h3>
+        <p>Infografías, esquemas, folletos, revistas, trípticos, lineas del tiempo, mapas conceptuales y materiales gráficos elaborados para presentar información de forma clara, atractiva y bien organizada.</p>
+      </div>
+
+      <div class="pdf-cards-grid">
+       
+
+        <button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1Xqw7Nd_F0WMGMFYPdxCADMr40VfuHJvU/preview"
+  data-title="Revista digital temática"
+  aria-label="Abrir revista digital en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATERIALVISUAL-REVISTA-1.webp" alt="Portada de revista digital" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Revista digital</span>
+    <span class="pdf-card-text">Da clic para visualizar la revista</span>
+  </span>
+</button>
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/10l2wPhK3mW8WJAB_2xkukmHW9uCq-GjA/preview"
+  data-title="Cultura mexicana"
+  aria-label="Abrir infografía de cultura mexicana en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATERIALVISUAL-INFOGRAFIA-2.webp" alt="Infografía sobre cultura mexicana" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Cultura mexicana</span>
+    <span class="pdf-card-text">Da clic para visualizar la infografía</span>
+  </span>
+</button>
+
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/14eR9kPUlyLyGD0mFVTHqc5T5_goA_u4e/preview"
+  data-title="Principios del procedimiento penal acusatorio y oral"
+  aria-label="Abrir mapa conceptual de principios del procedimiento penal acusatorio y oral en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATERIALVISUAL-MAPACONCEPTUAL-1.webp" alt="Mapa conceptual sobre principios del procedimiento penal acusatorio y oral" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Procedimiento penal acusatorio</span>
+    <span class="pdf-card-text">Da clic para visualizar el mapa conceptual</span>
+  </span>
+</button>
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1SxhYICYHQNA-29bq5QBTIe_Vw_QCF8iR/preview"
+  data-title="Hemorragia postparto y poscesárea: prevención, diagnóstico y manejo"
+  aria-label="Abrir infografía Hemorragia postparto y poscesárea en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATERIALVISUAL-INFOGRAFIA-1.webp" alt="Infografía sobre hemorragia postparto y poscesárea" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Hemorragia postparto y poscesárea</span>
+    <span class="pdf-card-text">Da clic para visualizar la infografía</span>
+  </span>
+</button>
+
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1KTn7wOEoh25NAwPMVzQWnz24XgIHPvZX/preview"
+  data-title="Fuentes de financiamiento para emprendedores"
+  aria-label="Abrir mapa mental de fuentes de financiamiento para emprendedores en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATERIALVISUAL-MAPAMENTAL-1.webp" alt="Mapa mental de fuentes de financiamiento para emprendedores" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Fuentes de financiamiento</span>
+    <span class="pdf-card-text">Da clic para visualizar el mapa mental</span>
+  </span>
+</button>
+
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1tCp5lAJc1SO-nM0ToaYKTGOtW7lWvf97/preview"
+  data-title="Principales reformas educativas en México (1934–2024)"
+  aria-label="Abrir línea del tiempo de reformas educativas en México en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATERIALVISUAL-LINEATIEMPO-1.webp" alt="Línea del tiempo de reformas educativas en México de 1934 a 2024" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Reformas educativas en México</span>
+    <span class="pdf-card-text">Da clic para visualizar la línea del tiempo</span>
+  </span>
+</button>
+
+
+       <button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/16HycZHEh6lfKE1xsw5nX6aGkapw1abN9/preview"
+  data-title="Educación sexual"
+  aria-label="Abrir cartel de educación sexual en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATERIALVISUAL-CARTEL-1.webp" alt="Cartel sobre educación sexual" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Educación sexual</span>
+    <span class="pdf-card-text">Da clic para visualizar el cartel</span>
+  </span>
+</button>
+
+        <button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1PKH8uveEDpviMgp1WTfovwPpRTODAfNW/preview"
+  data-title="Visitar Bustamante, Nuevo León"
+  aria-label="Abrir folleto turístico de Bustamante Nuevo León en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATERIALVISUAL-TRIPTICO-1.webp" alt="Folleto tríptico turístico de Bustamante Nuevo León" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Bustamante, Nuevo León</span>
+    <span class="pdf-card-text">Da clic para visualizar el folleto turístico</span>
+  </span>
+</button>
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1JuhaUmwlj5ra2aBghHnIDamf5QWxCUn4/preview"
+  data-title="Proceso de nóminas en una empresa"
+  aria-label="Abrir diagrama de flujo del proceso de nóminas en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATERIALVISUAL-DIAGRAMAFLUJO-1.webp" alt="Diagrama de flujo del proceso de nóminas de una empresa" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Proceso de nóminas</span>
+    <span class="pdf-card-text">Da clic para visualizar el diagrama de flujo</span>
+  </span>
+</button>
+           
+       <button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1OROCJqZv-Rsw_70ek-gg_rxEtn2zK_t0/preview"
+  data-title="Dimensiones de la práctica docente"
+  aria-label="Abrir infografía sobre dimensiones de la práctica docente en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATERIALVISUAL-INFOGRAFIA-3.webp" alt="Infografía sobre dimensiones de la práctica docente" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Práctica docente</span>
+    <span class="pdf-card-text">Da clic para visualizar la infografía</span>
+  </span>
+</button>
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1gJrrhb73yyGxfxvcq4BLatwah5y88un0/preview"
+  data-title="Cómic sobre el Trastorno Obsesivo Compulsivo (TOC)"
+  aria-label="Abrir cómic sobre el trastorno obsesivo compulsivo en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATERIALVISUAL-COMIC-1.webp" alt="Cómic sobre trastorno obsesivo compulsivo" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Cómic sobre el TOC</span>
+    <span class="pdf-card-text">Da clic para visualizar el cómic</span>
+  </span>
+</button>
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1g83LeNFLJWslsalXI8UfIW_nTm0bdv6r/preview"
+  data-title="Análisis Integral de Trastornos Infantiles"
+  aria-label="Abrir revista sobre análisis integral de trastornos infantiles"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATERIALVISUAL-REVISTA-2.webp" alt="Portada de revista sobre trastornos infantiles" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Trastornos infantiles</span>
+    <span class="pdf-card-text">Da clic para visualizar la revista</span>
+  </span>
+</button>
+
+        <button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1dLYvlyXCbEbfgGmu2uBV2bO-TKyuXd9g/preview"
+  data-title="Etapas del desarrollo psicológico según Diane Papalia"
+  aria-label="Abrir línea del tiempo de etapas del desarrollo psicológico según Diane Papalia en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATERIALVISUAL-LINEATIEMPO-2.webp" alt="Línea del tiempo de etapas del desarrollo psicológico según Diane Papalia" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Desarrollo psicológico</span>
+    <span class="pdf-card-text">Da clic para visualizar la línea del tiempo</span>
+  </span>
+</button>
+
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1zqS9gdAdOpd5kiKrs54P9x04-JwljSTc/preview"
+  data-title="Modelo económico de una empresa competitiva: Estudio de caso de La Costeña"
+  aria-label="Abrir cartel sobre modelo económico de empresa competitiva La Costeña en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATERIALVISUAL-CARTEL-2.webp" alt="Cartel sobre modelo económico de una empresa competitiva La Costeña" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Modelo económico empresarial</span>
+    <span class="pdf-card-text">Da clic para visualizar el cartel</span>
+  </span>
+</button>
+
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1JzOodnqhvp1dU2p8F6v8YluRzKkGpkiX/preview"
+  data-title="Síndrome de Turner"
+  aria-label="Abrir folleto sobre el síndrome de Turner en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATERIALVISUAL-FOLLETO-1.webp" alt="Folleto sobre el síndrome de Turner" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Síndrome de Turner</span>
+    <span class="pdf-card-text">Da clic para visualizar el folleto</span>
+  </span>
+</button>
+
+
+      </div>
+    </div>
+
+    <!-- =========================
+         PRESENTACIONES
+    ========================== -->
+    <div class="pdf-category-block pdf-step-block reveal-up">
+      <div class="pdf-category-head">
+        <h3>Presentaciones</h3>
+        <p>Exposiciones y diapositivas preparadas para materias, proyectos, defensas, análisis y desarrollo de temas académicos.</p>
+      </div>
+
+      <div class="pdf-cards-grid">
+        <button 
+  class="pdf-card pdf-card--horizontal reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1RBdc517WeVspBMCll-eJINSRG6dJE06E/preview" 
+  data-title="Aprendizaje social, clima emocional y modelado en la comunicación educativa"
+  aria-label="Abrir presentación Aprendizaje social, clima emocional y modelado en la comunicación educativa en PDF"
+>
+  <span class="pdf-card-image-wrap pdf-card-image-wrap--horizontal">
+    <img src="imgs/PRESENTACION-APRENDIZAJE-1.webp" alt="Portada de presentación Aprendizaje social, clima emocional y modelado educativo" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Aprendizaje social y clima emocional</span>
+    <span class="pdf-card-text">Da clic para visualizar la presentación</span>
+  </span>
+</button>
+
+        <button 
+  class="pdf-card pdf-card--horizontal reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1XvM9mcWNpvzNwA9OcnsstAgYG-_9pBpC/preview" 
+  data-title="Introducción a la Psicología y sus Corrientes"
+  aria-label="Abrir presentación Introducción a la Psicología y sus Corrientes en PDF"
+>
+  <span class="pdf-card-image-wrap pdf-card-image-wrap--horizontal">
+    <img src="imgs/PRESENTACION-PLATON-1.webp" alt="Portada de presentación Introducción a la Psicología y sus corrientes" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Psicología y sus corrientes</span>
+    <span class="pdf-card-text">Da clic para visualizar la presentación</span>
+  </span>
+</button>
+
+      <button 
+  class="pdf-card pdf-card--horizontal reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1fHbjTV5Dix6HmetZtyg7Tpm-MnWZzRUM/preview" 
+  data-title="Live Action: técnica híbrida en la producción audiovisual"
+  aria-label="Abrir presentación Live Action técnica híbrida en la producción audiovisual en PDF"
+>
+  <span class="pdf-card-image-wrap pdf-card-image-wrap--horizontal">
+    <img src="imgs/PRESENTACION-LIVEACTION-2.webp" alt="Portada de presentación Live Action técnica híbrida en producción audiovisual" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Live Action en audiovisual</span>
+    <span class="pdf-card-text">Da clic para visualizar la presentación</span>
+  </span>
+</button>
+
+        <button 
+  class="pdf-card pdf-card--horizontal reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/15bMlH7wzP0X6QW8E25smVRardShSqLbH/preview" 
+  data-title="Brasil: Patrimonio Cultural y Natural de la Humanidad"
+  aria-label="Abrir presentación Brasil patrimonio cultural y natural de la humanidad en PDF"
+>
+  <span class="pdf-card-image-wrap pdf-card-image-wrap--horizontal">
+    <img src="imgs/PRESENTACION-BRASIL-3.webp" alt="Portada de presentación Brasil patrimonio cultural y natural de la humanidad" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Patrimonio de Brasil</span>
+    <span class="pdf-card-text">Da clic para visualizar la presentación</span>
+  </span>
+</button>
+
+<button 
+  class="pdf-card pdf-card--horizontal reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1_qBnWt9VwA2soColOcQl7CHd32eWxBAi/preview" 
+  data-title="Relación entre horas de estudio y calificaciones en estudiantes de primaria"
+  aria-label="Abrir presentación sobre regresión lineal y horas de estudio en PDF"
+>
+  <span class="pdf-card-image-wrap pdf-card-image-wrap--horizontal">
+    <img src="imgs/PRESENTACION-REGRESION-4.webp" alt="Portada de presentación regresión lineal horas de estudio y calificaciones" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Regresión lineal</span>
+    <span class="pdf-card-text">Da clic para visualizar la presentación</span>
+  </span>
+</button>
+
+<button 
+  class="pdf-card pdf-card--horizontal reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1JKWpSSOb2lwgFdeKGTuARr1qjFmc4yPa/preview" 
+  data-title="Recursos Humanos en las Empresas"
+  aria-label="Abrir presentación Recursos Humanos en las empresas en PDF"
+>
+  <span class="pdf-card-image-wrap pdf-card-image-wrap--horizontal">
+    <img src="imgs/PRESENTACION-RH-5.webp" alt="Portada de presentación recursos humanos en las empresas" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Recursos humanos</span>
+    <span class="pdf-card-text">Da clic para visualizar la presentación</span>
+  </span>
+</button>
+
+
+<button 
+  class="pdf-card pdf-card--horizontal reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/11xqB9GIoEd84tpTtXAqOXOMTnIAYGKkl/preview" 
+  data-title="Plataforma digital de comida casera local Tucomida.mx: liderazgo, emprendimiento e innovación"
+  aria-label="Abrir presentación de plataforma digital Tucomida.mx en PDF"
+>
+  <span class="pdf-card-image-wrap pdf-card-image-wrap--horizontal">
+    <img src="imgs/PRESENTACION-MODELONEG-6.webp" alt="Portada de presentación Tucomida.mx plataforma digital de comida casera" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Tucomida.mx</span>
+    <span class="pdf-card-text">Da clic para visualizar la presentación</span>
+  </span>
+</button>
+
+<button 
+  class="pdf-card pdf-card--horizontal reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1CE9A1NajxjWGCHG303cjbKJ7XWYiMU8-/preview" 
+  data-title="Proceso de compras y ventas en una empresa"
+  aria-label="Abrir presentación sobre proceso de compras y ventas en PDF"
+>
+  <span class="pdf-card-image-wrap pdf-card-image-wrap--horizontal">
+    <img src="imgs/PRESENTACION-COMPRAS-7.webp" alt="Portada de presentación proceso de compras y ventas en una empresa" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Compras y ventas</span>
+    <span class="pdf-card-text">Da clic para visualizar la presentación</span>
+  </span>
+</button>
+
+
+<button 
+  class="pdf-card pdf-card--horizontal reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1nTmB0uuL05W_IbwVlnMst8D_T-bJoNaI/preview" 
+  data-title="Diagnóstico de auditoría administrativa en Grupo Bimbo"
+  aria-label="Abrir presentación diagnóstico de auditoría administrativa en Grupo Bimbo en PDF"
+>
+  <span class="pdf-card-image-wrap pdf-card-image-wrap--horizontal">
+    <img src="imgs/PRESENTACION-BIMBO-8.webp" alt="Portada de presentación auditoría administrativa Grupo Bimbo" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Auditoría en Grupo Bimbo</span>
+    <span class="pdf-card-text">Da clic para visualizar la presentación</span>
+  </span>
+</button>
+
+<button 
+  class="pdf-card pdf-card--horizontal reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1E-0r2zI7f6a3t5iFDjs9Dpe_CX99P2Mq/preview" 
+  data-title="Propuesta de mejora del proceso de entrega urbana en DHL"
+  aria-label="Abrir presentación propuesta de mejora del proceso de entrega urbana DHL en PDF"
+>
+  <span class="pdf-card-image-wrap pdf-card-image-wrap--horizontal">
+    <img src="imgs/PRESENTACION-DHL-9.webp" alt="Portada de presentación mejora del proceso de entrega urbana DHL" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Entrega urbana DHL</span>
+    <span class="pdf-card-text">Da clic para visualizar la presentación</span>
+  </span>
+</button>
+
+<button 
+  class="pdf-card pdf-card--horizontal reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1XolOMYsQ2kkbIKMjH2RGf_jiGRY4wb2T/preview" 
+  data-title="Respuesta al daño del ADN (DDR) y enfermedad metabólica"
+  aria-label="Abrir presentación sobre respuesta al daño del ADN y enfermedad metabólica en PDF"
+>
+  <span class="pdf-card-image-wrap pdf-card-image-wrap--horizontal">
+    <img src="imgs/PRESENTACION-ADN-10.webp" alt="Portada de presentación respuesta al daño del ADN DDR y enfermedad metabólica" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Daño del ADN (DDR)</span>
+    <span class="pdf-card-text">Da clic para visualizar la presentación</span>
+  </span>
+</button>
+
+<button 
+  class="pdf-card pdf-card--horizontal reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1m1FJ1NnBrpq5RYLb6XuBsMXe3sGkvsEn/preview" 
+  data-title="Instrumentos de análisis e investigación cuantitativa"
+  aria-label="Abrir presentación sobre instrumentos de investigación cuantitativa en PDF"
+>
+  <span class="pdf-card-image-wrap pdf-card-image-wrap--horizontal">
+    <img src="imgs/PRESENTACION-CUALITATIVA-11.webp" alt="Portada de presentación instrumentos de investigación cuantitativa" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Investigación cuantitativa</span>
+    <span class="pdf-card-text">Da clic para visualizar la presentación</span>
+  </span>
+</button>
+
+<button 
+  class="pdf-card pdf-card--horizontal reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1dXyL2opDL3A9etRP5aEPDtL-D7nqx4FM/preview" 
+  data-title="Resultados del proyecto de intervención organizacional en Bokados"
+  aria-label="Abrir presentación intervención organizacional en Bokados en PDF"
+>
+  <span class="pdf-card-image-wrap pdf-card-image-wrap--horizontal">
+    <img src="imgs/PRESENTACION-BOKADOS-12.webp" alt="Portada de presentación intervención organizacional en Bokados" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Intervención en Bokados</span>
+    <span class="pdf-card-text">Da clic para visualizar la presentación</span>
+  </span>
+</button>
+
+<button 
+  class="pdf-card pdf-card--horizontal reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1GJW-Mh9bOIwkkLyT_508Lpvq4K-i2b3E/preview" 
+  data-title="Herramientas de modelado de bases de datos"
+  aria-label="Abrir presentación herramientas de modelado de bases de datos en PDF"
+>
+  <span class="pdf-card-image-wrap pdf-card-image-wrap--horizontal">
+    <img src="imgs/PRESENTACION-MODELADO-13.webp" alt="Portada de presentación herramientas de modelado de bases de datos" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Modelado de bases de datos</span>
+    <span class="pdf-card-text">Da clic para visualizar la presentación</span>
+  </span>
+</button>
+        
+<button 
+  class="pdf-card pdf-card--horizontal reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/11vpzKbHn2U4zMSwRMYBUtUIBAMDOfVpB/preview" 
+  data-title="Análisis matemático para la toma de decisiones productivas"
+  aria-label="Abrir presentación análisis matemático para la toma de decisiones productivas en PDF"
+>
+  <span class="pdf-card-image-wrap pdf-card-image-wrap--horizontal">
+    <img src="imgs/PRESENTACION-MATEMATICO-15.webp" alt="Portada de presentación análisis matemático para la toma de decisiones productivas" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Análisis matemático</span>
+    <span class="pdf-card-text">Da clic para visualizar la presentación</span>
+  </span>
+</button>
+
+      </div>
+    </div>
+
+    <!-- =========================
+         TESIS, INVESTIGACIÓN Y PORTAFOLIOS
+    ========================== -->
+    <div class="pdf-category-block pdf-step-block reveal-up">
+      <div class="pdf-category-head">
+        <h3>Tesis, investigaciones y portafolios</h3>
+        <p>Documentos académicos formales, avances de tesis,tesinas completas, investigaciones y trabajos finales de diversas áreas del conocimiento.</p>
+      </div>
+
+      <div class="pdf-cards-grid">
+       
+        
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1V8s9YgM7TqrfOGfYTX5feFbzYhqpFEgU/preview"
+  data-title="Ciencias sociales: sector terciario y su impacto en la economía y la sociedad"
+  aria-label="Abrir investigación sobre el sector terciario en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/INV-18.webp" alt="Portada de investigación sobre sector terciario en ciencias sociales" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Sector terciario</span>
+    <span class="pdf-card-text">Da clic para visualizar la investigación</span>
+  </span>
+</button>
+
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1GkdwstyUet4gmweL8Ty5yC_2Urg55aXZ/preview"
+  data-title="Importancia de los sobrecargos como parte fundamental de la seguridad aérea"
+  aria-label="Abrir tesina sobre la importancia de los sobrecargos en la seguridad aérea en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/TESINA-2.webp" alt="Portada de tesina sobre sobrecargos y seguridad aérea" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Seguridad aérea</span>
+    <span class="pdf-card-text">Da clic para visualizar la tesina</span>
+  </span>
+</button>
+
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1SlPogjRMxbMWlOUMr7BtTwv4WKUSrpM7/preview"
+  data-title="Informe de investigación de mercados LittleCakes: pasteles pequeños y saludables para niños"
+  aria-label="Abrir investigación de mercados LittleCakes en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/INV-3.webp" alt="Portada de investigación de mercados LittleCakes pasteles saludables para niños" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Investigación LittleCakes</span>
+    <span class="pdf-card-text">Da clic para visualizar la investigación</span>
+  </span>
+</button>
+
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1seMq1lQrLOCULiw7bNAA_MHtmHLfZVmQ/preview"
+  data-title="Resiliencia y trauma desde una perspectiva cualitativa"
+  aria-label="Abrir ensayo sobre resiliencia y trauma en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/ENSAYO-1.webp" alt="Portada de ensayo sobre resiliencia y trauma psicológico" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Resiliencia y trauma</span>
+    <span class="pdf-card-text">Da clic para visualizar el ensayo</span>
+  </span>
+</button>
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1XWSmQTlbc9zW6vH6PspLVaZox1VVhcGc/preview"
+  data-title="Integración digital, ERP, CRM y procesos en negocio de moda"
+  aria-label="Abrir investigación sobre integración digital y sistemas empresariales en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/INV-MAPAS.webp" alt="Portada de investigación sobre procesos digitales, ERP y CRM" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Procesos digitales y ERP</span>
+    <span class="pdf-card-text">Da clic para visualizar el archivo</span>
+  </span>
+</button>
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1Nl2xzTwvZ6dm1DruNF-e2b0RRRjs_tv3/preview"
+  data-title="Auditoría administrativa: procesos, mapas mentales y análisis organizacional"
+  aria-label="Abrir documento de auditoría administrativa y mapas conceptuales en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/ACTS-MAPA-2.webp" alt="Portada de auditoría administrativa con diagramas y mapas mentales" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Auditoría administrativa</span>
+    <span class="pdf-card-text">Da clic para visualizar el archivo</span>
+  </span>
+</button>
+
+ <button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1mLMWxuhHCGlLqcILofg2JdgQcsF0E6S3/preview"
+  data-title="El bienestar psicológico en adolescentes con mapas de bienestar psicológico"
+  aria-label="Abrir investigación sobre bienestar psicológico en adolescentes en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/DOC-BIENESTARPSIC-1.webp" alt="Portada de investigación sobre bienestar psicológico en adolescentes" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Bienestar psicológico</span>
+    <span class="pdf-card-text">Da clic para visualizar la investigación</span>
+  </span>
+</button>
+
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/19YNjuXvf94jWd37FEq68QDtvidxn7Fwf/preview"
+  data-title="Análisis cinematográfico de El Principito"
+  aria-label="Abrir análisis cinematográfico de El Principito en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/INV-4.webp" alt="Portada de análisis cinematográfico de El Principito" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">El Principito</span>
+    <span class="pdf-card-text">Da clic para visualizar el análisis</span>
+  </span>
+</button>
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1IbcZuw58Fi7y8CRKbpDEnXQG0Q0ApuWo/preview"
+  data-title="Proyecto de inversión para el negocio Toña’s Mar y Cerveza"
+  aria-label="Abrir proyecto de inversión Toña’s Mar y Cerveza en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/INV-5.webp" alt="Portada de proyecto de inversión Toña’s Mar y Cerveza" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Proyecto Toña’s</span>
+    <span class="pdf-card-text">Da clic para visualizar el proyecto</span>
+  </span>
+</button>
+
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1r_75gwgifYbphsebTRTCyWIGtbFE_oj-/preview"
+  data-title="Optimización de procesos y estrategias financieras en Salas y Tapizados del Norte: estudio integral de proyectos de inversión"
+  aria-label="Abrir investigación sobre optimización de procesos y estrategias financieras en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/INV-12.webp" alt="Portada de investigación sobre optimización de procesos en empresa de tapicería" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Optimización empresarial</span>
+    <span class="pdf-card-text">Da clic para visualizar la investigación</span>
+  </span>
+</button>
+
+
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1lYUG7ciDQNWpRWrsh5D6GCgPgzETpZW1/preview"
+  data-title="Implementación de bibliotecas virtuales como herramienta para mejorar la comprensión lectora en primer grado de primaria"
+  aria-label="Abrir tesina sobre bibliotecas virtuales y comprensión lectora en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/TESINA-1.webp" alt="Portada de tesina sobre bibliotecas virtuales y comprensión lectora en primaria" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Comprensión lectora</span>
+    <span class="pdf-card-text">Da clic para visualizar la tesina</span>
+  </span>
+</button>
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1Zqhjolo_QXa2UH7NvFMQ6Vn8Cop-KA7Z/preview"
+  data-title="Evaluar métodos preventivos en control biológico para combatir plagas en cítricos en la zona de la Huasteca Tantoyuca"
+  aria-label="Abrir investigación sobre control biológico de plagas en cítricos en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/INV-1.webp" alt="Portada de investigación sobre control biológico de plagas en cítricos" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Control biológico en cítricos</span>
+    <span class="pdf-card-text">Da clic para visualizar la investigación</span>
+  </span>
+</button>
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1jsTm1BSOM97ku9yAu7pyvQ0zAt9pB-N8/preview"
+  data-title="Los feminicidios: una respuesta del patriarcado a la resistencia femenina en busca del cambio"
+  aria-label="Abrir investigación sobre feminicidios y patriarcado en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/INV-2.webp" alt="Portada de investigación sobre feminicidios y violencia de género" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Feminicidios</span>
+    <span class="pdf-card-text">Da clic para visualizar la investigación</span>
+  </span>
+</button>
+
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/15sRW5uLl1agxFqlvq-JaSvYfu9h9mOPB/preview"
+  data-title="Historia y evolución de la biotecnología a través de un mapa mental"
+  aria-label="Abrir mapa mental sobre historia y evolución de la biotecnología en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/INV-17.webp" alt="Portada de mapa mental sobre historia y evolución de la biotecnología" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Biotecnología</span>
+    <span class="pdf-card-text">Da clic para visualizar el mapa mental</span>
+  </span>
+</button>
+
+
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1X55_9K8MvNOvyzy7rfFrr702aFj8GKWg/preview"
+  data-title="Raíces de la ciencia: huertos educativos mendelianos en escuelas primarias"
+  aria-label="Abrir investigación sobre huertos educativos y genética mendeliana en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/INV-14.webp" alt="Portada de investigación sobre huertos educativos mendelianos en primaria" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Huertos educativos</span>
+    <span class="pdf-card-text">Da clic para visualizar la investigación</span>
+  </span>
+</button>
+
+
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/13bEMTbqjNkrU3uRR0HcesbcHpm6hb8ud/preview"
+  data-title="Ideación suicida y su relación con la autoestima, sintomatología depresiva y funcionamiento familiar"
+  aria-label="Abrir investigación sobre ideación suicida en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/INV-19.webp" alt="Portada de investigación sobre ideación suicida, autoestima y depresión" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Ideación suicida</span>
+    <span class="pdf-card-text">Da clic para visualizar la investigación</span>
+  </span>
+</button>
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1LxCPa3nhz5GISSLq25FEUloCtBNowLgg/preview"
+  data-title="Ciencias del comportamiento: manual para fortalecer el sentido de vida"
+  aria-label="Abrir manual de ciencias del comportamiento sobre sentido de vida en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/INV-6.webp" alt="Portada de manual de ciencias del comportamiento y sentido de vida" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Sentido de vida</span>
+    <span class="pdf-card-text">Da clic para visualizar el manual</span>
+  </span>
+</button>
+
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1iOXQ7UYFrusYFFDiKy0QlErV3SJKMRrB/preview"
+  data-title="Iniciativa de reforma de la Ley General de Educación para la mejora de la inclusión de estudiantes con necesidades especiales"
+  aria-label="Abrir investigación sobre reforma educativa e inclusión en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/INV-9.webp" alt="Portada de iniciativa de reforma educativa para inclusión de estudiantes con necesidades especiales" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Inclusión educativa</span>
+    <span class="pdf-card-text">Da clic para visualizar la investigación</span>
+  </span>
+</button>
+
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/17GdC14hM5CSkQaM6Em03XTjMu_8N8s--/preview"
+  data-title="La travesía genética: evolución, funciones vitales y manipulación del ADN en el ser humano"
+  aria-label="Abrir artículo de divulgación sobre evolución humana y ADN en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/INV-8.webp" alt="Portada de artículo sobre evolución humana y manipulación del ADN" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Evolución y ADN</span>
+    <span class="pdf-card-text">Da clic para visualizar el artículo</span>
+  </span>
+</button>
+
+
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1d4moxE4SFk4OF-Jgm2jUSYvCWNub7di8/preview"
+  data-title="Análisis forense y evaluación de evidencias: estudio del caso de O.J. Simpson"
+  aria-label="Abrir análisis forense del caso O.J. Simpson en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/INV-10.webp" alt="Portada de análisis forense del caso O.J. Simpson" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Caso O.J. Simpson</span>
+    <span class="pdf-card-text">Da clic para visualizar la investigación</span>
+  </span>
+</button>
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1qe87Tz4KXbFEVbZIg4X4dLGyk0dRGPER/preview"
+  data-title="Consumo colaborativo y sostenibilidad en Bimbo: propuesta de innovación Bimbo Share"
+  aria-label="Abrir investigación sobre sostenibilidad y consumo colaborativo en Bimbo en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/INV-11.webp" alt="Portada de investigación sobre sostenibilidad y modelo Bimbo Share" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Bimbo Share</span>
+    <span class="pdf-card-text">Da clic para visualizar la investigación</span>
+  </span>
+</button>
+
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1Rnl7RcSoesWLQtirRkxjxUZxlQk-1BhY/preview"
+  data-title="Impacto de la legislación comercial en la exportación de aguacate mexicano: análisis de leyes aduaneras y políticas arancelarias"
+  aria-label="Abrir investigación sobre legislación comercial y exportación de aguacate en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/INV-13.webp" alt="Portada de investigación sobre exportación de aguacate y legislación comercial" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Exportación de aguacate</span>
+    <span class="pdf-card-text">Da clic para visualizar la investigación</span>
+  </span>
+</button>
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1X55_9K8MvNOvyzy7rfFrr702aFj8GKWg/preview"
+  data-title="Raíces de la ciencia: huertos educativos mendelianos en escuelas primarias"
+  aria-label="Abrir investigación sobre huertos educativos y genética mendeliana en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/INV-14.webp" alt="Portada de investigación sobre huertos educativos mendelianos en primaria" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Huertos educativos</span>
+    <span class="pdf-card-text">Da clic para visualizar la investigación</span>
+  </span>
+</button>
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1VMEpi80-nmIqGRfcHIyeOy195c9pXAWW/preview"
+  data-title="Proyecto de importación de artículos electrónicos de China a México: relojes inteligentes"
+  aria-label="Abrir proyecto de importación de relojes inteligentes en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/INV-15.webp" alt="Portada de proyecto de importación de relojes inteligentes desde China" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Importación de smartwatches</span>
+    <span class="pdf-card-text">Da clic para visualizar la investigación</span>
+  </span>
+</button>
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1AUFS2BpbAe_RI690gWPeFro-UeTHbFNy/preview"
+  data-title="Informe pericial del caso O.J. Simpson: análisis forense y evaluación de evidencias"
+  aria-label="Abrir informe pericial del caso O.J. Simpson en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/INV-16.webp" alt="Portada de informe pericial del caso O.J. Simpson" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Informe pericial</span>
+    <span class="pdf-card-text">Da clic para visualizar la investigación</span>
+  </span>
+</button>
+
+        
+      </div>
+    </div>
+
+    <!-- =========================
+         TRABAJOS MATEMÁTICOS Y DE CÁLCULO
+    ========================== -->
+    <div class="pdf-category-block pdf-step-block reveal-up">
+      <div class="pdf-category-head">
+        <h3>Trabajos matemáticos y de cálculo</h3>
+        <p>Resoluciones, proyectos y ejercicios desarrollados de matemáticas, álgebra, estadística, optimización, probabilidad, contabilidad, cálculo, procesamiento de datos y todo lo que tenga que ver con números y cálculos.</p>
+      </div>
+
+      <div class="pdf-cards-grid">
+        
+        <button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/10empRTfQxJD0_P9iFFLq3eDo6FxmmTZp/preview"
+  data-title="Datos meteorológicos mensuales y proyecto de calentamiento solar-eléctrico"
+  aria-label="Abrir documento de datos meteorológicos mensuales y proyecto de calentamiento solar-eléctrico en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATEMATICAS-1.webp" alt="Portada del proyecto de calentamiento solar-eléctrico para agua caliente sanitaria" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Calentamiento solar-eléctrico</span>
+    <span class="pdf-card-text">Proyecto para cubrir la demanda diaria de agua caliente sanitaria de una empresa con 100 empleados.</span>
+  </span>
+</button>
+
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1CZ25wu7N5zJ-dfGy2VnkwuhhYqSlOPmc/preview"
+  data-title="Proyecto de abastecimiento de agua potable en Mier y Noriega"
+  aria-label="Abrir documento de proyecto de abastecimiento de agua potable en Mier y Noriega en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATE-2.webp" alt="Portada del proyecto de abastecimiento de agua potable en comunidad rural" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Abastecimiento de agua potable</span>
+    <span class="pdf-card-text">Proyecto para dotar de agua potable a una comunidad de Nuevo León mediante infraestructura hidráulica y análisis de demanda.</span>
+  </span>
+</button>
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1xODgdaPsefWuayAtVUWEKjQGfjwmkklb/preview"
+  data-title="Espectroscopia 1H-RMN e IR en compuestos orgánicos"
+  aria-label="Abrir documento de espectroscopia 1H-RMN e IR en compuestos orgánicos en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATE-3.webp" alt="Portada de tablas de espectroscopia RMN e IR de compuestos orgánicos" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Espectroscopia RMN e IR</span>
+    <span class="pdf-card-text">Tablas de señales características de 1H-RMN e IR para familias de compuestos orgánicos y su interpretación.</span>
+  </span>
+</button>
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1HN8njEbgJpkKe94Z0q6_itblYAXDuYiE/preview"
+  data-title="Análisis estadístico de producción y capacitación"
+  aria-label="Abrir documento de análisis estadístico de producción y capacitación en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATE-16.webp" alt="Portada de análisis estadístico de producción y correlación de capacitación" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Análisis estadístico empresarial</span>
+    <span class="pdf-card-text">Evaluación de modelos de maquinaria y relación entre capacitación y productividad mediante estadística.</span>
+  </span>
+</button>
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1NKRHpdADZtoizDnRzmth1LVE1vtlY9GM/preview"
+  data-title="Optimización y teoría de decisiones"
+  aria-label="Abrir documento de optimización y teoría de decisiones en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATE-4.webp" alt="Portada de ejercicios de optimización, programación lineal y teoría de decisiones" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Optimización y decisiones</span>
+    <span class="pdf-card-text">Problemas de programación lineal, árboles de decisión y modelos estratégicos para la toma de decisiones.</span>
+  </span>
+</button>
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1KhJsCNDhkeWVT1CB_5aGfCmtqKcnPcOX/preview"
+  data-title="Interpretación de planos de instrumentación P&ID"
+  aria-label="Abrir documento de interpretación de planos de instrumentación P&ID en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATE-5.webp" alt="Portada de interpretación de planos P&ID con norma ISA 5.1" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Planos P&ID e instrumentación</span>
+    <span class="pdf-card-text">Interpretación de lazos de control y componentes de automatización bajo la norma ISA 5.1.</span>
+  </span>
+</button>
+
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1jYywDxOUHd_nl2ra_bJ1VK_l33e7Qm34/preview"
+  data-title="Cartas de control para variables y atributos"
+  aria-label="Abrir documento de cartas de control para variables y atributos en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATE-6.webp" alt="Portada de análisis de cartas de control en procesos bancarios" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Cartas de control</span>
+    <span class="pdf-card-text">Análisis estadístico de procesos mediante cartas de control para evaluar calidad y desempeño.</span>
+  </span>
+</button>
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1Hd3oItST4JTD_JjB04jcf7EagY7k1iNe/preview"
+  data-title="Análisis de estados financieros y razones financieras"
+  aria-label="Abrir documento de análisis de estados financieros y razones financieras en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATE-7.webp" alt="Portada de análisis financiero y razones financieras de empresas" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Análisis financiero</span>
+    <span class="pdf-card-text">Evaluación de liquidez, endeudamiento, rentabilidad y activos para comparar el desempeño de dos empresas.</span>
+  </span>
+</button>
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1Csx566m-TNkP_-4Wzd3q6J8Bi0_NH2DX/preview"
+  data-title="Dominio y rango de funciones"
+  aria-label="Abrir documento de dominio y rango de funciones en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATE-8.webp" alt="Portada de ejercicios de dominio y rango de funciones matemáticas" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Dominio y rango</span>
+    <span class="pdf-card-text">Obtención del dominio y rango de funciones mediante despeje y análisis algebraico.</span>
+  </span>
+</button>
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1yc0cj_Cfj9OGmj7vDjGmk_g1yx_95T_l/preview"
+  data-title="Tipos de amplificadores con BJT"
+  aria-label="Abrir documento de tipos de amplificadores con BJT en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATE-9.webp" alt="Portada de tabla comparativa de amplificadores BJT" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Tipos de amplificadores</span>
+    <span class="pdf-card-text">Tabla comparativa de amplificadores BJT: emisor común, base común y colector común.</span>
+  </span>
+</button>
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1ZZlGL2U9muv-DjUq0FLUp325SwTKmK3m/preview"
+  data-title="Modelado y análisis de esfuerzos en un eje"
+  aria-label="Abrir documento de modelado y análisis de esfuerzos en un eje en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATE-10.webp" alt="Portada de modelado de eje en Autodesk Inventor y análisis de esfuerzos" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Análisis de esfuerzos</span>
+    <span class="pdf-card-text">Modelado de un eje en Autodesk Inventor para evaluar esfuerzos combinados y factor de seguridad.</span>
+  </span>
+</button>
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1u7DfAflZsvv-j9z0kGt7qdVcSlVk-yN5/preview"
+  data-title="Java: ambiente de desarrollo y diseño de aplicación"
+  aria-label="Abrir documento de Java, ambiente de desarrollo y diseño de aplicación en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATE-11.webp" alt="Portada de avance de proyecto en Java con diagrama de flujo, clases y pseudocódigo" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Proyecto en Java</span>
+    <span class="pdf-card-text">Avance de aplicación con ambiente de desarrollo, diagrama de flujo, diagrama de clases y pseudocódigo.</span>
+  </span>
+</button>
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1wRruLxtb6-Dxz05BkCpx-5moiRyRSULt/preview"
+  data-title="Aplicaciones de probabilidad y distribuciones"
+  aria-label="Abrir documento de aplicaciones de probabilidad y distribuciones en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATE-12.webp" alt="Portada de ejercicios de probabilidad, distribución binomial y Poisson" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Probabilidad aplicada</span>
+    <span class="pdf-card-text">Resolución de casos con probabilidad condicional, distribución binomial y distribución de Poisson.</span>
+  </span>
+</button>
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1X982ss44C4YHwTeYeBn6SXCUhqCXvcDT/preview"
+  data-title="Análisis de regresión con variables dicótomas en R Studio"
+  aria-label="Abrir documento de análisis de regresión en R Studio en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATE-13.webp" alt="Portada de análisis de regresión en R Studio con variables dicótomas" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Regresión en R Studio</span>
+    <span class="pdf-card-text">Análisis estadístico con variables dicótomas, ANOVA y modelos de regresión aplicados en R Studio.</span>
+  </span>
+</button>
+
+<button
+  class="pdf-card reveal-up"
+  type="button"
+  data-pdf="https://drive.google.com/file/d/1RGdg8ea2I-B0on1OxZ9w2f4I9Ah6RFzM/preview"
+  data-title="Estequiometría, gases y concentración de soluciones"
+  aria-label="Abrir documento de estequiometría, gases y concentración de soluciones en PDF"
+>
+  <span class="pdf-card-image-wrap">
+    <img src="imgs/MATE-15.webp" alt="Portada de ejercicios de estequiometría, gases y concentración de soluciones" class="pdf-card-image">
+  </span>
+  <span class="pdf-card-body">
+    <span class="pdf-card-title">Estequiometría y gases</span>
+    <span class="pdf-card-text">Resolución de ejercicios sobre reactivo limitante, gases ideales y concentración de soluciones químicas.</span>
+  </span>
+</button>
+
+
+
+      </div>
+    </div>
+
+    <!-- =========================
+         PROYECTOS EN EXCEL Y OTROS SOFTWARES
+    ========================== -->
+    <div class="pdf-category-block pdf-step-block reveal-up">
+      <div class="pdf-category-head">
+        <h3>Proyectos en Excel y otros softwares</h3>
+        <p>Desarrollos técnicos realizados en Excel, simuladores, software estadístico, programación y herramientas de análisis aplicadas a distintos contextos.</p>
+      </div>
+
+      <div class="pdf-cards-grid">
+        <button
+          class="pdf-card pdf-card--horizontal reveal-up"
+          type="button"
+          data-pdf="https://drive.google.com/file/d/ID_EXCEL_1/preview"
+          data-title="Presupuesto maestro y estados financieros"
+          aria-label="Abrir proyecto Presupuesto maestro y estados financieros en PDF"
+        >
+          <span class="pdf-card-image-wrap pdf-card-image-wrap--horizontal">
+            <img src="imgs/pdf-excel-1.webp" alt="Portada de proyecto de presupuesto maestro y estados financieros" class="pdf-card-image">
+          </span>
+          <span class="pdf-card-body">
+            <span class="pdf-card-title">Presupuesto maestro</span>
+            <span class="pdf-card-text">Da clic para visualizar el archivo</span>
+          </span>
+        </button>
+
+        <button
+          class="pdf-card pdf-card--horizontal reveal-up"
+          type="button"
+          data-pdf="https://drive.google.com/file/d/ID_EXCEL_2/preview"
+          data-title="Análisis de instrumentos financieros"
+          aria-label="Abrir proyecto Análisis de instrumentos financieros en PDF"
+        >
+          <span class="pdf-card-image-wrap pdf-card-image-wrap--horizontal">
+            <img src="imgs/pdf-excel-2.webp" alt="Portada de análisis de instrumentos financieros" class="pdf-card-image">
+          </span>
+          <span class="pdf-card-body">
+            <span class="pdf-card-title">Análisis financiero</span>
+            <span class="pdf-card-text">Da clic para visualizar el archivo</span>
+          </span>
+        </button>
+
+        <button
+          class="pdf-card pdf-card--horizontal reveal-up"
+          type="button"
+          data-pdf="https://drive.google.com/file/d/ID_EXCEL_3/preview"
+          data-title="Simulación de negocio en Excel"
+          aria-label="Abrir proyecto Simulación de negocio en Excel en PDF"
+        >
+          <span class="pdf-card-image-wrap pdf-card-image-wrap--horizontal">
+            <img src="imgs/pdf-excel-3.webp" alt="Portada de simulación de negocio en Excel" class="pdf-card-image">
+          </span>
+          <span class="pdf-card-body">
+            <span class="pdf-card-title">Simulación empresarial</span>
+            <span class="pdf-card-text">Da clic para visualizar el archivo</span>
+          </span>
+        </button>
+
+        <button
+          class="pdf-card pdf-card--horizontal reveal-up"
+          type="button"
+          data-pdf="https://drive.google.com/file/d/ID_EXCEL_4/preview"
+          data-title="Dashboard interactivo de datos"
+          aria-label="Abrir proyecto Dashboard interactivo de datos en PDF"
+        >
+          <span class="pdf-card-image-wrap pdf-card-image-wrap--horizontal">
+            <img src="imgs/pdf-excel-4.webp" alt="Portada de dashboard interactivo de datos" class="pdf-card-image">
+          </span>
+          <span class="pdf-card-body">
+            <span class="pdf-card-title">Dashboard en Excel</span>
+            <span class="pdf-card-text">Da clic para visualizar el archivo</span>
+          </span>
+        </button>
+
+        <button
+          class="pdf-card pdf-card--horizontal reveal-up"
+          type="button"
+          data-pdf="https://drive.google.com/file/d/ID_EXCEL_5/preview"
+          data-title="Automatización de datos y programación"
+          aria-label="Abrir proyecto Automatización de datos y programación en PDF"
+        >
+          <span class="pdf-card-image-wrap pdf-card-image-wrap--horizontal">
+            <img src="imgs/pdf-excel-5.webp" alt="Portada de automatización de datos y programación" class="pdf-card-image">
+          </span>
+          <span class="pdf-card-body">
+            <span class="pdf-card-title">Automatización y programación</span>
+            <span class="pdf-card-text">Da clic para visualizar el archivo</span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <div class="pdf-step-actions reveal-up">
+      <button type="button" class="btn btn-secondary" id="btnMostrarMasPdf">
+        Ver más trabajos que hice
+      </button>
+    </div>
+  </div>
+</section>
+  
+
+  <!-- =========================
+       MODAL PDF
+  ========================== -->
+  <div class="pdf-modal" id="pdfModal" aria-hidden="true">
+    <div class="pdf-modal-backdrop" data-close-pdf></div>
+
+    <div
+      class="pdf-modal-dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="pdfModalTitle"
+    >
+      <button class="pdf-modal-close" type="button" id="pdfModalClose" aria-label="Cerrar visor de PDF">
+        ×
+      </button>
+
+      <div class="pdf-modal-topbar">
+        <h3 class="pdf-modal-title" id="pdfModalTitle">Vista previa del documento</h3>
+      </div>
+
+      <div class="pdf-modal-viewer">
+        <iframe
+          id="pdfViewer"
+          src=""
+          title="Visor de PDF"
+          loading="lazy"
+          allow="autoplay"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
     <section class="final-cta section">
       <div class="container final-cta-grid">
         <div class="final-cta-content reveal-left">
-          <span class="section-tag">¿Necesitas ayuda con una tarea?</span>
-          <h2>Mándame tu actividad y te confirmo si sí puedo apoyarte</h2>
+          <span class="section-tag">¿Listo para pedir apoyo?</span>
+          <h2>Envíame tu tarea, proyecto o tesis y te confirmo si puedo ayudarte</h2>
           <p>
-            Si estás buscando quién te ayude con tareas de secundaria, preparatoria, bachillerato, universidad o actividades en línea, puedes mandar la información y revisar disponibilidad.
+            Escríbeme con tus instrucciones, fecha de entrega y material que tengas. Reviso tu actividad y te paso cotización sin compromiso.
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="https://wa.me/528116718765" target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a>
-            <a class="btn btn-secondary" href="index.html">Volver al inicio</a>
+            <a class="btn btn-secondary" href="mailto:daenna2001@gmail.com">Enviar correo</a>
           </div>
         </div>
         <div class="final-cta-visual reveal-right">
-          <img src="imgs/logo-cohete.webp" alt="Apoyo académico para tareas, trabajos y actividades escolares" />
+          <img src="imgs/logo-cohete.webp" alt="Personaje con cohete" />
         </div>
       </div>
     </section>
   </main>
 
   <section class="seo-hidden">
-    <h2>Hacer tareas de secundaria, preparatoria, bachillerato y universidad</h2>
-    <p>
-      Servicio de apoyo para tareas escolares y universitarias, trabajos académicos, actividades en línea, ejercicios, investigaciones, presentaciones y otros entregables educativos.
-    </p>
+  <h2>Ayuda con tareas en línea</h2>
+  <p>
+    En Te Hago La Tarea ofrecemos ayuda con tareas en línea, trabajos escolares, ensayos, tesis, presentaciones e investigaciones. Nuestro servicio de apoyo académico está dirigido a estudiantes de licenciatura, ingeniería, maestría y otros niveles educativos.
+  </p>
 
-    <h2>Ayuda con tareas en Monterrey y todo México</h2>
-    <p>
-      Atención personalizada para estudiantes que necesitan apoyo con tareas, trabajos, proyectos escolares, ejercicios o investigaciones en distintas materias.
-    </p>
+  <h2>Apoyo académico en México</h2>
+  <p>
+    Brindamos apoyo académico en Monterrey y en todo México, ayudando a estudiantes con tareas de matemáticas, estadística, contabilidad, administración, derecho, psicología, programación y más áreas académicas.
+  </p>
 
-    <h2>Qué se necesita para cotizar una tarea</h2>
-    <p>
-      Para revisar una actividad conviene compartir instrucciones, fecha de entrega, rúbrica, archivos base y material del profesor.
-    </p>
-  </section>
+  <h2>Servicios de tareas y trabajos escolares</h2>
+  <p>
+    Realizamos tareas escolares, proyectos finales, actividades en línea, trabajos universitarios, presentaciones en PowerPoint, documentos en Word, análisis en Excel, investigaciones académicas y desarrollo de tesis completas.
+  </p>
 
-  <footer class="main-footer">
-    <div class="container footer-content">
-      <div class="footer-brand">
-        <img src="imgs/logo-horizontal.webp" alt="Logo horizontal Te Hago La Tarea" class="footer-logo" />
-        <p>
-          Apoyo académico de confianza para tareas, trabajos, proyectos, tesis, presentaciones e investigaciones con atención personalizada.
-        </p>
-      </div>
+  <h2>Hacer tareas y proyectos por encargo</h2>
+  <p>
+    Servicio profesional para hacer tareas, proyectos y trabajos escolares con entrega puntual, confidencialidad y adaptación a las instrucciones del profesor. Atención personalizada por WhatsApp.
+  </p>
 
-      <div class="footer-links">
-        <h4>Enlaces</h4>
-        <a href="index.html">Inicio</a>
-        <a href="hacer-tareas.html">Hacer tareas</a>
-        <a href="tesis.html">Tesis</a>
-        <a href="ayuda-con-tareas.html">Ayuda con tareas</a>
-        <a href="proyectos-universidad.html">Proyectos universidad</a>
-      </div>
+  <ul>
+  <li>Ayuda con tareas</li>
+  <li>Elaboración de tesis</li>
+  <li>Trabajos escolares</li>
+  <li>Apoyo en línea</li>
+  <li>Presentaciones académicas</li>
+</ul>
 
-      <div class="footer-contact">
-        <h4>Contacto</h4>
-        <a href="https://wa.me/528116718765" target="_blank" rel="noopener noreferrer">
-          WhatsApp: +52 81 1671 8765
-        </a>
-        <a href="mailto:daenna2001@gmail.com">
-          daenna2001@gmail.com
-        </a>
-        <a href="https://www.facebook.com/tehagolatarea.daenna" target="_blank" rel="noopener noreferrer">
-          Facebook
-        </a>
-        <span class="footer-location">Monterrey, Nuevo León, México</span>
-      </div>
+</section>
+
+<footer class="main-footer">
+  <div class="container footer-content">
+
+    <div class="footer-brand">
+      <img src="imgs/logo-horizontal.webp" alt="Logo horizontal Te Hago La Tarea" class="footer-logo" />
+      <p>
+        Tu apoyo académico de confianza en Monterrey. Tareas, proyectos, tesis,
+        presentaciones e investigaciones con atención personalizada.
+      </p>
     </div>
 
-    <div class="footer-bottom">
-      <div class="container footer-bottom-content">
-        <p>© 2026 Te Hago La Tarea. Todos los derechos reservados.</p>
-        <p>By Daenna González</p>
-      </div>
+    <div class="footer-links">
+      <h4>Enlaces</h4>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#areas">Carreras y materias</a>
+      <a href="#niveles">Niveles</a>
+      <a href="#evidencias">Evidencias</a>
+      <a href="#contacto">Contacto</a>
+     <a href="blog.html">Blog</a>
     </div>
-  </footer>
+
+    <div class="footer-contact">
+      <h4>Contacto</h4>
+      <a href="https://wa.me/528116718765" target="_blank" rel="noopener noreferrer">
+        WhatsApp: +52 81 1671 8765
+      </a>
+      <a href="mailto:daenna2001@gmail.com">
+        daenna2001@gmail.com
+      </a>
+      <a href="https://www.facebook.com/tehagolatarea.daenna" target="_blank" rel="noopener noreferrer">
+        Facebook
+      </a>
+      <span class="footer-location">Monterrey, Nuevo León, México</span>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-content">
+      <p>© 2026 Te Hago La Tarea. Todos los derechos reservados.</p>
+      <p>By Daenna González</p>
+    </div>
+  </div>
+</footer>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const revealItems = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right');
       revealItems.forEach((el) => el.classList.add('reveal-visible'));
-
-      const menuToggle = document.getElementById('menuToggle');
-      const mainNav = document.getElementById('mainNav');
-
-      if (menuToggle && mainNav) {
-        menuToggle.addEventListener('click', function () {
-          const isOpen = mainNav.classList.toggle('open');
-          menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-          document.body.classList.toggle('menu-open', isOpen);
-        });
-      }
     });
   </script>
+
+  <script src="script.js"></script>
 </body>
 </html>
